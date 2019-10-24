@@ -13,7 +13,7 @@
 
 <body>
 
-  <div class="header" role="banner">
+  <header class="header" role="banner">
     <div class="header__top-bar">
       <div class="header__top-bar__content page-width">
         <a href="#" role="button">
@@ -52,7 +52,7 @@
       </div>
 
       <!-- Begin Mobile Navigation -->
-      <div class="header__mobile mobile">
+      <div class="header__mobile medium">
         <a href="#" class="header__mobile__icon" role="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 12 12">
             <g fill="none" fill-rule="evenodd" stroke="#4B4C4C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
@@ -86,7 +86,7 @@
       <!-- End Mobile Navigation -->
 
       <!-- Start Desktop Navigation -->
-      <div class="header__content__navigation" role="navigation">
+      <nav class="header__content__navigation" role="navigation">
         <a href="#" role="button" class="selected container">
           Our Story
           <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5">
@@ -117,7 +117,7 @@
           </svg>
           <span class="ribbon"></span>
         </a>
-      </div>
+      </nav>
       <!-- End Deskop Navigation -->
 
       <div class="header__polygon"></div>
@@ -126,10 +126,10 @@
     </div>
 
     <!-- Begin Mobile Drawer -->
-    <div class="mobile__drawer mobile__drawer--hide mobile" id="mobile-drawer">
+    <div class="mobile__drawer mobile__drawer--hide medium" id="mobile-drawer">
       <div class="mobile__drawer__header">
         <!-- Begin Mobile Navigation -->
-        <div class="header__mobile mobile">
+        <div class="header__mobile medium">
             <a href="#" class="header__mobile__icon" role="button">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
                   <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
@@ -167,7 +167,7 @@
           <!-- End Mobile Navigation -->
       </div>
       <div class="mobile__drawer__body">
-        <div class="mobile__drawer__body__navigation">
+        <nav class="mobile__drawer__body__navigation">
           <ul>
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">Our Story</a>
@@ -202,7 +202,7 @@
               <a href="#">News</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </div>
       <div class="mobile__drawer__footer">
         <svg xmlns="http://www.w3.org/2000/svg" width="140" height="24" viewBox="0 0 140 24">
@@ -212,7 +212,7 @@
       <div class="mobile__drawer__bg-container"></div>
     </div>
     <!-- End Mobile Drawer -->
-  </div>
+  </header>
 
   <div class="hero" role="banner">
     <div class="hero__image"></div>
@@ -220,11 +220,11 @@
     <!-- <div class="hero__image__overlay--lighten"></div> -->
   </div>
 
-  <div class="content page-width" role="article">
+  <main class="content page-width" role="article">
     Page content
-  </div>
+  </main>
 
-  <div class="footer" role="contentinfo">
+  <footer class="footer" role="contentinfo">
     <div class="footer__content page-width">
       <div class="footer__content__item">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="41" viewBox="0 0 67 41">
@@ -255,7 +255,7 @@
           </div>
         </div>
 
-        <div class="page-width footer__content__hr mobile"></div>
+        <div class="page-width footer__content__hr medium"></div>
 
         <div class="footer__content__item">
           <p>Call Direct: (830) 302-5200</p>
@@ -265,6 +265,7 @@
               <button role="button" class="button__yellow footer__content__contact-button">Contact Us</button>
           </div>
         </div>
+        <div class="page-width footer__content__hr small"></div>
         <div class="footer__content__item">
           <p>Subscribe to our media announcements.</p>
           <div>
@@ -284,14 +285,14 @@
       <div class="page-width footer__content__hr"></div>
 
       <div class="footer__content footer__copyright page-width">
-        <div>©2019 Rush Enterprises, Inc.</div>
+        <div><a href="#">©2019 Rush Enterprises, Inc.</a></div>
         <div>
           <a href="#">Privacy Policy</a>
           <a href="#">Terms of Use</a>
           <a href="#">Report an Ethics Violation</a>
         </div>
       </div>
-  </div>
+    </footer>
 
   <div class="tagline">
       <svg xmlns="http://www.w3.org/2000/svg" width="91" height="32" view-box="0 0 91 32">
@@ -340,36 +341,46 @@
       {
         name: 'House of Trucks',
         url: '#',
-        id: 0
+        id: 7
       },
       {
         name: 'Momentum Fuel Technologies',
         url: '#',
-        id: 0
+        id: 8
       },
       {
         name: 'Custom Vehicle Solutions',
         url: '#',
-        id: 0
+        id: 9
       },
       {
         name: 'Perfection Truck Parts & Equipment',
         url: '#',
-        id: 0
+        id: 10
       },
       {
         name: 'Chrome Country',
         url: '#',
-        id: 0
+        id: 11
       },
       {
         name: 'World Wide Tires',
         url: '#',
-        id: 0
+        id: 12
       }
     ];
 
-    links.map(link => {
+    var generateLinks = () => {
+      var links = [];
+      for (var i = 0; i  < 14; i++) {
+        links.push({ name: `Link ${i+1}`, url: '#' });
+      }
+      return links;
+    }
+
+    const genericLinks = generateLinks();
+
+    genericLinks.map(link => {
       var a = document.createElement('a');
       var linkText = document.createTextNode(link.name);
       a.appendChild(linkText);

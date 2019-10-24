@@ -22,6 +22,21 @@
     url("../assets/fonts/Trade\ Gothic\ Bold\ Condensed.eot") format("eot");
 }
 
+@font-face {
+  font-family: "Warnock";
+  src: url("../assets/fonts/WarnockPro-Regular.otf");
+}
+
+@font-face {
+  font-family: "Warnock Bold";
+  src: url("../assets/fonts/WarnockPro-Bold.otf");
+}
+
+@font-face {
+  font-family: "Warnock Disp";
+  src: url("../assets/fonts/WarnockPro-Disp.otf");
+}
+
 *,* {
   box-sizing: border-box;
   padding: 0;
@@ -82,12 +97,19 @@
   font-family: "Trade Gothic Condensed", sans-serif;
 }
 
-.mobile {
+.medium,
+.small {
   display: none;
 }
 
 @media screen and (max-width: 809px) {
-  .mobile {
+  .medium {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .small {
     display: block;
   }
 }
@@ -198,7 +220,7 @@
 .header__top-bar__content {
   display: flex;
   flex-direction: row;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .header__top-bar__content {
@@ -341,8 +363,8 @@
 }
 
 .mobile__drawer__bg-container {
-  position: sticky;
-  z-index: 2;
+  position: fixed;
+  z-index: -1;
 }
 
 .mobile__drawer--hide {
@@ -522,8 +544,11 @@
   margin: 0 auto;
 }
 
+
+
 .footer__content__item:first-child {
   margin-left: 0;
+  margin-bottom: 24px;
 }
 
 .footer__content__item:last-child {
@@ -539,6 +564,12 @@
 @media screen and (max-width: 809px) {
   .footer__content__item {
     width: 220px;
+  }
+}
+
+@media screen and (max-width: 459px) { 
+  .footer__content__item {
+    width: 100%;
   }
 }
 
@@ -581,7 +612,6 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
 }
 
 .footer__content__item__links a {
@@ -606,6 +636,22 @@
   }
 }
 
+@media screen and (max-width: 459px) {
+  .footer__content__item__links {
+
+  }
+
+  .footer__content__item__links a {
+    font-size: 12px;
+    width: 130px;
+  }
+
+  .footer__content__item__links a:last-child,
+  .footer__content__item__links a:nth-last-child(2) {
+    margin-bottom: 0;
+  }
+}
+
 .footer__content__item__links a:last-child {
   margin-bottom: 0;
 }
@@ -622,7 +668,7 @@
 
 .footer__copyright div,
 .footer__copyright div a {
-  font-family: serif;
+  font-family: "Warnock", serif;;
   font-size: 12px;
 }
 
@@ -639,6 +685,23 @@
   margin-left: 16px;
 }
 
+@media screen and (max-width: 459px) { 
+  .footer__copyright {
+    display: block;
+  }
+
+  .footer__copyright div,
+  .footer__copyright a {
+    display: block;
+    margin: 0;
+    line-height: 16px;
+  }
+
+  .footer__copyright div:first-child {
+    margin-bottom: 16px;
+  }
+}
+
 .footer__copyright a:hover {
   text-decoration: underline;
   color: #eeb111;
@@ -649,6 +712,12 @@
   background-color: #939598;
   margin: 24px auto;
   opacity: 0.5;
+}
+
+@media screen and (max-width: 459px) { 
+  .footer__content__item {
+    width: 100%;
+  }
 }
 
 .tagline {
