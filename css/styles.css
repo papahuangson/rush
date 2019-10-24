@@ -519,6 +519,12 @@
   margin: 30px auto;
 }
 
+.content p {
+  font-family: "Warnock", serif;
+  font-size: 16px;
+  margin: 10px 0;
+}
+
 /* Footer */
 .footer {
   background-color: #4b4c4c;
