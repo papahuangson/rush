@@ -97,19 +97,19 @@
   font-family: "Trade Gothic Condensed", sans-serif;
 }
 
-.medium,
-.small {
+.bp-medium,
+.bp-small {
   display: none;
 }
 
 @media screen and (max-width: 809px) {
-  .medium {
+  .bp-medium {
     display: block;
   }
 }
 
 @media screen and (max-width: 459px) {
-  .small {
+  .bp-small {
     display: block;
   }
 }
@@ -664,6 +664,10 @@
 .footer__copyright {
   justify-content: space-between;
   font-size: 12px;
+}
+
+.footer__copyright div:first-child a {
+  margin: 0;
 }
 
 .footer__copyright div,
