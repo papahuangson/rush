@@ -12,6 +12,7 @@
     url("../assets/fonts/Trade\ Gothic\ Condensed.woff") format("woff"),
     url("../assets/fonts/Trade\ Gothic\ Condensed.ttf") format("ttf"),
     url("../assets/fonts/Trade\ Gothic\ Condensed.eot") format("eot");
+    /* src: url("../assets/fonts/TradeGothicLT-CondEighteen.ttf"); */
 }
 
 @font-face {
@@ -41,7 +42,6 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: "Trade Gothic", sans-serif;
 }
 
 .page-width {
@@ -90,11 +90,6 @@
   background: #000;
   opacity: .07;
   clip-path: polygon(50% 0%, 100% 0, 50% 100%, 0% 100%);
-}
-
-.gold {
-  color: #eeb111;
-  font-family: "Trade Gothic Condensed", sans-serif;
 }
 
 .bp-medium,
@@ -236,6 +231,22 @@
   font-size: 12px;
 }
 
+.header__top-bar__content a:hover {
+  color: #eeb111;
+}
+
+.header__top-bar__content a:hover svg.utility__base-icon {
+  display: none;
+}
+
+.header__top-bar__content a svg.utility__hover-icon {
+  display: none;
+}
+
+.header__top-bar__content a:hover svg.utility__hover-icon {
+  display: inline;
+}
+
 .header__top-bar__content a:not(:last-child) {
   margin-right: 20px;
 }
@@ -348,6 +359,18 @@
 
   .header__mobile__icon {
     margin-top: 27px;
+  }
+
+  .header__mobile__icon .header__mobile__icon--hover {
+    display: none;
+  }
+
+  .header__mobile__icon:hover .header__mobile__icon--base {
+    display: none;
+  }
+
+  .header__mobile__icon:hover .header__mobile__icon--hover {
+    display: inline;
   }
 }
 
@@ -519,7 +542,7 @@
   margin: 30px auto;
 }
 
-.content p {
+.content > p {
   font-family: "Warnock", serif;
   font-size: 16px;
   margin: 10px 0;
@@ -620,6 +643,10 @@
   flex-wrap: wrap;
 }
 
+.footer__content__item__links--mobile {
+  display: none;
+}
+
 .footer__content__item__links a {
   display: block;
   font-family: "Trade Gothic Condensed", sans-serif;
@@ -639,17 +666,23 @@
 @media screen and (max-width: 809px) {
   .footer__content__item__links a {
     width: 220px;
+    padding-right: 50px;
+  }
+
+  .footer__content__item__links {
+    display: none;
+  }
+
+  .footer__content__item__links--mobile {
+    display: flex;
   }
 }
 
 @media screen and (max-width: 459px) {
-  .footer__content__item__links {
-
-  }
-
   .footer__content__item__links a {
     font-size: 12px;
     width: 130px;
+    padding: 0;
   }
 
   .footer__content__item__links a:last-child,
@@ -665,6 +698,28 @@
 .footer__content__item__links a:hover {
   text-decoration: underline;
   color: #eeb111;
+}
+
+.footer__map-link {
+  color: #eeb111;
+  font-family: "Trade Gothic Condensed", sans-serif;
+  text-decoration: none;
+}
+
+a.footer__map-link:hover {
+  color: #fff;
+}
+
+a.footer__map-link:hover svg.footer__base-icon {
+  display: none;
+}
+
+a.footer__map-link svg.footer__hover-icon {
+  display: none;
+}
+
+a.footer__map-link:hover svg.footer__hover-icon {
+  display: inline;
 }
 
 .footer__copyright {
