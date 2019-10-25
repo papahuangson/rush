@@ -687,13 +687,18 @@ button {
   border-radius: 2px;
   background: none;
   border: 1px solid #939598;
-  padding: 3px 8px 5px 8px;
+  padding: 4px 8px 4px 8px;
   margin-right: 8px;
   line-height: 16px;
   color: #e6e7e8;
   font-family: serif;
   font-size: 12px;
   width: 165px;
+}
+
+.footer__content__item input::placeholder {
+  color: #fff;
+  opacity: 1;
 }
 
 @media screen and (max-width: 983px) {
