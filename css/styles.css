@@ -354,7 +354,7 @@ button {
 }
 
 .header__content__navigation a:not(:first-child) {
-  margin-left: 20px;
+  margin-left: 14px;
 }
 
 .header__content__navigation--with-child {
@@ -368,7 +368,7 @@ button {
 }
 
 .header__content__navigation--with-child__child {
-  margin-top: 12px;
+  margin-top: 10px;
   display: flex;
   justify-content: flex-end;
 }
