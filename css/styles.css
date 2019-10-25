@@ -148,7 +148,7 @@ button {
   height: 0.25em;
   width: 105%;
   position: absolute;
-  top: 85%;
+  bottom: 0;
   left: -5%;
   z-index: -1;
   background: #EEB111;
@@ -208,6 +208,12 @@ button {
   .header__polygon {
     top: 46px;
     left: -53px;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .header__polygon {
+    display: none;
   }
 }
 
@@ -497,7 +503,6 @@ button {
 }
 
 .mobile__drawer__body__navigation ul li.mobile-nav-child {
-  /* border-top: none; */
   padding-left: 29px;
 }
 
@@ -507,7 +512,7 @@ button {
 }
 
 .mobile__drawer__body__navigation__item {
-  /* padding: 15px 20px 15px 12px; */
+  position: relative;
 }
 
 .mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation__item--selected,
@@ -519,6 +524,13 @@ button {
 .mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation__item--selected a,
 .mobile__drawer__body__navigation__item:hover a {
   color: #000;
+}
+
+.mobile__drawer__body__navigation__item__expand-control {
+  position: absolute;
+  right: 20px;
+  top: 3px;
+  cursor: pointer;
 }
 
 .mobile__drawer__body__navigation__item a {
@@ -573,6 +585,13 @@ button {
   .hero__image {
     background-image: url("../assets/images/Hero\ Image\ S.png");
     height: 231px;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .hero__image {
+    background-image: url("../assets/images/Hero\ Image\ XS.png");
+    height: 169px;
   }
 }
 
