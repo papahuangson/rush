@@ -425,7 +425,8 @@ button {
 }
 
 .mobile__drawer,
-.mobile__drawer__bg-container {
+.mobile__drawer__bg-container,
+.mobile__drawer__page-mask {
   background-color: #939598;
   position: absolute;
   z-index: 3;
@@ -438,6 +439,14 @@ button {
 .mobile__drawer__bg-container {
   position: fixed;
   z-index: -1;
+}
+
+.mobile__drawer__page-mask {
+  z-index: -2;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(230, 231, 232, .75);
+
 }
 
 .mobile__drawer--hide {
@@ -766,16 +775,40 @@ a.footer__map-link:hover {
   color: #fff;
 }
 
-a.footer__map-link:hover svg.footer__base-icon {
+a.footer__map-link:hover svg.footer__base-icon,
+.footer__content__linkedin a:hover svg.footer__base-icon {
   display: none;
 }
 
-a.footer__map-link svg.footer__hover-icon {
+a.footer__map-link svg.footer__hover-icon,
+.footer__content__linkedin a svg.footer__hover-icon {
   display: none;
 }
 
-a.footer__map-link:hover svg.footer__hover-icon {
+a.footer__map-link:hover svg.footer__hover-icon,
+.footer__content__linkedin a:hover svg.footer__hover-icon {
   display: inline;
+}
+
+
+.footer__content__linkedin {
+  display: inline;
+}
+
+.footer__content__linkedin svg {
+  margin-top: 6px;
+  vertical-align: text-bottom;
+}
+
+.footer__content__linkedin a {
+  font-family: "Trade Gothic Bold Condensed", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer__content__linkedin a:hover {
+  color: #eeb111;
 }
 
 .footer__copyright {

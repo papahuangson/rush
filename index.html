@@ -270,6 +270,7 @@
         </svg>
       </div>
       <div class="mobile__drawer__bg-container"></div>
+      <div class="mobile__drawer__page-mask"></div>
     </div>
     <!-- End Mobile Drawer -->
     
@@ -322,10 +323,6 @@
                 <circle cx="4.125" cy="4.125" r="1.5" fill="#FFF"/>
               </g>
             </svg>
-          
-          
-          
-          
             MAP and DIRECTIONS
           </a>
         </div>
@@ -337,7 +334,24 @@
           <p>Toll Free: (800) 973-7874</p>
           <p>Hours: 8:00am - 5:00pm CT</p>
           <div>
-              <button class="button__yellow footer__content__contact-button">Contact Us</button>
+            <button class="button__yellow footer__content__contact-button">Contact Us</button>
+            <div class="footer__content__linkedin">
+              <a href="#">
+                <svg class="footer__base-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
+                  <g fill="#FFF" fill-rule="evenodd">
+                    <path d="M15.626 11.963a.95.95 0 0 0-.96.94c0 .519.43.94.96.94a.95.95 0 0 0 .958-.94.949.949 0 0 0-.958-.94zm0 .107c.468 0 .849.373.849.832 0 .46-.381.833-.85.833a.842.842 0 0 1-.85-.833c0-.46.382-.832.85-.832z"/>
+                    <path d="M15.697 12.867h-.221v-.339h.28c.145 0 .311.019.311.161 0 .164-.167.178-.371.178m.222.1c.187.001.34-.112.342-.253v-.016c0-.191-.154-.282-.468-.282h-.508v1h.19v-.437h.236l.005.006.365.43h.204l-.392-.445.026-.003M12.963.001H1.033A1.021 1.021 0 0 0 0 1.01v11.98c.006.564.47 1.016 1.033 1.01h11.93A1.025 1.025 0 0 0 14 12.99V1.01A1.024 1.024 0 0 0 12.963 0v.001zM2.079 11.714h2.08v-6.56H2.08v6.56zM3.12 4.257a1.194 1.194 0 0 1-1.206-1.182c0-.653.54-1.182 1.206-1.182.665-.001 1.206.528 1.206 1.181s-.54 1.183-1.206 1.183zm8.828 7.457H9.87v-3.19c0-.76-.015-1.74-1.081-1.74-1.082 0-1.248.829-1.248 1.684v3.246H5.465v-6.56h1.994v.896h.028a2.196 2.196 0 0 1 1.968-1.06c2.106 0 2.494 1.358 2.494 3.125l-.001 3.599z"/>
+                  </g>
+                </svg>
+                <svg class="footer__hover-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
+                  <g fill="#EEB111" fill-rule="evenodd">
+                    <path d="M15.626 11.963a.95.95 0 0 0-.96.94c0 .519.43.94.96.94a.95.95 0 0 0 .958-.94.949.949 0 0 0-.958-.94zm0 .107c.468 0 .849.373.849.832 0 .46-.381.833-.85.833a.842.842 0 0 1-.85-.833c0-.46.382-.832.85-.832z"/>
+                    <path d="M15.697 12.867h-.221v-.339h.28c.145 0 .311.019.311.161 0 .164-.167.178-.371.178m.222.1c.187.001.34-.112.342-.253v-.016c0-.191-.154-.282-.468-.282h-.508v1h.19v-.437h.236l.005.006.365.43h.204l-.392-.445.026-.003M12.963.001H1.033A1.021 1.021 0 0 0 0 1.01v11.98c.006.564.47 1.016 1.033 1.01h11.93A1.025 1.025 0 0 0 14 12.99V1.01A1.024 1.024 0 0 0 12.963 0v.001zM2.079 11.714h2.08v-6.56H2.08v6.56zM3.12 4.257a1.194 1.194 0 0 1-1.206-1.182c0-.653.54-1.182 1.206-1.182.665-.001 1.206.528 1.206 1.181s-.54 1.183-1.206 1.183zm8.828 7.457H9.87v-3.19c0-.76-.015-1.74-1.081-1.74-1.082 0-1.248.829-1.248 1.684v3.246H5.465v-6.56h1.994v.896h.028a2.196 2.196 0 0 1 1.968-1.06c2.106 0 2.494 1.358 2.494 3.125l-.001 3.599z"/>
+                  </g>
+                </svg>
+                FOLLOW US
+              </a>
+            </div>
           </div>
         </div>
         <div class="page-width footer__content__hr bp-small"></div>
@@ -559,6 +573,7 @@
     window.onload = function() {
       document.getElementById('expand-mobile').addEventListener('click', openDrawer);
       document.getElementById('close-mobile').addEventListener('click', closeDrawer);
+      document.getElementsByClassName('mobile__drawer__page-mask')[0].addEventListener('click', closeDrawer);
 
       // close drawer when screen larger than mobile
       window.addEventListener('resize', () => window.innerWidth > 809 ? closeDrawer() : null);
