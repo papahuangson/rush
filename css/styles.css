@@ -148,12 +148,18 @@ button {
   height: 0.25em;
   width: 105%;
   position: absolute;
-  bottom: 0;
+  top: 80%;
   left: -5%;
   z-index: -1;
   background: #EEB111;
   clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 95%);
   backface-visibilty: hidden;
+}
+
+.header__content__navigation--with-child__child .container:hover .ribbon,
+.header__content__navigation--with-child__child .highlighted-link .ribbon {
+  top: 75%;
+  width: 110%;
 }
 
 /* .container:hover .ribbon {
