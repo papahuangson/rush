@@ -44,6 +44,14 @@
   margin: 0;
 }
 
+button {
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: 0;
+}
+
 .page-width {
   width: 984px;
   margin: 0 auto;
@@ -80,6 +88,7 @@
   font-family: "Trade Gothic Bold Condensed", sans-serif;
   font-size: 12px;
   line-height: 11px;
+  height: auto;
 }
 
 .bg-polygon {
@@ -134,7 +143,8 @@
   transition: background-size 0.25s ease-in;
 }
 
-.container:hover .ribbon {
+.container:hover .ribbon,
+.highlighted-link .ribbon {
   height: 0.25em;
   width: 105%;
   position: absolute;
@@ -285,7 +295,7 @@
 
 @media screen and (max-width: 809px) {
   .header__content__logo {
-    margin: 16px 0 17px;
+    margin: 16px 0 16px;
   }
 }
 
@@ -331,8 +341,42 @@
   color: #111;
 }
 
-.header__content__navigation a:not(:last-child) {
-  margin-right: 20px;
+.header__content__navigation a:not(:first-child) {
+  margin-left: 20px;
+}
+
+.header__content__navigation--with-child {
+  margin-top: 31px;
+}
+
+@media screen and (max-width: 983px) {
+  .header__content__navigation--with-child {
+    margin-top: 19px;
+  }
+}
+
+.header__content__navigation--with-child__child {
+  margin-top: 12px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 983px) {
+  .header__content__navigation--with-child__child {
+    margin-top: 8px;
+  }
+}
+
+.header__content__navigation--with-child__child a {
+  font-family: "Trade Gothic Condensed", sans-serif;
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 983px) {
+  .header__content__navigation--with-child__child a {
+    font-size: 15px;
+  }
 }
 
 /* Mobile */
@@ -454,13 +498,18 @@
 }
 
 .mobile__drawer__body__navigation__item {
-  
   /* padding: 15px 20px 15px 12px; */
 }
 
-.mobile__drawer__body__navigation__item--selected,
-.mobile__drawer__body__navigation__item:hover {
+.mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation__item--selected,
+.mobile__drawer__body__navigation__item:hover,
+.mobile__drawer__body__navigation__item:focus {
   border-color: #eeb111;
+}
+
+.mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation__item--selected a,
+.mobile__drawer__body__navigation__item:hover a {
+  color: #000;
 }
 
 .mobile__drawer__body__navigation__item a {
@@ -546,6 +595,7 @@
 /* Content */
 .content {
   margin: 30px auto;
+  /* background: no-repeat url("../assets/images/rush-paralellogram-watermark.png"); */
 }
 
 .content > p {
