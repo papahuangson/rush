@@ -231,13 +231,30 @@
           <ul>
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">Our Story</a>
-              <button class="mobile__drawer__body__navigation__item__expand-control">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+              <button class="mobile__drawer__body__navigation__item__expand-control" onclick="toggleMobileSubNav('our-story')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" id="our-story--hide" class="hide">
                   <path fill="none" fill-rule="evenodd" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.563 9h16.875"/>
                 </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" id="our-story--show">
+                  <g fill="none" fill-rule="evenodd" stroke="#4B4C4C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
+                    <path d="M.563 9h16.875M9 .563v16.875"/>
+                  </g>
+                </svg>   
               </button>
             </li>
-            <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item--selected mobile-nav-child">
+            <ul class="mobile__drawer__body__navigation__item__child--list hide" id="our-story">
+              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item--selected mobile__drawer__body__navigation__item__child">
+                <a href="#">Overview</a>
+              </li>
+              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
+                <a href="#">Strategic Vision</a>
+              </li>
+              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
+                <a href="#">Culture and Values</a>
+              </li>
+            </ul>
+            
+            <!-- <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item--selected mobile-nav-child">
               <a href="#">Overview</a>
             </li>
             <li class="mobile__drawer__body__navigation__item mobile-nav-child">
@@ -245,7 +262,7 @@
             </li>
             <li class="mobile__drawer__body__navigation__item mobile-nav-child">
               <a href="#">Culture and Values</a>
-            </li>
+            </li> -->
             <li class="mobile__drawer__body__navigation--divider"></li>
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">Our Businesses</a>
@@ -265,14 +282,28 @@
             <li class="mobile__drawer__body__navigation--divider"></li>
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">News</a>
-              <button class="mobile__drawer__body__navigation__item__expand-control">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+              <button class="mobile__drawer__body__navigation__item__expand-control" onclick="toggleMobileSubNav('news')">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" id="news--hide">
                   <g fill="none" fill-rule="evenodd" stroke="#4B4C4C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
                     <path d="M.563 9h16.875M9 .563v16.875"/>
                   </g>
-                </svg>              
+                </svg>    
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" id="news--show" class="hide">
+                  <path fill="none" fill-rule="evenodd" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.563 9h16.875"/>
+                </svg> 
               </button>
             </li>
+            <ul class="mobile__drawer__body__navigation__item__child--list hide" id="news">
+              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
+                <a href="#">News Item 1</a>
+              </li>
+              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
+                <a href="#">News Item 2</a>
+              </li>
+              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
+                <a href="#">News Item 3</a>
+              </li>
+            </ul>
           </ul>
         </nav>
       </div>
@@ -513,11 +544,6 @@
         id: 3
       },
       {
-        name: 'Perfection Truck Parts & Equipment',
-        url: '#',
-        id: 10
-      },
-      {
         name: 'Rush Towing Systems',
         url: '#',
         id: 4
@@ -546,7 +572,12 @@
         name: 'Rush Truck Insurance',
         url: '#',
         id: 6
-      }
+      },
+      {
+        name: 'Perfection Truck Parts & Equipment',
+        url: '#',
+        id: 10
+      },
     ];
 
     links.map(link => {
@@ -582,6 +613,12 @@
       }
     }
 
+    function toggleMobileSubNav(subNavTitle) {
+      document.getElementById(subNavTitle).classList.toggle('hide');
+      document.getElementById(`${subNavTitle}--hide`).classList.toggle('hide');
+      document.getElementById(`${subNavTitle}--show`).classList.toggle('hide');
+    }
+
     window.onload = function() {
       document.getElementById('expand-mobile').addEventListener('click', openDrawer);
       document.getElementById('close-mobile').addEventListener('click', closeDrawer);
@@ -590,6 +627,8 @@
       // close drawer when screen larger than mobile
       window.addEventListener('resize', () => window.innerWidth > 809 ? closeDrawer() : null);
     }
+
+    //mobile__drawer__body__navigation__item__expand-control mobile__drawer__body__navigation__item__child--list
   </script>
 </body>
 </html>

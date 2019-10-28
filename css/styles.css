@@ -118,6 +118,10 @@ button {
   }
 }
 
+.hide {
+  display: none;
+}
+
 /* Magic Underline */
 .container {
   position:relative;
@@ -198,6 +202,7 @@ button {
   left: -120px;
   width: 198px;
   height: 126px;
+  z-index: 1;
 }
 
 @media screen and (max-width: 983px) {
@@ -247,7 +252,7 @@ button {
 
 .header__top-bar__content a {
   color: #fff;
-  padding: 10px 0;
+  padding: 9px 0;
   text-decoration: none;
   font-family: "Trade Gothic Bold Condensed", sans-serif;
   font-size: 12px;
@@ -313,7 +318,7 @@ button {
 
 .header__content__logo a {
   position: absolute;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__content__navigation {
@@ -508,11 +513,15 @@ button {
   padding: 0;
 }
 
-.mobile__drawer__body__navigation ul li.mobile-nav-child {
+ul.mobile__drawer__body__navigation__item__child--list {
+  padding: 0;
+}
+
+.mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation__item__child {
   padding-left: 29px;
 }
 
-.mobile__drawer__body__navigation ul li.mobile-nav-child a {
+.mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation__item__child a {
   font-family: "Trade Gothic Condensed", sans-serif;
   font-size: 14px;
 }
@@ -729,6 +738,13 @@ button {
 @media screen and (max-width: 983px) {
   .footer__content__item input {
     width: 125px;
+  }
+}
+
+
+@media screen and (max-width: 459px) {
+  .footer__content__item input {
+    width: 219px;
   }
 }
 
