@@ -544,7 +544,7 @@ ul.mobile__drawer__body__navigation__item__child--list {
 .mobile__drawer__body__navigation__item__expand-control {
   position: absolute;
   right: 20px;
-  top: 3px;
+  top: 6px;
   cursor: pointer;
 }
 
