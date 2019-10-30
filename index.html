@@ -1,62 +1,33 @@
 <!doctype html>
-
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rush</title>
   <link rel="stylesheet" href="css/styles.css">
-
 </head>
-
 <body>
-
   <header class="header" role="banner">
+    <!-- Begin Utility Bar -->
     <div class="header__top-bar">
       <div class="header__top-bar__content page-width">
         <a href="#">
-          <svg class="utility__base-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" view-box="0 0 12 12">
-            <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
-              <circle cx="4.412" cy="4.412" r="4"/>
-              <path d="M7.339 7.314l4.308 4.309"/>
-            </g>
-          </svg>
-          <svg class="utility__hover-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-            <g fill="none" fill-rule="evenodd" stroke="#EEB111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
-              <circle cx="4.412" cy="4.412" r="4"/>
-              <path d="M7.339 7.314l4.308 4.309"/>
-            </g>
-          </svg>
+          <img src="assets/svg/search-white.svg" class="utility__base-icon" />
+          <img src="assets/svg/search-gold.svg" class="utility__hover-icon" />
           Search
         </a>
         <a href="#">
-          <svg class="utility__base-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" view-box="0 0 12 12">
-            <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.52 11.195l.006.003a2.767 2.767 0 0 0 3.442-.377l.387-.387a.923.923 0 0 0 0-1.304L9.725 7.5a.923.923 0 0 0-1.305 0 .922.922 0 0 1-1.304 0L4.507 4.89a.923.923 0 0 1 0-1.304.922.922 0 0 0 0-1.304L2.877.65a.923.923 0 0 0-1.304 0l-.387.387a2.768 2.768 0 0 0-.378 3.442l.003.006a24.967 24.967 0 0 0 6.709 6.71z"/>
-          </svg>
-          <svg class="utility__hover-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12">
-            <path fill="none" fill-rule="evenodd" stroke="#EEB111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.52 11.195l.006.003a2.767 2.767 0 0 0 3.442-.377l.387-.387a.923.923 0 0 0 0-1.304L9.725 7.5a.923.923 0 0 0-1.305 0 .922.922 0 0 1-1.304 0L4.507 4.89a.923.923 0 0 1 0-1.304.922.922 0 0 0 0-1.304L2.877.65a.923.923 0 0 0-1.304 0l-.387.387a2.768 2.768 0 0 0-.378 3.442l.003.006a24.967 24.967 0 0 0 6.709 6.71z"/>
-          </svg>
+          <img src="assets/svg/contact-white.svg" class="utility__base-icon" />
+          <img src="assets/svg/contact-gold.svg" class="utility__hover-icon" />
           Contact
         </a>
         <a href="#">
-          <svg class="utility__base-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="12" view-box="0 0 8 12">
-            <g fill="none" fill-rule="evenodd">
-              <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.875 4.125c0 2.11-1.466 3.324-2.566 4.5-.657.704-1.184 3-1.184 3S3.6 9.331 2.943 8.629C1.843 7.454.375 6.238.375 4.125a3.75 3.75 0 0 1 7.5 0z"/>
-              <circle cx="4.125" cy="4.125" r="1.5" fill="#FFF"/>
-            </g>
-          </svg>
-          <svg class="utility__hover-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
-            <g fill="none" fill-rule="evenodd">
-              <path stroke="#EEB111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.875 4.125c0 2.11-1.466 3.324-2.566 4.5-.657.704-1.184 3-1.184 3S3.6 9.331 2.943 8.629C1.843 7.454.375 6.238.375 4.125a3.75 3.75 0 0 1 7.5 0z"/>
-              <circle cx="4.125" cy="4.125" r="1.5" fill="#EEB111"/>
-            </g>
-          </svg>
-        
+          <img src="assets/svg/location-white.svg" class="utility__base-icon" />
+          <img src="assets/svg/location-gold.svg" class="utility__hover-icon" />
           Locations
         </a>
       </div>
+      <!-- End Utility Bar -->
     </div>
 
     <div class="header__content page-width">
@@ -69,53 +40,21 @@
       <!-- Begin Mobile Navigation -->
       <div class="header__mobile bp-medium">
         <a href="#" class="header__mobile__icon">
-            <svg class="header__mobile__icon--base" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 12 12">
-              <g fill="none" fill-rule="evenodd" stroke="#4B4C4C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
-                  <circle cx="4.412" cy="4.412" r="4"/>
-                  <path d="M7.339 7.314l4.308 4.309"/>
-              </g>
-            </svg>
-            <svg class="header__mobile__icon--hover" xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 12 12">
-              <g fill="none" fill-rule="evenodd" stroke="#EEB111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
-                  <circle cx="4.412" cy="4.412" r="4"/>
-                  <path d="M7.339 7.314l4.308 4.309"/>
-              </g>
-            </svg>
+          <img src="assets/svg/search-mobile-gray.svg" class="header__mobile__icon--base" />
+          <img src="assets/svg/search-mobile-gold.svg" class="header__mobile__icon--hover" />
         </a>
         <a href="#" class="header__mobile__icon">
-          <svg class="header__mobile__icon--base" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 12 12">
-            <path fill="none" fill-rule="evenodd" stroke="#4B4C4C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.52 11.195l.006.003a2.767 2.767 0 0 0 3.442-.377l.387-.387a.923.923 0 0 0 0-1.304L9.725 7.5a.923.923 0 0 0-1.305 0 .922.922 0 0 1-1.304 0L4.507 4.89a.923.923 0 0 1 0-1.304.922.922 0 0 0 0-1.304L2.877.65a.923.923 0 0 0-1.304 0l-.387.387a2.768 2.768 0 0 0-.378 3.442l.003.006a24.967 24.967 0 0 0 6.709 6.71z"/>
-          </svg>
-          <svg class="header__mobile__icon--hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 12 12">
-            <path fill="none" fill-rule="evenodd" stroke="#EEB111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.52 11.195l.006.003a2.767 2.767 0 0 0 3.442-.377l.387-.387a.923.923 0 0 0 0-1.304L9.725 7.5a.923.923 0 0 0-1.305 0 .922.922 0 0 1-1.304 0L4.507 4.89a.923.923 0 0 1 0-1.304.922.922 0 0 0 0-1.304L2.877.65a.923.923 0 0 0-1.304 0l-.387.387a2.768 2.768 0 0 0-.378 3.442l.003.006a24.967 24.967 0 0 0 6.709 6.71z"/>
-          </svg>
+          <img src="assets/svg/contact-mobile-gray.svg" class="header__mobile__icon--base" />
+          <img src="assets/svg/contact-mobile-gold.svg" class="header__mobile__icon--hover" />
         </a>
         <a href="#" class="header__mobile__icon">
-          <svg class="header__mobile__icon--base" xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 8 12">
-            <g fill="none" fill-rule="evenodd">
-                <path stroke="#4B4C4C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.875 4.125c0 2.11-1.466 3.324-2.566 4.5-.657.704-1.184 3-1.184 3S3.6 9.331 2.943 8.629C1.843 7.454.375 6.238.375 4.125a3.75 3.75 0 0 1 7.5 0z"/>
-                <circle cx="4.125" cy="4.125" r="1.5" fill="#4B4C4C"/>
-            </g>
-          </svg>
-          <svg class="header__mobile__icon--hover" xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 8 12">
-            <g fill="none" fill-rule="evenodd">
-                <path stroke="#EEB111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.875 4.125c0 2.11-1.466 3.324-2.566 4.5-.657.704-1.184 3-1.184 3S3.6 9.331 2.943 8.629C1.843 7.454.375 6.238.375 4.125a3.75 3.75 0 0 1 7.5 0z"/>
-                <circle cx="4.125" cy="4.125" r="1.5" fill="#EEB111"/>
-            </g>
-          </svg>
+          <img src="assets/svg/location-mobile-gray.svg" class="header__mobile__icon--base" />
+          <img src="assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover" />
         </a>
         <div class="header__mobile__divider"></div>
         <button class="header__mobile__icon" id="expand-mobile">
-          <svg class="header__mobile__icon--base" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-            <g fill="none" fill-rule="evenodd" stroke="#4B4C4C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
-                <path d="M.225 13.803h17.55M.225 8.403h17.55M.225 3.003h17.55"/>
-            </g>
-          </svg>
-          <svg class="header__mobile__icon--hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-            <g fill="none" fill-rule="evenodd" stroke="#EEB111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
-                <path d="M.225 13.803h17.55M.225 8.403h17.55M.225 3.003h17.55"/>
-            </g>
-        </svg>
+          <img src="assets/svg/menu-mobile-gray.svg" class="header__mobile__icon--base" />
+          <img src="assets/svg/menu-mobile-gold.svg" class="header__mobile__icon--hover" />
       </button>
       </div>
       <!-- End Mobile Navigation -->
@@ -124,9 +63,7 @@
       <nav class="header__content__navigation header__content__navigation--with-child" role="navigation">
         <a href="#" class="selected container highlighted-link">
           Our Story
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5">
-            <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5" d="M9.375 0L4.687 4.558 0 0"/>
-          </svg>
+          <img src="assets/svg/down-caret-black.svg" />
           <span class="ribbon"></span>
         </a>
         <a href="#" class="container">
@@ -147,9 +84,7 @@
         </a>
         <a href="#" class="container">
           News
-          <svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5">
-            <path fill="none" fill-rule="evenodd" stroke="#000" stroke-width="1.5" d="M9.375 0L4.687 4.558 0 0"/>
-          </svg>
+          <img src="assets/svg/down-caret-black.svg" />
           <span class="ribbon"></span>
         </a>
         <div class="header__content__navigation--with-child__child">
@@ -171,58 +106,22 @@
         <!-- Begin Mobile Navigation -->
         <div class="header__mobile bp-medium">
             <a href="#" class="header__mobile__icon">
-              <svg class="header__mobile__icon--base" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                <g fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
-                    <circle cx="6.618" cy="6.618" r="6"/>
-                    <path d="M11.009 10.972l6.462 6.462"/>
-                </g>
-              </svg>
-              <svg class="header__mobile__icon--hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                <g fill="none" fill-rule="evenodd" stroke="#eeb111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25">
-                    <circle cx="6.618" cy="6.618" r="6"/>
-                    <path d="M11.009 10.972l6.462 6.462"/>
-                </g>
-              </svg>
-              
+              <img src="assets/svg/search-mobile-white.svg" class="header__mobile__icon--base" />
+              <img src="assets/svg/search-mobile-gold.svg" class="header__mobile__icon--hover" />
             </a>
             <a href="#" class="header__mobile__icon">
-                <svg class="header__mobile__icon--base" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                  <path fill="none" fill-rule="evenodd" stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M11.28 16.793l.009.005a4.15 4.15 0 0 0 5.163-.566l.58-.581c.54-.54.54-1.416 0-1.957l-2.445-2.444a1.384 1.384 0 0 0-1.957 0 1.382 1.382 0 0 1-1.956 0L6.761 7.336a1.384 1.384 0 0 1 0-1.957 1.382 1.382 0 0 0 0-1.956L4.315.975a1.384 1.384 0 0 0-1.956 0l-.58.58a4.151 4.151 0 0 0-.568 5.163l.006.01A37.451 37.451 0 0 0 11.28 16.793z"/>
-              </svg>
-              <svg class="header__mobile__icon--hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                <path fill="none" fill-rule="evenodd" stroke="#eeb111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M11.28 16.793l.009.005a4.15 4.15 0 0 0 5.163-.566l.58-.581c.54-.54.54-1.416 0-1.957l-2.445-2.444a1.384 1.384 0 0 0-1.957 0 1.382 1.382 0 0 1-1.956 0L6.761 7.336a1.384 1.384 0 0 1 0-1.957 1.382 1.382 0 0 0 0-1.956L4.315.975a1.384 1.384 0 0 0-1.956 0l-.58.58a4.151 4.151 0 0 0-.568 5.163l.006.01A37.451 37.451 0 0 0 11.28 16.793z"/>
-            </svg>
-              
+              <img src="assets/svg/contact-mobile-white.svg" class="header__mobile__icon--base" />
+              <img src="assets/svg/contact-mobile-gold.svg" class="header__mobile__icon--hover" />
             </a>
             <a href="#" class="header__mobile__icon">
-                <svg class="header__mobile__icon--base" xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
-                  <g fill="none" fill-rule="evenodd">
-                      <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M11.813 6.188c0 3.165-2.2 4.986-3.849 6.75-.987 1.055-1.777 4.5-1.777 4.5s-.787-3.442-1.772-4.495C2.765 11.18.562 9.356.562 6.188a5.625 5.625 0 1 1 11.25 0z"/>
-                      <circle cx="6.188" cy="6.188" r="2.25" fill="#FFF"/>
-                  </g>
-              </svg>
-              <svg class="header__mobile__icon--hover" xmlns="http://www.w3.org/2000/svg" width="12" height="18" viewBox="0 0 12 18">
-                <g fill="none" fill-rule="evenodd">
-                    <path stroke="#eeb111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M11.813 6.188c0 3.165-2.2 4.986-3.849 6.75-.987 1.055-1.777 4.5-1.777 4.5s-.787-3.442-1.772-4.495C2.765 11.18.562 9.356.562 6.188a5.625 5.625 0 1 1 11.25 0z"/>
-                    <circle cx="6.188" cy="6.188" r="2.25" fill="#eeb111"/>
-                </g>
-            </svg>
-              
+              <img src="assets/svg/location-mobile-white.svg" class="header__mobile__icon--base" />
+              <img src="assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover" />
             </a>
             <div class="header__mobile__divider"></div>
             <button class="header__mobile__icon" role="button" id="close-mobile">
-                <svg class="header__mobile__icon--base" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                  <g fill="none" fill-rule="evenodd" stroke="#EEB111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                      <path d="M0 17.868L17.868 0M17.868 17.868L0 0"/>
-                  </g>
-              </svg>
-              <svg class="header__mobile__icon--hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
-                <g fill="none" fill-rule="evenodd" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                    <path d="M0 17.868L17.868 0M17.868 17.868L0 0"/>
-                </g>
-            </svg>
-              
-          </button>
+              <img src="assets/svg/close-mobile-white.svg" class="header__mobile__icon--base" />
+              <img src="assets/svg/close-mobile-gold.svg" class="header__mobile__icon--hover" />
+            </button>
           </div>
           <!-- End Mobile Navigation -->
       </div>
@@ -232,14 +131,8 @@
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">Our Story</a>
               <button class="mobile__drawer__body__navigation__item__expand-control" onclick="toggleMobileSubNav('our-story')">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" id="our-story--hide" class="hide">
-                  <path fill="none" fill-rule="evenodd" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.563 9h16.875"/>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" id="our-story--show">
-                  <g fill="none" fill-rule="evenodd" stroke="#4B4C4C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                    <path d="M.563 9h16.875M9 .563v16.875"/>
-                  </g>
-                </svg>   
+                <img src="assets/svg/collapse-mobile-gray.svg" id="our-story--hide" class="hide" />
+                <img src="assets/svg/expand-mobile-gray.svg" id="our-story--show" />
               </button>
             </li>
             <ul class="mobile__drawer__body__navigation__item__child--list hide" id="our-story">
@@ -253,16 +146,7 @@
                 <a href="#">Culture and Values</a>
               </li>
             </ul>
-            
-            <!-- <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item--selected mobile-nav-child">
-              <a href="#">Overview</a>
-            </li>
-            <li class="mobile__drawer__body__navigation__item mobile-nav-child">
-              <a href="#">Strategic Vision</a>
-            </li>
-            <li class="mobile__drawer__body__navigation__item mobile-nav-child">
-              <a href="#">Culture and Values</a>
-            </li> -->
+
             <li class="mobile__drawer__body__navigation--divider"></li>
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">Our Businesses</a>
@@ -283,14 +167,8 @@
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">News</a>
               <button class="mobile__drawer__body__navigation__item__expand-control" onclick="toggleMobileSubNav('news')">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" id="news--hide">
-                  <g fill="none" fill-rule="evenodd" stroke="#4B4C4C" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5">
-                    <path d="M.563 9h16.875M9 .563v16.875"/>
-                  </g>
-                </svg>    
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" id="news--show" class="hide">
-                  <path fill="none" fill-rule="evenodd" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.563 9h16.875"/>
-                </svg> 
+                <img src="assets/svg/collapse-mobile-gray.svg" id="news--hide" class="hide" />
+                <img src="assets/svg/expand-mobile-gray.svg" id="news--show" />
               </button>
             </li>
             <ul class="mobile__drawer__body__navigation__item__child--list hide" id="news">
@@ -308,9 +186,7 @@
         </nav>
       </div>
       <div class="mobile__drawer__footer">
-        <svg xmlns="http://www.w3.org/2000/svg" width="140" height="24" viewBox="0 0 140 24">
-          <path fill="#FFF" fill-rule="evenodd" d="M8.358 9.724c1.418 0 2.504-.266 2.776-.384.21-.148.302-.355.302-.769 0-2.867-2.203-4.759-4.918-4.759C3.198 3.812 0 6.65 0 10.906c0 3.842 2.625 6.443 6.307 6.443.935 0 2.564-.413 3.228-.768.362-.266 1.298-1.33 1.478-2.04l-.06-.117c-.544.295-1.418.945-2.414 1.743-.301.06-.543.089-.845.089-2.866 0-5.159-2.128-5.13-5.882 0-.207 0-.414.061-.65h5.733zm-5.763-.68c.06-1.33 1.056-4.7 3.742-4.7 1.9 0 2.654 2.099 2.654 3.637 0 .471-.09.916-.18 1.063H2.595zm13.517-4.08l.091-.856c-.664.03-1.177.09-1.87.09-.906 0-1.84-.06-2.806-.09l-.03.119c.904.413 1.628.71 2.172 1.004.483.68 1.388 2.247 3.228 5.586-1.51 2.365-2.082 3.193-2.958 4.404-.3.385-.572.592-1.055.798l-1.78.887v.119c.845-.03 1.78-.09 2.746-.09.603 0 1.448.06 1.81.09l.12-.119c-.452-.473-.784-.74-.995-1.123.633-1.242 1.086-2.04 2.414-4.315h.06c1.78 3.251 2.413 4.492 2.927 5.645 1.478 0 3.681-.148 4.647-.148l.09-.089-2.082-.886c-.332-.118-.633-.443-.996-1.005-.543-.887-2.203-3.695-3.228-5.587 1.237-1.862 1.75-2.66 2.685-3.871.845-.414 1.69-.74 3.018-1.3l.03-.119c-1.087.03-1.992.09-2.867.09-.392 0-.815-.06-1.297-.09.03.443.03.798-.03 1.271-.362.857-1.177 2.306-1.81 3.399h-.061l-2.173-3.813zm12.371-1.24c-.875.088-3.35.68-3.802.857l-.12.119 1.599.916v8.364c0 3.931-.091 7.27-.121 8.896l-1.66 1.005-.06.119c.966-.03 1.932-.09 2.897-.09 1.328 0 2.655.06 4.043.09l.12-.119-2.775-1.093c-.06-2.188-.121-4.789-.121-6.355l.06-.03c.785.444 2.052.946 2.445.946 2.836 0 7.271-2.216 7.271-7.418 0-4.138-3.228-6.09-5.552-6.09-.995 0-2.202.652-4.285 1.982h-.06l.121-2.099zm0 2.66C29.599 5.497 30.747 5.2 31.41 5.2c2.745 0 4.285 2.572 4.285 5.203 0 3.9-2.384 5.941-4.918 5.941-.937 0-1.78-.236-2.294-.532v-9.43zm19.34 3.34c1.418 0 2.505-.266 2.776-.384.212-.148.302-.355.302-.769 0-2.867-2.203-4.759-4.918-4.759-3.32 0-6.518 2.838-6.518 7.094 0 3.842 2.625 6.443 6.307 6.443.935 0 2.564-.413 3.228-.768.362-.266 1.298-1.33 1.479-2.04l-.061-.117c-.542.295-1.418.945-2.414 1.743-.301.06-.542.089-.844.089-2.867 0-5.16-2.128-5.13-5.882 0-.207 0-.414.06-.65h5.733zm-5.763-.68c.06-1.33 1.056-4.7 3.742-4.7 1.901 0 2.654 2.099 2.654 3.637 0 .471-.09.916-.18 1.063H42.06zM52.108 10.7c0 4.965 4.043 6.65 6.818 6.65.875 0 2.264-.296 2.747-.473.452-.295 1.568-1.685 1.78-2.393l-.03-.09c-.544.267-1.358.828-2.535 1.833-.211.06-.543.119-.845.119-3.198 0-5.37-2.571-5.37-5.912 0-3.014 1.659-5.97 5.28-5.97.633 0 1.025.059 1.266.177.333 1.567.694 2.749.966 3.281l.121-.06c.422-.768.844-2.127 1.056-2.984-.453-.384-2.052-1.065-3.742-1.065-3.65 0-7.512 2.217-7.512 6.858v.03zm16.02-6.502L68.25 0c-.392 0-1.266.503-1.568.976a25.138 25.138 0 0 0-.875 3.221h-1.54l-.422.59 1.932.386v7.832c0 1.862.15 2.512.663 3.162.604.71 1.63 1.182 2.716 1.182 1.478 0 2.685-.68 3.32-1.596l.059-.473-.09-.03c-.483.326-1.298.74-2.323.74-.755 0-1.207-.207-1.54-.443-.15-.148-.452-.562-.452-.946V5.173l3.982-.385.453-.59h-4.435zm11.346 5.41c0 2.925-.03 5.762-.122 6.294l-1.66 1.035-.028.117c.663-.028 1.9-.088 2.806-.088 1.327 0 2.473.06 3.107.088l.06-.117-1.72-.976c-.12-.886-.12-5.38-.12-9.191.905-.77 2.172-1.479 3.138-1.479 2.323 0 2.897 1.833 2.897 3.252 0 2.63-.03 5.526-.122 7.359l-1.418 1.035-.06.117c.785-.028 1.81-.088 2.776-.088.905 0 1.991.06 2.776.088l.09-.117-1.689-.976V9.458c0-1.123-.09-2.129-.18-2.601 1.115-1.064 2.17-1.567 3.408-1.567 2.384 0 2.806 2.099 2.806 3.458.03 3.607-.09 5.971-.18 7.124l-1.268 1.064-.03.117c.754-.028 1.72-.088 2.595-.088 1.116 0 2.202.06 3.289.088v-.117l-1.479-.799c-.362-.207-.574-.413-.574-.59V8.098c0-2.6-1.538-4.286-3.891-4.286-1.358 0-2.625.68-4.828 2.454-.573-1.566-1.87-2.454-3.5-2.454-1.268 0-2.745.946-4.646 2.424h-.03l.12-2.424c-.905.03-3.139.769-3.772 1.035l-.06.147 1.509.652v3.96zm28.09-5.795c-3.108 0-6.669 2.601-6.669 6.947 0 4.167 3.35 6.59 6.579 6.59 3.802 0 6.728-2.719 6.728-6.886 0-3.901-2.957-6.65-6.608-6.65h-.03zm.03.503c2.625 0 3.923 3.636 3.923 6.414 0 2.719-.935 6.118-3.682 6.118-2.715 0-4.254-3.458-4.254-6.414 0-2.6 1.116-6.118 3.983-6.118h.03zm7.754.562l1.479.975c0 1.626 0 5.29-.242 10.108l-1.719.976v.117c.603-.028 1.96-.088 2.806-.088 1.87 0 3.44.06 4.285.088v-.117l-2.807-.946V7.95c.785-1.743 1.81-2.807 2.837-2.807.24 0 .331.03.422.058.422 1.065.784 1.745 1.025 2.099l.152-.088c.483-1.065.875-2.542.905-3.074-.242-.177-.633-.326-1.177-.326-1.026 0-2.897.71-4.193 3.074h-.03c0-1.093-.152-2.66-.303-3.074-.785.03-2.897.769-3.35.946l-.09.119zm17.38 4.847c1.419 0 2.505-.266 2.776-.384.211-.148.302-.355.302-.769 0-2.867-2.203-4.759-4.919-4.759-3.319 0-6.516 2.838-6.516 7.094 0 3.842 2.625 6.443 6.305 6.443.936 0 2.565-.413 3.23-.768.361-.266 1.296-1.33 1.477-2.04l-.06-.117c-.543.295-1.418.945-2.413 1.743a4.09 4.09 0 0 1-.846.089c-2.866 0-5.16-2.128-5.129-5.882 0-.207 0-.414.06-.65h5.734zm-5.763-.68c.061-1.33 1.056-4.7 3.742-4.7 1.9 0 2.655 2.099 2.655 3.637 0 .471-.09.916-.18 1.063h-6.217zm11.497 4.966c-.483.265-1.117.946-1.51 1.537l-.06.236c.242.503.846 1.27 1.388 1.566l.182-.06c.422-.236 1.266-1.063 1.477-1.536l.061-.236c-.241-.561-.996-1.419-1.388-1.566l-.15.059z"/>
-        </svg>
+          <img src="assets/svg/tagline-white.svg" />
       </div>
       <div class="mobile__drawer__bg-container"></div>
       <div class="mobile__drawer__page-mask"></div>
@@ -321,8 +197,6 @@
 
   <div class="hero" role="banner">
     <div class="hero__image"></div>
-    <!-- <div class="hero__image__overlay--darken"></div> -->
-    <!-- <div class="hero__image__overlay--lighten"></div> -->
   </div>
 
   <main class="content page-width" role="article">
@@ -336,36 +210,14 @@
   <footer class="footer" role="contentinfo">
     <div class="footer__content page-width">
       <div class="footer__content__item">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="67" height="41" viewBox="0 0 67 41">
-            <defs>
-                <path id="a" d="M0 38.817h66.593V0H0z"/>
-            </defs>
-            <g fill="none" fill-rule="evenodd">
-                <path fill="#FEFEFE" d="M37.093 18.427h.796l19.03 14.868h-3.383zM34.176 18.427h.662l15.317 14.868H47.04zM26.31 18.427h-.796L6.485 33.295h3.382zM29.228 18.427h-.663L13.25 33.295h3.116zM0 35.18v3.608h4.05v-.79H1.48v-.702h2.365v-.667H1.48v-.659h2.52v-.79zM9.883 35.18l.088 2.77h-.059l-1.589-2.77H5.824v3.608h1.48l-.09-2.77h.06l1.567 2.77h2.52v-3.607zM12.655 35.18v.837h1.419v2.771h1.478v-2.77h1.493v-.837zM18.353 35.18v3.608h4.05v-.79h-2.571v-.702h2.365v-.667h-2.365v-.659h2.52v-.79zM26.772 36.994c.636 0 .614-.154.614-.563 0-.322-.126-.413-.614-.413h-1.146v.976h1.146zm-2.624-1.814h2.853c1.28.016 1.907.193 1.907 1.092 0 .602 0 .953-1.05 1.111v.04c.607.013.999.23.999.64v.725h-1.478v-.504c.014-.27-.163-.454-.607-.454h-1.146v.958h-1.478V35.18zM32.966 37.028c.585-.014.666-.058.666-.524 0-.371-.09-.486-.666-.486h-1.012v1.01h1.012zm-2.49 1.76v-3.607h2.786c1.375 0 1.892.38 1.892 1.323 0 1.014-.347 1.36-1.892 1.36h-1.308v.924h-1.479zM39.183 36.994c.635 0 .613-.154.613-.563 0-.322-.126-.413-.613-.413h-1.146v.976h1.146zm-2.624-1.814h2.853c1.279.016 1.907.193 1.907 1.092 0 .602 0 .953-1.05 1.111v.04c.606.013.998.23.998.64v.725h-1.478v-.504c.015-.27-.163-.454-.606-.454h-1.146v.958h-1.478V35.18z"/>
-                <mask id="b" fill="#fff">
-                    <use xlink:href="#a"/>
-                </mask>
-                <path fill="#FEFEFE" d="M42.916 38.787h1.478v-3.606h-1.478zM48.666 36.595c1.64.076 2.047.21 2.047 1.039 0 .596.037 1.183-2.402 1.183-1.412 0-2.35-.02-2.35-1.203h1.418c0 .375.207.414.932.414.694 0 .923-.029.923-.332 0-.312-.08-.308-.775-.337l-.326-.014c-1.367-.062-2.165-.058-2.165-1.092s.894-1.101 2.343-1.101c1.212 0 2.247.014 2.247 1.01v.149h-1.42c0-.37-.236-.37-.827-.37-.798 0-.865.106-.865.308 0 .288.214.298.606.317l.614.029zM53.766 36.628h2.365v.67h-2.365v.701h2.572v.789h-4.05V35.18h3.998v.79h-2.52zM60.64 36.595c1.64.076 2.047.21 2.047 1.039 0 .596.037 1.183-2.402 1.183-1.412 0-2.35-.02-2.35-1.203h1.418c0 .375.208.414.932.414.695 0 .924-.029.924-.332 0-.312-.081-.308-.776-.337l-.325-.014c-1.368-.062-2.166-.058-2.166-1.092s.894-1.101 2.343-1.101c1.212 0 2.247.014 2.247 1.01v.149h-1.42c0-.37-.236-.37-.827-.37-.798 0-.865.106-.865.308 0 .288.215.298.606.317l.614.029zM11.32 18.352H0v14.942L17.696 21.26c-.719-.044-7.298-4.017-6.376-2.908m1.546.715c.547.706 1.593.973 2.999 1.876L1.35 30.783V19.695h11.641M62.765 18.398H40.79l21.975 14.897V18.398zm-1.35 1.344v11.012L45.169 19.742h16.246z" mask="url(#b)"/>
-                <path fill="#EAB020" d="M62.122 15.32l-5.08-.004 1.355-4.948-4.375-.005-1.042 3.58c-.217.849-.347 1.348-1.118 1.348l-4.628-.005 3.428-12.195 5.363.005-1.23 4.458 4.502.004L60.48 3.1l4.994.005-3.352 12.215zm-17-.045l-8.66-.009c-1.53 0-2.068-.363-2.075-1.13a2.96 2.96 0 0 1 .113-.752l1.016-3.785c-.002.007-.001.013-.002.02v.022c.008.533 1.223 2.149 2.93 2.2l3.308.004h.02s-.155-.14-4.837-3.562c-.611-.447-.8-.61-.806-.839a.9.9 0 0 1 .047-.272c.12-.42.158-.714.927-3.379.063-.264.297-.482 1.141-.481l9.133.008c.586 0 1.579-.026 1.59.764.003.142-.025.308-.094.506l-.597 2.13s-1.169-1.484-2.822-1.485l-3.1-.003.024.018a741.83 741.83 0 0 1 4.548 3.362c.522.4.58.774.577.932 0 .05-.007.078-.007.078l-1.285 4.49c-.217.618-.226 1.146-1.089 1.163zm-12.43.022l-5.071-.005.282-.896s-.67.534-1.674.93a6.047 6.047 0 0 1-.692.22 6.718 6.718 0 0 1-.282.066l-.145.028-.034.007a5.032 5.032 0 0 1-.298.047l-.078.008-.149.016-.038.003a13.3 13.3 0 0 1-.177.011l-.022.001-.03.001c-.05.002-.099.005-.15.006h-.082c-2.087-.055-4.168-1.014-3.6-3.256.545-2.164 2.138-8.67 2.253-9.144l.008-.028 4.548.007c.099 0 .18.01.248.027a.434.434 0 0 1 .218.114.282.282 0 0 1 .056.078.346.346 0 0 1 .034.175c-.003.116-.034.212-.034.212l-1.917 7.229h-.001s-.103.373-.153.577l-.003.02a.594.594 0 0 0-.021.19.763.763 0 0 0 .044.23c.07.204.238.403.572.476.93.201 1.788-.418 2.185-1.826a.855.855 0 0 0 .014-.056l.007-.015 1.375-4.87.72-2.558 2.711.002 2.71.004-.004.016-3.33 11.953zm-11.717 3.97a4.7 4.7 0 0 0 .34.456l.003.003c.03.036.06.072.093.108l.002.002a4.708 4.708 0 0 0 .31.325l.044.042-.014.007-.001.001a2.296 2.296 0 0 1-.206.087 4.898 4.898 0 0 1-.122.044c-.022.008-.045.017-.07.024-.024.008-.05.018-.075.025a4.965 4.965 0 0 1-.262.078 7.016 7.016 0 0 1-.932.178 6.858 6.858 0 0 1-1.396.027c-.229-.018-.47-.04-.72-.073a13.666 13.666 0 0 1-2.032-.412 10.358 10.358 0 0 1-1.462-.545 8.195 8.195 0 0 1-1.394-.822l-.02-.016a7.07 7.07 0 0 1-.632-.526c-1.25-1.168-2.06-2.463-2.188-4.358l-.001-.005a8.142 8.142 0 0 1-.01-.225v-.01c-.002-.01-.002-.019-.002-.03-.002-.046-.002-.094-.003-.142l-.001-.15v-.002-.025l.003-.211v-.014a10.897 10.897 0 0 1 .155-1.512l.04-.218c.04-.222.087-.45.14-.684h.001l5.082-.004h.001s1.016 0 2.088.896a4.456 4.456 0 0 1 .449.427c.06.065.118.132.177.204a5.577 5.577 0 0 1 .43.596 6.428 6.428 0 0 1 .325.577 7.64 7.64 0 0 1 .296.672 10.105 10.105 0 0 1 .403 1.315c.028.113.053.228.077.346l.06.295c.075.388.14.752.21 1.098l.028.13a9 9 0 0 0 .191.743 4.94 4.94 0 0 0 .594 1.279zM7.64 15.03l-.062.219-6.308-.007L5.243.958l3.198.004 3.208.003-.1.347L7.64 15.03zM13.217.961l1.46.001h.102l.426.001h.676a1515.493 1515.493 0 0 0 2.082.003h.736c.535 0 1.006.266 1.359.75.136.184.255.401.352.648.02.05.038.1.056.15.036.104.068.211.097.323.1.392.156.837.158 1.328a7.308 7.308 0 0 1-.049.882c-.021.191-.05.387-.085.588l-.008.036a8.576 8.576 0 0 1-.053.273l-.004.018c-.131.62-.293 1.12-.472 1.524-.767 1.576-2.199 2.127-2.707 2.181-.602.062-1.075.053-1.075.053l-5.506.004 1.227-4.382 1.228-4.38zm53.372 1.371l-6.764-.006-1.2 4.33-1.787-.002h-.893l1.002-3.463.252-.868-3.59-.003-3.592-.003-.302.92c-.142-.264-.408-.912-1.461-.923l-.105.001-18.38-.02-.155.423-.582 1.593c.001-.005.192-.65-.054-1.209-.172-.392-.561-.74-1.38-.796a3.33 3.33 0 0 0-.236-.009h-.002l-5.53-.005h-.28a4.315 4.315 0 0 0-.397-.855 3.432 3.432 0 0 0-.327-.453C20.013.04 19.03.016 18.964.015h-.004L12.574.008h-.008L7.062.002 4.594 0l-.366 1.312L.075 16.214l8.322.01.72-2.802.047.418.1.91.026.226c0 .01.128 1.06.907 2.308.258.414.609.881 1.08 1.352l.003.002c.04.04.082.082.125.122l.002.002.131.123.002.001c.226.206.477.412.755.614l.066.046c.056.055.15.118.27.184.675.444 1.492.854 2.48 1.181l.014.004.266.086.143.043c.044.012.087.026.13.04l.15.042.117.032.153.042c.035.01.07.02.106.028l.156.038c.032.01.065.016.097.024l.16.038.086.018c.054.013.109.024.162.035l.074.015.17.033a11.023 11.023 0 0 0 1.88.197h.028l.1.002h.077l.05-.002a6.69 6.69 0 0 0 .212-.005l.161-.008.045-.002c.053-.003.105-.008.157-.012l.044-.003.15-.015.045-.005.145-.018.043-.005.139-.021.045-.007.131-.023.046-.008.125-.025.045-.01.12-.027c.015-.004.03-.008.045-.01a3.121 3.121 0 0 0 .158-.042c.037-.01.073-.019.108-.03l.045-.013.103-.03.043-.015c.034-.01.066-.022.099-.033l.042-.015c.032-.01.064-.022.094-.034l.04-.014.092-.038.03-.01a4.591 4.591 0 0 0 1.37-.838c-.13-.09-.29-.216-.464-.378a5.039 5.039 0 0 1-.609-.682l-.045-.06c-.448-.625-.864-1.498-1.013-2.682l-.065-.517.187.09.286.134c.008.005.571.264 1.434.434l.004.001c.108.021.22.042.337.06h.005l.161.022.029.004.172.02h.001a13.652 13.652 0 0 0 .217.02l.144.008.047.002c.11.006.222.01.336.01h.053l.138-.005.036-.002.113-.007c.007 0 .014 0 .022-.002.043-.002.086-.006.128-.012.011 0 .021-.002.032-.004l.1-.012a5.51 5.51 0 0 0 .149-.023l.023-.005c.032-.005.064-.012.095-.018l.031-.006a2.618 2.618 0 0 0 .116-.026l.1-.025.029-.008.084-.023a8.33 8.33 0 0 0 .11-.033l.024-.007.07-.024.02-.007.083-.029.015-.006c.022-.008.044-.015.064-.024l.018-.007.07-.028h.002l.062-.027.014-.006.053-.024h.002c.124-.057.193-.096.195-.098l.067-.04 9.126.006h.496l7.718.004H43.814l5.215.006 2.014.002h1.118c.14 0 .269-.03.39-.085.561-.252.937-1.008 1.113-1.54a3.57 3.57 0 0 0 .068-.233l.051-.172.887-3.014 2.572.002-1.383 5.045 5.368.005 1.477.002 3.889-13.954h-.004z" mask="url(#b)"/>
-            </g>
-          </svg>
+          <img src="assets/svg/enterprises-dark.svg" />
         </div>
         <div class="footer__content__item">
           <p>555 IH-35 South Suite 500</p>
           <p>New Braunfels, Texas 78130</p>
           <a href="#" class="footer__map-link">
-            <svg class="footer__base-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
-              <g fill="none" fill-rule="evenodd">
-                  <path stroke="#EEB111" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.875 4.125c0 2.11-1.466 3.324-2.566 4.5-.657.704-1.184 3-1.184 3S3.6 9.331 2.943 8.629C1.843 7.454.375 6.238.375 4.125a3.75 3.75 0 0 1 7.5 0z"/>
-                  <circle cx="4.125" cy="4.125" r="1.5" fill="#EEB111"/>
-              </g>
-            </svg>
-            <svg class="footer__hover-icon" xmlns="http://www.w3.org/2000/svg" width="8" height="12" view-box="0 0 8 12">
-              <g fill="none" fill-rule="evenodd">
-                <path stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.25" d="M7.875 4.125c0 2.11-1.466 3.324-2.566 4.5-.657.704-1.184 3-1.184 3S3.6 9.331 2.943 8.629C1.843 7.454.375 6.238.375 4.125a3.75 3.75 0 0 1 7.5 0z"/>
-                <circle cx="4.125" cy="4.125" r="1.5" fill="#FFF"/>
-              </g>
-            </svg>
+              <img src="assets/svg/location-footer-gold.svg" class="footer__base-icon" />
+              <img src="assets/svg/location-footer-white.svg" class="footer__hover-icon" />
             MAP and DIRECTIONS
           </a>
         </div>
@@ -380,18 +232,8 @@
             <button class="button__yellow footer__content__contact-button">Contact Us</button>
             <div class="footer__content__linkedin">
               <a href="#">
-                <svg class="footer__base-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
-                  <g fill="#FFF" fill-rule="evenodd">
-                    <path d="M15.626 11.963a.95.95 0 0 0-.96.94c0 .519.43.94.96.94a.95.95 0 0 0 .958-.94.949.949 0 0 0-.958-.94zm0 .107c.468 0 .849.373.849.832 0 .46-.381.833-.85.833a.842.842 0 0 1-.85-.833c0-.46.382-.832.85-.832z"/>
-                    <path d="M15.697 12.867h-.221v-.339h.28c.145 0 .311.019.311.161 0 .164-.167.178-.371.178m.222.1c.187.001.34-.112.342-.253v-.016c0-.191-.154-.282-.468-.282h-.508v1h.19v-.437h.236l.005.006.365.43h.204l-.392-.445.026-.003M12.963.001H1.033A1.021 1.021 0 0 0 0 1.01v11.98c.006.564.47 1.016 1.033 1.01h11.93A1.025 1.025 0 0 0 14 12.99V1.01A1.024 1.024 0 0 0 12.963 0v.001zM2.079 11.714h2.08v-6.56H2.08v6.56zM3.12 4.257a1.194 1.194 0 0 1-1.206-1.182c0-.653.54-1.182 1.206-1.182.665-.001 1.206.528 1.206 1.181s-.54 1.183-1.206 1.183zm8.828 7.457H9.87v-3.19c0-.76-.015-1.74-1.081-1.74-1.082 0-1.248.829-1.248 1.684v3.246H5.465v-6.56h1.994v.896h.028a2.196 2.196 0 0 1 1.968-1.06c2.106 0 2.494 1.358 2.494 3.125l-.001 3.599z"/>
-                  </g>
-                </svg>
-                <svg class="footer__hover-icon" xmlns="http://www.w3.org/2000/svg" width="17" height="14" viewBox="0 0 17 14">
-                  <g fill="#EEB111" fill-rule="evenodd">
-                    <path d="M15.626 11.963a.95.95 0 0 0-.96.94c0 .519.43.94.96.94a.95.95 0 0 0 .958-.94.949.949 0 0 0-.958-.94zm0 .107c.468 0 .849.373.849.832 0 .46-.381.833-.85.833a.842.842 0 0 1-.85-.833c0-.46.382-.832.85-.832z"/>
-                    <path d="M15.697 12.867h-.221v-.339h.28c.145 0 .311.019.311.161 0 .164-.167.178-.371.178m.222.1c.187.001.34-.112.342-.253v-.016c0-.191-.154-.282-.468-.282h-.508v1h.19v-.437h.236l.005.006.365.43h.204l-.392-.445.026-.003M12.963.001H1.033A1.021 1.021 0 0 0 0 1.01v11.98c.006.564.47 1.016 1.033 1.01h11.93A1.025 1.025 0 0 0 14 12.99V1.01A1.024 1.024 0 0 0 12.963 0v.001zM2.079 11.714h2.08v-6.56H2.08v6.56zM3.12 4.257a1.194 1.194 0 0 1-1.206-1.182c0-.653.54-1.182 1.206-1.182.665-.001 1.206.528 1.206 1.181s-.54 1.183-1.206 1.183zm8.828 7.457H9.87v-3.19c0-.76-.015-1.74-1.081-1.74-1.082 0-1.248.829-1.248 1.684v3.246H5.465v-6.56h1.994v.896h.028a2.196 2.196 0 0 1 1.968-1.06c2.106 0 2.494 1.358 2.494 3.125l-.001 3.599z"/>
-                  </g>
-                </svg>
+                <img src="assets/svg/linkedin-footer-white.svg" class="footer__base-icon" />
+                <img src="assets/svg/linkedin-footer-gold.svg" class="footer__hover-icon" />
                 FOLLOW US
               </a>
             </div>
@@ -427,11 +269,7 @@
     </footer>
 
   <div class="tagline">
-      <svg xmlns="http://www.w3.org/2000/svg" width="91" height="32" view-box="0 0 91 32">
-        <g fill="#EEB111" fill-rule="evenodd">
-            <path d="M7.805 9.43c1.324 0 2.339-.259 2.593-.373.197-.144.282-.344.282-.745 0-2.78-2.058-4.615-4.594-4.615C2.986 3.697 0 6.45 0 10.576c0 3.726 2.452 6.248 5.89 6.248.872 0 2.394-.401 3.014-.745.338-.258 1.212-1.29 1.38-1.978l-.056-.114c-.507.286-1.324.917-2.254 1.691a3.696 3.696 0 0 1-.788.086c-2.678 0-4.819-2.064-4.79-5.704 0-.2 0-.4.056-.63h5.353zm-5.382-.66c.057-1.29.986-4.557 3.494-4.557 1.775 0 2.48 2.035 2.48 3.525 0 .46-.084.89-.169 1.033H2.423zm12.624-3.955l.084-.83c-.62.028-1.098.085-1.747.085-.845 0-1.718-.057-2.62-.086l-.029.115c.846.4 1.522.687 2.03.974.45.66 1.296 2.178 3.014 5.417-1.409 2.293-1.944 3.095-2.762 4.27-.28.373-.534.574-.986.775l-1.662.86v.114c.789-.029 1.662-.086 2.565-.086a23.6 23.6 0 0 1 1.69.086l.113-.115c-.423-.459-.733-.716-.93-1.089.591-1.204 1.014-1.977 2.254-4.184h.057c1.662 3.152 2.254 4.356 2.732 5.474 1.381 0 3.438-.143 4.34-.143l.085-.087-1.945-.86c-.31-.114-.591-.43-.93-.973-.506-.861-2.056-3.583-3.014-5.418 1.155-1.805 1.633-2.58 2.508-3.755.788-.4 1.577-.716 2.817-1.26l.028-.115c-1.014.029-1.86.086-2.677.086-.366 0-.76-.057-1.212-.086.028.43.028.774-.028 1.233-.337.83-1.099 2.235-1.69 3.296h-.057l-2.028-3.698zM26.6 3.611c-.818.086-3.129.66-3.55.831l-.114.115 1.494.888v8.111c0 3.812-.084 7.051-.113 8.628l-1.55.974-.056.115c.901-.029 1.803-.086 2.705-.086 1.24 0 2.48.057 3.775.086l.113-.115-2.591-1.06c-.057-2.121-.113-4.643-.113-6.163l.056-.028c.732.43 1.916.917 2.282.917 2.649 0 6.791-2.149 6.791-7.194 0-4.013-3.015-5.904-5.185-5.904-.93 0-2.057.63-4 1.92h-.057l.113-2.035zm0 2.58c1.042-.86 2.113-1.146 2.732-1.146 2.565 0 4.002 2.493 4.002 5.043 0 3.784-2.226 5.762-4.593 5.762-.873 0-1.663-.23-2.141-.516V6.19zM44.66 9.43c1.325 0 2.339-.259 2.593-.373.197-.144.282-.344.282-.745 0-2.78-2.057-4.615-4.593-4.615-3.1 0-6.087 2.752-6.087 6.879 0 3.726 2.452 6.248 5.89 6.248.873 0 2.395-.401 3.015-.745.338-.258 1.21-1.29 1.38-1.978l-.056-.114c-.507.286-1.324.917-2.255 1.691a3.682 3.682 0 0 1-.788.086c-2.677 0-4.819-2.064-4.79-5.704 0-.2 0-.4.056-.63h5.353zm-5.381-.66c.056-1.29.986-4.557 3.494-4.557 1.775 0 2.48 2.035 2.48 3.525 0 .46-.085.89-.17 1.033H39.28zm9.383 1.605c0 4.815 3.775 6.45 6.368 6.45.817 0 2.113-.287 2.564-.46.423-.286 1.466-1.634 1.662-2.321l-.027-.086c-.508.258-1.268.802-2.367 1.777a3.076 3.076 0 0 1-.79.115c-2.986 0-5.015-2.494-5.015-5.733 0-2.923 1.55-5.79 4.93-5.79.593 0 .96.058 1.184.173.31 1.519.649 2.665.901 3.18l.113-.056c.395-.745.79-2.064.987-2.895-.423-.373-1.916-1.032-3.494-1.032-3.41 0-7.016 2.15-7.016 6.65v.028zM63.623 4.07L63.736 0c-.366 0-1.183.488-1.464.946a25.124 25.124 0 0 0-.818 3.124h-1.437l-.394.573 1.803.373v7.595c0 1.806.14 2.436.62 3.067.563.687 1.52 1.146 2.536 1.146 1.38 0 2.507-.66 3.1-1.548l.056-.459-.085-.028c-.451.315-1.212.717-2.17.717-.704 0-1.126-.2-1.437-.43-.14-.144-.423-.544-.423-.917V5.016l3.72-.373.423-.573h-4.143zM34.602 24.788c0 2.726-.028 5.367-.112 5.863l-1.547.963-.028.11c.619-.027 1.772-.082 2.615-.082 1.237 0 2.305.055 2.896.083l.056-.11-1.603-.909c-.112-.826-.112-5.01-.112-8.56.843-.715 2.024-1.376 2.924-1.376 2.165 0 2.699 1.706 2.699 3.028 0 2.45-.028 5.146-.113 6.853l-1.321.963-.056.11c.731-.027 1.687-.082 2.586-.082.844 0 1.856.055 2.587.083l.084-.11-1.574-.909v-6.055c0-1.046-.085-1.982-.17-2.423 1.042-.99 2.026-1.458 3.178-1.458 2.221 0 2.614 1.954 2.614 3.22.029 3.358-.083 5.56-.167 6.634l-1.181.99-.028.11c.702-.027 1.601-.082 2.417-.082 1.04 0 2.053.055 3.065.083v-.11l-1.378-.743c-.338-.193-.534-.386-.534-.551v-6.937c0-2.422-1.434-3.99-3.627-3.99-1.265 0-2.446.633-4.498 2.284-.535-1.459-1.744-2.284-3.262-2.284-1.18 0-2.558.88-4.33 2.257h-.028l.113-2.257c-.843.027-2.924.715-3.514.963l-.057.138 1.406.605v3.688zm26.175-5.394c-2.897 0-6.214 2.422-6.214 6.468 0 3.881 3.121 6.138 6.13 6.138 3.542 0 6.27-2.532 6.27-6.414 0-3.632-2.756-6.192-6.158-6.192h-.028zm.028.467c2.446 0 3.655 3.386 3.655 5.973 0 2.533-.872 5.698-3.43 5.698-2.53 0-3.965-3.22-3.965-5.973 0-2.422 1.04-5.698 3.712-5.698h.028zm7.225.524l1.377.908c0 1.514 0 4.927-.224 9.413l-1.603.908v.11a65.592 65.592 0 0 1 2.615-.082c1.743 0 3.205.055 3.992.083v-.11l-2.614-.881v-7.487c.73-1.624 1.686-2.614 2.642-2.614.225 0 .31.027.394.055.394.99.73 1.623.956 1.954l.14-.083c.45-.99.815-2.367.844-2.863-.226-.164-.59-.302-1.097-.302-.956 0-2.698.66-3.907 2.862h-.028c0-1.018-.141-2.477-.282-2.862-.731.027-2.699.715-3.12.88l-.085.11zm16.195 4.514c1.321 0 2.333-.248 2.586-.359.197-.137.28-.33.28-.715 0-2.67-2.051-4.431-4.582-4.431-3.092 0-6.072 2.642-6.072 6.606 0 3.578 2.446 6 5.876 6 .871 0 2.39-.386 3.008-.716.338-.248 1.209-1.239 1.378-1.9l-.057-.11c-.506.276-1.321.881-2.249 1.625a3.828 3.828 0 0 1-.788.083c-2.67 0-4.806-1.983-4.778-5.478 0-.192 0-.385.056-.605h5.342zm-5.37-.634c.056-1.238.984-4.376 3.486-4.376 1.771 0 2.473 1.955 2.473 3.385 0 .441-.083.854-.167.991h-5.792zm10.71 4.624c-.448.248-1.04.882-1.404 1.432l-.056.22c.224.467.787 1.184 1.292 1.459l.169-.055c.394-.22 1.18-.99 1.378-1.432l.056-.22c-.225-.522-.928-1.321-1.293-1.459l-.141.055z"/>
-        </g>
-    </svg>
+      <img src="assets/svg/tagline-yellow.svg" />
   </div>
 
   <script type="text/javascript">

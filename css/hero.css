@@ -1,0 +1,35 @@
+.hero {
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero__image {
+  width: 100%;
+  height: 601px;
+  background-image: url("../assets/images/Hero Image L.png"); /* Pass as inline style from Sitecore */
+  background-position: top center;
+  background-repeat: no-repeat;
+  /* clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%); */
+}
+
+@media screen and (max-width: 983px) {
+  .hero__image {
+    background-image: url("../assets/images/Hero\ Image\ M.png");
+    height: 409px;
+  }
+}
+
+@media screen and (max-width: 809px) {
+  .hero__image {
+    background-image: url("../assets/images/Hero\ Image\ S.png");
+    height: 231px;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .hero__image {
+    background-image: url("../assets/images/Hero\ Image\ XS.png");
+    height: 169px;
+  }
+}

@@ -1,0 +1,10 @@
+.content {
+  margin: 30px auto;
+  /* background: no-repeat url("../assets/images/rush-paralellogram-watermark.png"); */
+}
+
+.content > p {
+  font-family: "Warnock", serif;
+  font-size: 16px;
+  margin: 10px 0;
+}

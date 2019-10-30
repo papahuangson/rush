@@ -1,0 +1,66 @@
+.container {
+  position:relative;
+}  
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+
+.underline--magical:hover {
+  background-size: 100% 88%;
+}
+
+.underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 101%;
+  transition: background-size 0.25s ease-in;
+}
+
+.container:hover .ribbon,
+.highlighted-link .ribbon {
+  height: 0.25em;
+  width: 105%;
+  position: absolute;
+  top: 80%;
+  left: -5%;
+  z-index: -1;
+  background: #EEB111;
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 95%);
+  backface-visibilty: hidden;
+}
+
+.header__content__navigation--with-child__child .container:hover .ribbon,
+.header__content__navigation--with-child__child .highlighted-link .ribbon {
+  top: 75%;
+  width: 110%;
+}
+
+/* .container:hover .ribbon {
+  position: absolute;
+  height:105%;
+  top: 0;
+  left: -5%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  background: #EEB111;
+  animation-duration: .6s;
+  animation-name: slideup;
+} */
+
+
+@keyframes slideup {
+  from {
+    top: 105%;
+    height: 0; 
+  }
+
+  to {
+    top: 0;
+    height:105%; 
+  }
+}

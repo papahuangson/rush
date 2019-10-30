@@ -1,0 +1,42 @@
+.page-width {
+  width: 984px;
+  margin: 0 auto;
+}
+
+/* 850px breakpoint */
+@media screen and (max-width: 983px) {
+  .page-width {
+    width: 810px;
+  }
+}
+
+/* 500px breakpoint */
+@media screen and (max-width: 809px) {
+  .page-width {
+    width: 460px;
+  }
+}
+
+/* 320px breakpoint */
+@media screen and (max-width: 459px) { 
+  .page-width {
+    width: 280px;
+  }
+}
+
+.bp-medium,
+.bp-small {
+  display: none;
+}
+
+@media screen and (max-width: 809px) {
+  .bp-medium {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .bp-small {
+    display: block;
+  }
+}

@@ -1,0 +1,204 @@
+.header {
+
+}
+
+.header__polygon {
+  background-image: url("../assets/images/rush-paralellogram-watermark.png");
+  position: absolute;
+  top: 47px;
+  left: -120px;
+  width: 198px;
+  height: 126px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 983px) {
+  .header__polygon {
+    background-image: url("../assets/images/rush-paralellogram-watermark.png");
+    background-size: 127px 86px;
+    background-repeat: no-repeat;
+    top: 51px;
+    left: -24px;
+  }
+}
+
+@media screen and (max-width: 809px) {
+  .header__polygon {
+    top: 46px;
+    left: -53px;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .header__polygon {
+    display: none;
+  }
+}
+
+.header__top-bar {
+  height: 30px;
+  background-color: #4b4c4c;
+}
+
+@media screen and (max-width: 809px) {
+  .header__top-bar {
+    display: none;
+  }
+}
+
+.header__top-bar__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header__top-bar__content {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.header__top-bar__content a {
+  color: #fff;
+  padding: 9px 0;
+  text-decoration: none;
+  font-family: "Trade Gothic Bold Condensed", sans-serif;
+  font-size: 12px;
+}
+
+.header__top-bar__content a:hover {
+  color: #eeb111;
+}
+
+.header__top-bar__content a:hover .utility__base-icon {
+  display: none;
+}
+
+.header__top-bar__content a .utility__hover-icon {
+  display: none;
+}
+
+.header__top-bar__content a:hover .utility__hover-icon {
+  display: inline;
+}
+
+.header__top-bar__content a:not(:last-child) {
+  margin-right: 20px;
+}
+
+.header__top-bar__content a img {
+  margin-right: 4px;
+  margin-bottom: -1px;
+}
+
+.header__content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .header__bg-polygon__top-1 {
+  top: 47px;
+  left: -120px;
+}
+
+.header__bg-polygon__top-2 {
+  top: 68px;
+  left: -82px;
+} */
+
+.header__content__logo {
+  margin: 31px 0 33px;
+  height: 40px;
+}
+
+@media screen and (max-width: 983px) {
+  .header__content__logo {
+    margin: 22px 0 22px;
+  }
+}
+
+@media screen and (max-width: 809px) {
+  .header__content__logo {
+    margin: 16px 0 16px;
+  }
+}
+
+.header__content__logo a {
+  position: absolute;
+  z-index: 2;
+}
+
+.header__content__navigation {
+  margin-top: 43px;
+}
+
+@media screen and (max-width: 809px) {
+  .header__content__navigation {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 983px) {
+  .header__content__navigation {
+    margin-top: 32px;
+  }
+}
+
+.header__content__navigation a {
+  color: #4b4c4c;
+  text-decoration: none;
+  font-family: "Trade Gothic Bold Condensed", sans-serif;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 983px) {
+  .header__content__navigation a {
+    font-size: 16px;
+  }
+}
+
+.header__content__navigation a img {
+  margin-bottom: 3px;
+}
+
+.header__content__navigation a.selected {
+  color: #111;
+}
+
+.header__content__navigation a:not(:first-child) {
+  margin-left: 14px;
+}
+
+.header__content__navigation--with-child {
+  margin-top: 31px;
+}
+
+@media screen and (max-width: 983px) {
+  .header__content__navigation--with-child {
+    margin-top: 19px;
+  }
+}
+
+.header__content__navigation--with-child__child {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media screen and (max-width: 983px) {
+  .header__content__navigation--with-child__child {
+    margin-top: 8px;
+  }
+}
+
+.header__content__navigation--with-child__child a {
+  font-family: "Trade Gothic Condensed", sans-serif;
+  font-size: 16px;
+  margin-left: 16px;
+}
+
+@media screen and (max-width: 983px) {
+  .header__content__navigation--with-child__child a {
+    font-size: 15px;
+  }
+}

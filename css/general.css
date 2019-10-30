@@ -1,0 +1,45 @@
+*,* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: 0;
+}
+
+.button__yellow {
+  background-color: #eeb111;
+  border-radius: 2px;
+  border: none;
+  color: #111;
+  text-transform: uppercase;
+  padding: 8px 8px 7px 8px;
+  font-family: "Trade Gothic Bold Condensed", sans-serif;
+  font-size: 12px;
+  line-height: 11px;
+  height: auto;
+}
+
+.bg-polygon {
+  position: absolute;
+  z-index: 3;
+  width: 167px;
+  height: 106px;
+  background: #000;
+  opacity: .07;
+  clip-path: polygon(50% 0%, 100% 0, 50% 100%, 0% 100%);
+}
+
+.hide {
+  display: none;
+}
+
+.svg__gold--hover:hover {
+  filter: url('../svg/filters.svg#gold-hover');
+  stroke: #eeb111;
+}
