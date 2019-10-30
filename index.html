@@ -9,7 +9,7 @@
 <body>
   <header class="header" role="banner">
     <!-- Begin Utility Bar -->
-    <div class="header__top-bar">
+    <nav class="header__top-bar">
       <div class="header__top-bar__content page-width">
         <a href="#">
           <img src="assets/svg/search-white.svg" class="utility__base-icon" />
@@ -27,18 +27,18 @@
           Locations
         </a>
       </div>
-      <!-- End Utility Bar -->
-    </div>
+    </nav>
+    <!-- End Utility Bar -->
 
     <div class="header__content page-width">
       <div class="header__content__logo">
         <a href="#">
-          <img src="assets/images/enterprises-standard.png" />
+          <img src="assets/svg/enterprises-standard.svg" />
         </a>
       </div>
 
       <!-- Begin Mobile Navigation -->
-      <div class="header__mobile bp-medium">
+      <nav class="header__mobile bp-medium">
         <a href="#" class="header__mobile__icon">
           <img src="assets/svg/search-mobile-gray.svg" class="header__mobile__icon--base" />
           <img src="assets/svg/search-mobile-gold.svg" class="header__mobile__icon--hover" />
@@ -56,7 +56,7 @@
           <img src="assets/svg/menu-mobile-gray.svg" class="header__mobile__icon--base" />
           <img src="assets/svg/menu-mobile-gold.svg" class="header__mobile__icon--hover" />
       </button>
-      </div>
+    </nav>
       <!-- End Mobile Navigation -->
 
       <!-- Start Desktop Navigation -->
@@ -102,26 +102,26 @@
     <div class="mobile__drawer mobile__drawer--hide bp-medium" id="mobile-drawer">
       <div class="mobile__drawer__header">
         <!-- Begin Mobile Navigation -->
-        <div class="header__mobile bp-medium">
-            <a href="#" class="header__mobile__icon">
-              <img src="assets/svg/search-mobile-white.svg" class="header__mobile__icon--base" />
-              <img src="assets/svg/search-mobile-gold.svg" class="header__mobile__icon--hover" />
-            </a>
-            <a href="#" class="header__mobile__icon">
-              <img src="assets/svg/contact-mobile-white.svg" class="header__mobile__icon--base" />
-              <img src="assets/svg/contact-mobile-gold.svg" class="header__mobile__icon--hover" />
-            </a>
-            <a href="#" class="header__mobile__icon">
-              <img src="assets/svg/location-mobile-white.svg" class="header__mobile__icon--base" />
-              <img src="assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover" />
-            </a>
-            <div class="header__mobile__divider"></div>
-            <button class="header__mobile__icon" role="button" id="close-mobile">
-              <img src="assets/svg/close-mobile-white.svg" class="header__mobile__icon--base" />
-              <img src="assets/svg/close-mobile-gold.svg" class="header__mobile__icon--hover" />
-            </button>
-          </div>
-          <!-- End Mobile Navigation -->
+        <nav class="header__mobile bp-medium">
+          <a href="#" class="header__mobile__icon">
+            <img src="assets/svg/search-mobile-white.svg" class="header__mobile__icon--base" />
+            <img src="assets/svg/search-mobile-gold.svg" class="header__mobile__icon--hover" />
+          </a>
+          <a href="#" class="header__mobile__icon">
+            <img src="assets/svg/contact-mobile-white.svg" class="header__mobile__icon--base" />
+            <img src="assets/svg/contact-mobile-gold.svg" class="header__mobile__icon--hover" />
+          </a>
+          <a href="#" class="header__mobile__icon">
+            <img src="assets/svg/location-mobile-white.svg" class="header__mobile__icon--base" />
+            <img src="assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover" />
+          </a>
+          <div class="header__mobile__divider"></div>
+          <button class="header__mobile__icon" role="button" id="close-mobile">
+            <img src="assets/svg/close-mobile-white.svg" class="header__mobile__icon--base" />
+            <img src="assets/svg/close-mobile-gold.svg" class="header__mobile__icon--hover" />
+          </button>
+        </nav>
+        <!-- End Mobile Navigation -->
       </div>
       <div class="mobile__drawer__body">
         <nav class="mobile__drawer__body__navigation">
@@ -146,22 +146,27 @@
             </ul>
 
             <li class="mobile__drawer__body__navigation--divider"></li>
+
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">Our Businesses</a>
             </li>
             <li class="mobile__drawer__body__navigation--divider"></li>
+
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">Investor Relations</a>
             </li>
             <li class="mobile__drawer__body__navigation--divider"></li>
+
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">Corporate Responsibility</a>
             </li>
             <li class="mobile__drawer__body__navigation--divider"></li>
+
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">Careers</a>
             </li>
             <li class="mobile__drawer__body__navigation--divider"></li>
+
             <li class="mobile__drawer__body__navigation__item">
               <a href="#">News</a>
               <button class="mobile__drawer__body__navigation__item__expand-control" onclick="toggleMobileSubNav('news')">

@@ -96,18 +96,12 @@
   justify-content: space-between;
 }
 
-/* .header__bg-polygon__top-1 {
-  top: 47px;
-  left: -120px;
-}
-
-.header__bg-polygon__top-2 {
-  top: 68px;
-  left: -82px;
-} */
-
 .header__content__logo {
   margin: 31px 0 33px;
+  height: 40px;
+}
+
+.header__content__logo a img {
   height: 40px;
 }
 
