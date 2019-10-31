@@ -51,7 +51,8 @@
   }
 }
 
-.footer__content__item p {
+.footer__content__item p,
+.footer__content__item label {
   font-family: "Trade Gothic Condensed", sans-serif;
   font-size: 14px;
   line-height: 16px;
@@ -65,6 +66,10 @@
 .footer__content__item input,
 .footer__content__item button {
   vertical-align: top;
+}
+
+.email-signup {
+  margin-top: 14px;
 }
 
 .footer__content__item input {
@@ -83,6 +88,14 @@
 .footer__content__item input::placeholder {
   color: #fff;
   opacity: 1;
+}
+
+.footer__content__item input:focus {
+  border: 1px solid #fff;
+}
+
+.footer__content__item input:focus::placeholder {
+  opacity: .5;
 }
 
 @media screen and (max-width: 983px) {

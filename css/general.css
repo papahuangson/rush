@@ -10,6 +10,7 @@ button {
   margin: 0;
   border: none;
   height: 0;
+  cursor: pointer;
 }
 
 .button__yellow {
@@ -23,6 +24,10 @@ button {
   font-size: 12px;
   line-height: 11px;
   height: auto;
+}
+
+.button__yellow:focus {
+  color: #fff;
 }
 
 .bg-polygon {
