@@ -270,13 +270,6 @@ a.footer__map-link:hover .footer__hover-icon,
   color: #eeb111;
 }
 
-.footer__content__hr {
-  height: 1px;
-  background-color: #939598;
-  margin: 24px auto;
-  opacity: 0.5;
-}
-
 @media screen and (max-width: 459px) { 
   .footer__content__item {
     width: 100%;
@@ -287,4 +280,8 @@ a.footer__map-link:hover .footer__hover-icon,
   width: 100%;
   margin: 28px auto;
   text-align: center;
+}
+
+.footer .hr {
+  margin: 24px auto;
 }

@@ -1,0 +1,45 @@
+.header-video {
+  position: relative;
+  height: 400px;
+  /* clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%); */
+}
+
+.header-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    height: 400px;
+    border: 1px solid white;
+    z-index:-2; /* Causes the video to sit behind your heading */
+    object-position:center; /* Causes video to be centred against the header */
+    object-fit:cover; /* Causes video to cover/stretch to the header */
+}
+
+.content__block .inline-video {
+  width: 100%;
+}
+
+.video-modal {
+  width: 90%;
+  height: auto;
+  box-shadow: 0px 0px 40px #000;
+  position: fixed;
+  top: 50px;
+  left: 5%;
+  z-index: 1000;
+}
+
+.video-modal--close {
+  position: absolute;
+  z-index: 1001;
+  top: 0;
+  right: 0;
+  font-size: 50px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+
+.video-modal video {
+  width: 100%;
+}

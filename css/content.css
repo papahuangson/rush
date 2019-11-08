@@ -3,8 +3,103 @@
   /* background: no-repeat url("../assets/images/rush-paralellogram-watermark.png"); */
 }
 
-.content > p {
+.content__block {
+  margin-top: 80px;
+}
+
+.content__block h2 {
+  font-family: "Trade Gothic Condensed", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.content__block p {
+  font-family: "Trade Gothic Condensed", serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.content__heading {
+  width: 735px;
+  float: right;
+}
+
+.content__heading h1 {
+  font-family: "Trade Gothic Condensed", sans-serif;
+  font-size: 48px;
+  text-transform: uppercase;
+}
+
+.content__heading p {
   font-family: "Warnock", serif;
-  font-size: 16px;
+  font-size: 20px;
   margin: 10px 0;
+  line-height: 32px;
+}
+
+.content__button {
+  color: #111;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-family: "Trade Gothic Condensed", sans-serif;
+  box-shadow: 0px 0px 2px #979797;
+  border: 1px solid #8a8a8a;
+}
+
+.content__button--yellow {
+  background-color: #eeb111;
+}
+
+.content__button--gray {
+  background-color: #fefefe;
+}
+
+.content__image--full {
+  background-image: url('http://www.fillmurray.com/1000/400');
+  height: 350px;
+  color: #fff;
+}
+
+.aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aligner-item {
+  max-width: 50%;
+}
+
+.aligner-item--top {
+  align-self: flex-start;
+}
+
+.aligner-item--bottom {
+  align-self: flex-end;
+}
+
+.in-the-news {
+  background: #ccc;
+  overflow: auto;
+}
+
+.in-the-news__container {
+  width: 800px;
+  margin: 60px auto;
+  display: flex;
+}
+
+.in-the-news__container__item {
+  width: 33%;
+}
+
+.in-the-news__container__item:not(last-child) {
+  margin-right: 20px;
+}
+
+.in-the-news__container__item--image img {
+  width: 100%;
 }
