@@ -275,7 +275,9 @@
               </div>
               <div class="in-the-news__container__item">
                   <div class="in-the-news__container__item--image">
-                    <img src="http://placekitten.com/600/300" />
+                    <a href="#" id="videoLink2">
+                      <img src="http://placekitten.com/600/300" />
+                    </a>
                   </div>
                   <div class="in-the-news__container__item--timestamp">
                     October 23, 2019
@@ -319,21 +321,21 @@
     </div>
 
     <div class="content__block page-width flex">
-        <div class="flex--50">
-          <h2>Grounded in our communities.</h2>
-          <button class="content__button content__button--gray">Learn about our corporate responsibility</button>
-        </div>
-        <div class="flex--50"></div>
+      <div class="flex--50">
+        <h2>Grounded in our communities.</h2>
+        <button class="content__button content__button--gray">Learn about our corporate responsibility</button>
       </div>
+      <div class="flex--50"></div>
+    </div>
 
-      <div class="content__block page-width flex">
-          <div class="flex--50">
-            <h2>Eyes to the future.</h2>
-            <p>We maintain the entrepreneurial spirit that built our business, and share a common purpose and sense of urgency to shape our future.</p>
-            <button class="content__button content__button--gray">Learn about our story</button>
-          </div>
-          <div class="flex--50"></div>
-        </div>
+    <div class="content__block page-width flex">
+      <div class="flex--50">
+        <h2>Eyes to the future.</h2>
+        <p>We maintain the entrepreneurial spirit that built our business, and share a common purpose and sense of urgency to shape our future.</p>
+        <button class="content__button content__button--gray">Learn about our story</button>
+      </div>
+      <div class="flex--50"></div>
+    </div>
   </main>
 
   <footer class="footer" role="contentinfo">
@@ -607,6 +609,7 @@
     }
     window.onload = function () {
       document.getElementById('videoLink1').addEventListener('click', openVideoModal);
+      document.getElementById('videoLink2').addEventListener('click', openVideoModal);
       document.getElementById('videoModalClose').addEventListener('click', closeVideoModal);
     }
   </script>

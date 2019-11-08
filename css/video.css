@@ -43,3 +43,7 @@
 .video-modal video {
   width: 100%;
 }
+
+.in-the-news__container__item--image {
+  position: relative;
+}
