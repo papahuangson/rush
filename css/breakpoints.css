@@ -1,6 +1,7 @@
 .page-width {
-  width: 984px;
+  width: 68vw;
   margin: 0 auto;
+  height: 100%;
 }
 
 /* 850px breakpoint */
