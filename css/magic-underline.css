@@ -24,7 +24,7 @@
 
 .container:hover .ribbon,
 .highlighted-link .ribbon {
-  height: 0.25em;
+  height: .3vw;
   width: 105%;
   position: absolute;
   top: 80%;

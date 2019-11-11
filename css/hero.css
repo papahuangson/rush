@@ -1,16 +1,18 @@
 .hero {
-  margin: 0 auto;
+  /* margin: -4vw auto -8vw 0; */
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 5vw;
+  z-index: -1vw;
 }
 
 .hero__image {
-  width: 100%;
-  height: 601px;
-  background-image: url("../assets/images/Hero Image L.png"); /* Pass as inline style from Sitecore */
+  width: 100vw;
+  height: 58vw;
+  background-image: url("../assets/images/Hero.png"); /* Pass as inline style from Sitecore */
   background-position: top center;
   background-repeat: no-repeat;
-  /* clip-path: polygon(25% 0%, 100% 0, 75% 100%, 0% 100%); */
+  background-size: 100vw;
 }
 
 @media screen and (max-width: 983px) {

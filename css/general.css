@@ -36,8 +36,10 @@
 
 .flex {
   display: flex;
+  align-content: stretch;
 }
 
 .flex--50 {
   width: 50%;
+  position: relative;
 }
