@@ -1,9 +1,9 @@
 .header-video {
   position: relative;
-  height: 500px;
+  height: 400px;
   width: 1200px;
   margin: 0 auto;
-  
+  overflow: hidden;
 }
 
 .header-video video {
