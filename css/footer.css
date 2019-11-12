@@ -18,11 +18,13 @@
 }
 
 .footer__content__item {
-  width: 228px;
+  width: 17vw;
   margin: 0 auto;
 }
 
-
+.footer--logo {
+  width: 5.55vw;
+}
 
 .footer__content__item:first-child {
   margin-left: 0;
@@ -45,7 +47,7 @@
   }
 }
 
-@media screen and (max-width: 459px) { 
+@media screen and (max-width: 459px) {
   .footer__content__item {
     width: 100%;
   }
@@ -54,13 +56,13 @@
 .footer__content__item p,
 .footer__content__item label {
   font-family: "Trade Gothic Condensed", sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  margin-bottom: 14px;
+  font-size: 1.2vw;
+  line-height: 1.2vw;
+  margin-bottom: .95vw;
 }
 
 .footer__content__contact-button {
-  margin-right: 8px;
+  margin-right: .5vw;
 }
 
 .footer__content__item input,
@@ -69,20 +71,20 @@
 }
 
 .email-signup {
-  margin-top: 14px;
+  margin-top: 1vw;
 }
 
 .footer__content__item input {
   border-radius: 2px;
   background: none;
   border: 1px solid #939598;
-  padding: 4px 8px 4px 8px;
-  margin-right: 8px;
-  line-height: 16px;
+  padding: .5vw .8vw;
+  margin-right: .5vw;
+  line-height: 1vw;
   color: #e6e7e8;
   font-family: serif;
-  font-size: 12px;
-  width: 165px;
+  font-size: .9vw;
+  width: 12vw;
 }
 
 .footer__content__item input::placeholder {
@@ -124,11 +126,11 @@
 .footer__content__item__links a {
   display: block;
   font-family: "Trade Gothic Condensed", sans-serif;
-  font-size: 14px;
+  font-size: 1.2vw;
   color: #fff;
   text-decoration: none;
-  margin-bottom: 14px;
-  width: 228px;
+  margin-bottom: 1.2vw;
+  width: 17vw;
 }
 
 @media screen and (max-width: 983px) {
@@ -178,6 +180,11 @@
   color: #eeb111;
   font-family: "Trade Gothic Condensed", sans-serif;
   text-decoration: none;
+  font-size: 1.2vw;
+}
+
+.footer__map-link img {
+  height: 1vw;
 }
 
 a.footer__map-link:hover {
@@ -205,13 +212,14 @@ a.footer__map-link:hover .footer__hover-icon,
 }
 
 .footer__content__linkedin img {
-  margin-top: 6px;
+  margin-top: .5vw;
   vertical-align: text-bottom;
+  height: 1.3vw;
 }
 
 .footer__content__linkedin a {
   font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 12px;
+  font-size: 1vw;
   text-decoration: none;
   color: #fff;
 }
@@ -222,7 +230,7 @@ a.footer__map-link:hover .footer__hover-icon,
 
 .footer__copyright {
   justify-content: space-between;
-  font-size: 12px;
+  font-size: 1vw;
 }
 
 .footer__copyright div:first-child a {
@@ -232,7 +240,7 @@ a.footer__map-link:hover .footer__hover-icon,
 .footer__copyright div,
 .footer__copyright div a {
   font-family: "Warnock", serif;;
-  font-size: 12px;
+  font-size: 1vw;
 }
 
 @media screen and (max-width: 809px) {
@@ -245,7 +253,7 @@ a.footer__map-link:hover .footer__hover-icon,
 .footer__copyright a {
   text-decoration: none;
   color: #e6e7e8;
-  margin-left: 16px;
+  margin-left: 1.2vw;
 }
 
 @media screen and (max-width: 459px) { 
@@ -270,7 +278,7 @@ a.footer__map-link:hover .footer__hover-icon,
   color: #eeb111;
 }
 
-@media screen and (max-width: 459px) { 
+@media screen and (max-width: 459px) {
   .footer__content__item {
     width: 100%;
   }
@@ -278,10 +286,14 @@ a.footer__map-link:hover .footer__hover-icon,
 
 .tagline {
   width: 100%;
-  margin: 28px auto;
+  margin: 2vw auto;
   text-align: center;
 }
 
+.tagline img {
+  height: 3vw;
+}
+
 .footer .hr {
-  margin: 24px auto;
+  margin: 2vw auto;
 }
