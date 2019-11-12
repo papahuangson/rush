@@ -62,8 +62,9 @@
   color: #fff;
   padding: .55vw 0;
   text-decoration: none;
-  font-family: "Trade Gothic Bold Condensed", sans-serif;
+  font-family: "Trade Gothic Condensed", sans-serif;
   font-size: .85vw;
+  font-weight: normal;
 }
 
 .header__top-bar__content a:hover {

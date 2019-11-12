@@ -12,10 +12,10 @@ button {
   border: none;
   color: #111;
   text-transform: uppercase;
-  padding: 8px 8px 7px 8px;
+  padding: .6vw .7vw;
   font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 12px;
-  line-height: 11px;
+  font-size: .9vw;
+  line-height: .8vw;
   height: auto;
 }
 
