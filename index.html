@@ -94,8 +94,6 @@
         </div>
       </nav>
       <!-- End Deskop Navigation -->
-
-      <div class="header__polygon"></div>
     </div>
 
     <!-- Begin Mobile Drawer -->
@@ -195,41 +193,44 @@
       <div class="mobile__drawer__page-mask"></div>
     </div>
     <!-- End Mobile Drawer -->
-    
   </header>
 
   <div class="hero" role="banner">
-    <div class="hero__image"></div>
+    <div class="hero__image" role="img" aria-label="Rush Headquarters Photo" style="background-image: url('assets/images/Hero.png')"></div>
   </div>
 
   <main class="content" role="article">
+
+    <!-- Begin Content Header -->
     <div class="page-width">
-        <div class="content__heading content__block">
-            <h1>Rush Enterprises.<br />More than a Tradition of Truck Sales.</h1>
-            <p>A family dealership founded in 1965, Rush Enterprises has grown to over 120 
-              dealerships across twenty states. With over 7,500 employees and $5.5 bliion in 
-              revenue, we're the largest commercial vehicle dealer group in North America. 
-              But we're a lot more than that.</p>
-              <button class="content__button content__button--yellow">Learn about our strategic vision</button>
-          </div>
-          <div class="clearfix"></div>
+      <div class="content__heading content__block">
+        <h1>Rush Enterprises.<br />More than a Tradition of Truck Sales.</h1>
+        <p>A family dealership founded in 1965, Rush Enterprises has grown to over 120 
+          dealerships across twenty states. With over 7,500 employees and $5.5 bliion in 
+          revenue, we're the largest commercial vehicle dealer group in North America.
+          But we're a lot more than that.</p>
+        <button class="content__button content__button--yellow">Learn about our strategic vision</button>
+      </div>
+      <div class="clearfix"></div>
     </div>
-    
-    <div class="content__image--full content__block">
+    <!-- End Content Header -->
+
+    <!-- Start Quote Component -->
+    <div class="content__image--full content__block" style="background-image: url('assets/images/IMG\ -\ Rusty.png')" role="img" aria-label="Rusty The Founder">
       <div class="flex page-width">
           <div class="flex--50">
               <p class="content__image__quote">
                 "Only a man who knows what it is like to be defeated can reach down to the bottom of 
-                his soul and come up with the extra ounce of power it takes to win when the match is even.
+                his soul and come up with the extra ounce of power it takes to win when the match is even.""
               </p>
               <p class="content__image__attribution">- W.M. "Rusty" Rush</p>
             </div>
             <div class="flex--50"></div>
-
       </div>
     </div>
+    <!-- End Quote Component -->
 
-    <div class="content__block home-bg-image expanding-our-reach">
+    <div class="content__block home-bg-image home-bg-image--left" style="background-image: url('assets/images/IMG\ -\ Expanding\ our\ reach.png');">
       <div class="page-width flex">
 
           <div class="flex--50"></div>
@@ -243,7 +244,7 @@
       </div>
     </div>
 
-    <div class="content__block home-bg-image driven-to-serve">
+    <div class="content__block home-bg-image home-bg-image--right" style="background-image: url('assets/images/IMG\ -\ driven\ to\ serve.png');">
       <div class="page-width flex">
           <div class="flex--50">
               <div class="justify-bottom">
@@ -256,12 +257,16 @@
       </div>
     </div>
 
-    <!-- <div class="content__block in-the-news">
-      <div class="page-width">
-        <h2>Rush in the news.</h2>
-        <div class="in-the-news__container">
-          <h3 class="in-the-news__container__header">Rush Enterprises Press Releases.</h3>
-          <ul class="in-the-news__container__item">
+    <div class="content__block in-the-news">
+      <div class="in-the-news__header page-width">
+        <div class="in-the-news__header__title">
+          In the news.
+          <div class="in-the-news__header__title--bg-helper"></div>
+        </div>
+        <div class="in-the-news__header__triangle"></div>
+      </div>
+      <div class="in-the-news__container page-width">
+          <!-- <ul class="in-the-news__container__item">
             <li>
               <span class="in-the-news__container__item__date">Oct 23, 2019.</span>
               <span class="in-the-news__container__item__title">Rush Enterprises, Inc. Reports Third Quarter 2019 Results, Announces $0.13 Per Share Dividend</span>
@@ -295,28 +300,36 @@
               <span class="in-the-news__container__item__source-title">Up and coming truck blog</span>
             </li>
           </ul>
-          <button class="content__button content__button--gray">More Rush news around the web</button>
+          <button class="content__button content__button--gray">More Rush in the news</button> -->
         </div>
-        <div class="clearfix"></div>
+    </div>
+
+    <div class="content__block home-bg-image home-bg-image--left" style="background-image: url('assets/images/IMG - Grounded in commiunities.png');">
+      <div class="page-width flex">
+
+          <div class="flex--50"></div>
+          <div class="flex--50">
+            <div class="justify-bottom">
+                <h2>Expanding our reach.</h2>
+                <p>We offer a variety of solutions that keep your truck on the road and you on the job.</p>
+                <button class="content__button content__button--gray">Learn more about our business</button>
+            </div>
+          </div>
       </div>
     </div>
 
-    <div class="content__block page-width flex">
-        <div class="flex--50">
-          <h2>Grounded in our communities.</h2>
-          <button class="content__button content__button--gray">Learn about our corporate responsibility</button>
-        </div>
-        <div class="flex--50"></div>
-      </div>
-
-      <div class="content__block page-width flex">
+    <div class="content__block home-bg-image home-bg-image--right" style="background-image: url('assets/images/IMG - Eyes to the future.png');">
+      <div class="page-width flex">
           <div class="flex--50">
-            <h2>Eyes to the future.</h2>
-            <p>We maintain the entrepreneurial spirit that built our business, and share a common purpose and sense of urgency to shape our future.</p>
-            <button class="content__button content__button--gray">Learn about our story</button>
-          </div>
-          <div class="flex--50"></div>
-        </div> -->
+              <div class="justify-bottom">
+                <h2>Driven to serve.</h2>
+                <p>We're in the business of serving people, and we bring an unmatched pride and 
+                  accountability to work every day.</p>
+                <button class="content__button content__button--gray">Learn more about our culture and values</button>              </div>
+            </div>
+            <div class="flex--50"></div>
+      </div>
+    </div>
   </main>
 
   <footer class="footer" role="contentinfo">
