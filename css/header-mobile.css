@@ -2,14 +2,14 @@
   display: none;
 }
 
-@media screen and (max-width: 809px) {
+@media screen and (max-width: 320px) {
   .header__mobile {
     display: flex;
   }
 
   .header__mobile__icon,
   .header__mobile div {
-    margin-left: 20px;
+    margin-left: 6vw;
   }
 
   .header__mobile__icon#expand-mobile,
@@ -19,14 +19,19 @@
 
   .header__mobile__divider {
     width: 1px;
-    height: 36px;
-    margin-top: 18px;
+    height: 3vw;
+    margin-top: 1.5vw;
     background-color: rgba(147, 149, 152, 0.5);
   }
 
+    .header__mobile__divider {
+      margin-top: 4vw;
+      height: 12vw;
+    }
+
   .header__mobile__icon {
-    margin-top: 27px;
-    height: 18px;
+    margin-top: 7vw;
+    height: 1.5vw;
   }
 
   .header__mobile__icon .header__mobile__icon--hover {
@@ -50,7 +55,7 @@
   z-index: 3;
   top: 0;
   right: 0;
-  width: 320px;
+  width: 26.667vw;
   height: 100%;
 }
 
@@ -79,38 +84,38 @@
   position: absolute;
   z-index: 5;
   right: 0;
-  padding-right: 20px;
+  padding-right: 1.667vw;
 }
 
 .mobile__drawer__header {
   background-color: #4b4c4c;
-  height: 72px;
+  height: 6vw;
 }
 
 .mobile__drawer__body {
   background-color: #fff;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.833vw 0 rgba(0, 0, 0, 0.2);
 }
 
 .mobile__drawer__body__navigation ul {
   list-style-type: none;
-  padding: 10px 0;
+  padding: 0.833vw 0;
 }
 
 .mobile__drawer__body__navigation ul li {
   list-style-type: none;
   border-left: 3px solid white;
-  padding: 5px 20px;
+  padding: 5px 0.833vw;
   /* margin: 10px 0; */
 }
 
 .mobile__drawer__body__navigation ul li a {
-  padding: 10px 0;
+  padding: 0.833vw 0;
 }
 
 .mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation--divider {
   border-top: 1px solid #939598;
-  margin: 10px 20px;
+  margin: 0.833vw 0.833vw;
   padding: 0;
 }
 
@@ -119,12 +124,12 @@ ul.mobile__drawer__body__navigation__item__child--list {
 }
 
 .mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation__item__child {
-  padding-left: 29px;
+  padding-left: 2.417vw;
 }
 
 .mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation__item__child a {
   font-family: "Trade Gothic Condensed", sans-serif;
-  font-size: 14px;
+  font-size: 1.167vw;
 }
 
 .mobile__drawer__body__navigation__item {
@@ -144,14 +149,14 @@ ul.mobile__drawer__body__navigation__item__child--list {
 
 .mobile__drawer__body__navigation__item__expand-control {
   position: absolute;
-  right: 20px;
+  right: 1.667vw;
   top: 6px;
   cursor: pointer;
 }
 
 .mobile__drawer__body__navigation__item a {
   font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 16px;
+  font-size: 1.333vw;
   color: #111;
   text-decoration: none;
 }
@@ -170,6 +175,6 @@ ul.mobile__drawer__body__navigation__item__child--list {
 }
 
 .mobile__drawer__footer {
-  margin-top: 24px;
+  margin-top: 2vw;
   text-align: center;
 }

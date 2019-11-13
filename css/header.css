@@ -2,7 +2,7 @@
 
 }
 
-.header__polygon {
+/* .header__polygon {
   background-image: url("../assets/images/rush-paralellogram-watermark.png");
   position: absolute;
   top: 47px;
@@ -11,9 +11,9 @@
   height: 126px;
   z-index: 1;
   display: none;
-}
+} */
 
-@media screen and (max-width: 983px) {
+/* @media screen and (max-width: 983px) {
   .header__polygon {
     background-image: url("../assets/images/rush-paralellogram-watermark.png");
     background-size: 127px 86px;
@@ -21,20 +21,20 @@
     top: 51px;
     left: -24px;
   }
-}
+} */
 
-@media screen and (max-width: 809px) {
+/* @media screen and (max-width: 809px) {
   .header__polygon {
     top: 46px;
     left: -53px;
   }
-}
+} */
 
-@media screen and (max-width: 459px) {
+/* @media screen and (max-width: 459px) {
   .header__polygon {
     display: none;
   }
-}
+} */
 
 .header__top-bar {
   height: 2vw;
@@ -92,7 +92,7 @@
 }
 
 .header__top-bar__content a img {
-  margin-right: 4px;
+  margin-right: 0.333vw;
   margin-bottom: -1px;
 }
 
@@ -106,11 +106,24 @@
   margin: 2vw 0;
 }
 
+@media screen and (max-width: 320px) {
+  .header__content__logo {
+    margin: 4vw 0 4vw;
+    width: 22vw;
+  }
+}
+
 .header__content__logo a img {
   height: 2.8vw;
 }
 
-@media screen and (max-width: 983px) {
+@media screen and (max-width: 320px) {
+  .header__content__logo a img {
+    height: 13vw;
+  }
+}
+
+/* @media screen and (max-width: 983px) {
   .header__content__logo {
     margin: 22px 0 22px;
   }
@@ -118,9 +131,9 @@
 
 @media screen and (max-width: 809px) {
   .header__content__logo {
-    margin: 16px 0 16px;
+    margin: 1.833vw 0 1.833vw;
   }
-}
+} */
 
 .header__content__logo a {
   position: absolute;
@@ -128,7 +141,7 @@
 }
 
 .header__content__navigation {
-  margin-top: 43px;
+  margin-top: 3.583vw;
 }
 
 @media screen and (max-width: 809px) {
@@ -139,7 +152,7 @@
 
 @media screen and (max-width: 983px) {
   .header__content__navigation {
-    margin-top: 32px;
+    margin-top: 2.667vw;
   }
 }
 
@@ -152,7 +165,7 @@
 
 @media screen and (max-width: 983px) {
   .header__content__navigation a {
-    font-size: 16px;
+    font-size: 1.333vw;
   }
 }
 
@@ -175,7 +188,7 @@
 
 @media screen and (max-width: 983px) {
   .header__content__navigation--with-child {
-    margin-top: 19px;
+    margin-top: 1.583vw;
   }
 }
 
@@ -187,18 +200,18 @@
 
 @media screen and (max-width: 983px) {
   .header__content__navigation--with-child__child {
-    margin-top: 8px;
+    margin-top: 0.667vw;
   }
 }
 
 .header__content__navigation--with-child__child a {
   font-family: "Trade Gothic Condensed", sans-serif;
   font-size: 1.12vw;
-  margin-left: 16px;
+  margin-left: 1.333vw;
 }
 
 @media screen and (max-width: 983px) {
   .header__content__navigation--with-child__child a {
-    font-size: 15px;
+    font-size: 1.250vw;
   }
 }

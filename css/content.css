@@ -1,6 +1,11 @@
 .content {
   margin: 50vw auto 2vw auto;
-  /* background: no-repeat url("../assets/images/rush-paralellogram-watermark.png"); */
+}
+
+@media screen and (max-width: 320px) {
+  .content {
+    margin: 85vw 0 16vw 0;
+  }
 }
 
 .content__block {
@@ -16,13 +21,23 @@
   letter-spacing: .05vw;
 }
 
+@media screen and (max-width: 320px) {
+  .content__block {
+    margin-top: 16vw;
+  }
+
+  .content__block h2 {
+    font-size: 7vw;
+    margin-bottom: 5vw;
+  }
+}
+
 .content__block p {
   font-family: "Trade Gothic Condensed", serif;
 }
 
 .content__heading {
-  width: 55vw;
-  margin: 0 auto;
+
 }
 
 .content__heading h1 {
@@ -33,11 +48,27 @@
   margin-bottom: 2vw;
 }
 
+@media screen and (max-width: 320px) {
+  .content__heading h1 {
+    font-size: 7.4vw;
+    margin-left: 25vw;
+    padding-right: 4vw;
+  }
+}
+
 .content__heading p {
   font-family: "Warnock", serif;
   font-size: 1.4vw;
   margin: 1.4vw 0;
   line-height: 2vw;
+}
+
+@media screen and (max-width: 320px) {
+  .content__heading p {
+    font-size: 4.5vw;
+    margin: 8vw 0 4vw;
+    line-height: 7vw;
+  }
 }
 
 .content__button {
@@ -48,8 +79,14 @@
   font-size: 1.2vw;
   font-family: "Trade Gothic Bold Condensed", sans-serif;
   font-weight: normal;
-  box-shadow: 0px 0px 4px #ccc;
   letter-spacing: .05vw;
+}
+
+@media screen and (max-width: 320px) {
+  .content__button {
+    font-size: 4.2vw;
+    padding: 2.6vw 6vw;
+  }
 }
 
 .content__button--yellow {
@@ -63,7 +100,6 @@
 }
 
 .content__image--full {
-  background-image: url('../assets/images/IMG\ -\ Rusty.png');
   height: 32vw;
   color: #fff;
   background-position: top center;
@@ -85,14 +121,99 @@
   font-size: 1.2vw;
 }
 
+@media screen and (max-width: 320px) {
+  .content__image--full {
+    height: 76vw;
+    color: #fff;
+    background-position: top center;
+    background-size: auto 100%;
+  }
+
+  .content__image--full .flex {
+    display: block;
+  }
+
+  .content__image--full .flex--50 {
+    width: 100%;
+  }
+
+  .content__image--full .flex--50:first-child {
+    /* height: 76vw; */
+    padding-top: 12vw;
+  }
+
+  .content__image--full .content__image__quote {
+    font-size: 5.4vw;
+    line-height: 8vw;
+    margin: 0;
+  }
+
+  .content__image__attribution {
+    letter-spacing: .04vw;
+    font-size: 5.5vw;
+    margin-top: 4vw;
+  }
+}
+
 .in-the-news {
-  background: #ccc;
+  background: #e1e1e1;
   overflow: auto;
 }
 
+.in-the-news__header {
+  display: flex;
+}
+
+.in-the-news__header__title {
+  background-color: #fff;
+  height: 4vw;
+  font-family: "Trade Gothic Bold Condensed", sans-serif;
+  font-size: 2.2vw;
+  text-transform: uppercase;
+  line-height: 4vw;
+  padding-right: 2vw;
+  position: relative;
+}
+
+.in-the-news__header__title--bg-helper {
+  position: absolute;
+  width: 20vw;
+  height: 4vw;
+  left: -20vw;
+  top: 0;
+  background-color: #fff;
+
+}
+
+.in-the-news__header__triangle {
+  background-image: url('../assets/images/news-triangle.png');
+  background-repeat: no-repeat;
+  background-position: top right;
+  background-size: 3.5vw 4vw;
+  height: 4vw;
+  width: 3.5vw;
+}
+
+@media screen and (max-width: 320px) {
+  .in-the-news__header__title {
+    font-size: 7vw;
+    height: 19vw;
+    line-height: 19vw;
+  }
+
+  .in-the-news__header__triangle {
+    background-size: 18vw 20vw;
+    height: 19vw;
+    width: 17.5vw;
+  }
+
+  .in-the-news__header__title--bg-helper {
+    height: 19vw;
+  }
+}
+
 .in-the-news__container {
-  width: 800px;
-  margin: 60px auto;
+  margin: 5em auto;
   display: flex;
 }
 
@@ -109,8 +230,18 @@
 }
 
 .home-bg-image {
-  height: 30vw;
+  height: 39vw;
   position: relative;
+  background-size: 51vw;
+  background-repeat: no-repeat;
+}
+
+.home-bg-image--left {
+  background-position: top left;
+}
+
+.home-bg-image--right {
+  background-position: top right;
 }
 
 .home-bg-image p {
@@ -118,18 +249,35 @@
   margin-bottom: 1.5vw;
 }
 
-.expanding-our-reach {
-  background: url('../assets/images/IMG\ -\ Expanding\ our\ reach.png') no-repeat top left;
-  background-size: 39vw;
-}
-
-.driven-to-serve {
-  background: url('../assets/images/IMG\ -\ driven\ to\ serve.png') no-repeat top right;
-  background-size: 39vw;
-}
-
 .justify-bottom {
   position: absolute;
   bottom: 0;
   margin-bottom: 10vw;
+}
+
+@media screen and (max-width: 320px) {
+  .home-bg-image {
+    height: unset;
+    min-height: 79vw;
+    background-size: 93vw;
+  }
+
+  .home-bg-image p {
+    font-size: 4.5vw;
+    margin-bottom: 4vw;
+  }
+
+  .home-bg-image .flex {
+    display: block;
+  }
+  .home-bg-image .flex--50 {
+    width: 100%;
+  }
+
+  .justify-bottom {
+    position: unset;
+    bottom: unset;
+    margin-bottom: 0;
+    padding-top: 78vw;
+  }
 }
