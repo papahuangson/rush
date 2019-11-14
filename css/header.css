@@ -37,11 +37,17 @@
 } */
 
 .header__top-bar {
-  height: 2vw;
+  height: 2.5vw;
   background-color: #4b4c4c;
 }
 
-@media screen and (max-width: 809px) {
+@media screen and (max-width: 850px) {
+  .header__top-bar {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
   .header__top-bar {
     display: none;
   }
@@ -60,11 +66,18 @@
 
 .header__top-bar__content a {
   color: #fff;
-  padding: .55vw 0;
+  padding: .75vw 0;
   text-decoration: none;
   font-family: "Trade Gothic Condensed", sans-serif;
-  font-size: .85vw;
+  font-size: 1vw;
   font-weight: normal;
+}
+
+@media screen and (max-width: 850px) {
+  .header__top-bar__content a {
+    padding: .8vw 0;
+    font-size: 1.2vw;
+  }
 }
 
 .header__top-bar__content a:hover {
@@ -72,7 +85,13 @@
 }
 
 .header__top-bar__content a img {
-  height: .7vw;
+  height: 1vw;
+}
+
+@media screen and (max-width: 850px) {
+  .header__top-bar a img {
+    height: 1.4vw;
+  }
 }
 
 .header__top-bar__content a:hover .utility__base-icon {
@@ -88,7 +107,7 @@
 }
 
 .header__top-bar__content a:not(:last-child) {
-  margin-right: 1.4vw;
+  margin-right: 1.667vw;
 }
 
 .header__top-bar__content a img {
@@ -115,6 +134,18 @@
 
 .header__content__logo a img {
   height: 2.8vw;
+}
+
+@media screen and (max-width: 850px) {
+  .header__content__logo a img {
+    height: 4.8vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header__content__logo a img {
+    height: 8vw;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -160,7 +191,7 @@
   color: #4b4c4c;
   text-decoration: none;
   font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.5vw;
 }
 
 @media screen and (max-width: 983px) {
@@ -169,9 +200,22 @@
   }
 }
 
+@media screen and (max-width: 850px) {
+  .header__content__navigation a {
+    font-size: 1.8vw;
+  }
+}
+
 .header__content__navigation a img {
   margin-bottom: .3vw;
-  height: .35vw;
+  height: .417vw;
+}
+
+@media screen and (max-width: 850px) {
+  .header__content__navigation a img {
+    margin-bottom: .4vw;
+    height: .6vw;
+  }
 }
 
 .header__content__navigation a.selected {
@@ -179,7 +223,7 @@
 }
 
 .header__content__navigation a:not(:first-child) {
-  margin-left: 1vw;
+  margin-left: 1.333vw;
 }
 
 .header__content__navigation--with-child {
@@ -210,8 +254,8 @@
   margin-left: 1.333vw;
 }
 
-@media screen and (max-width: 983px) {
+@media screen and (max-width: 850px) {
   .header__content__navigation--with-child__child a {
-    font-size: 1.250vw;
+    font-size: 1.6vw;
   }
 }
