@@ -4,6 +4,7 @@ button {
   margin: 0;
   border: none;
   cursor: pointer;
+  position: relative;
 }
 
 .button__yellow {
@@ -14,11 +15,37 @@ button {
   text-transform: uppercase;
   padding: .6vw .7vw;
   font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: .9vw;
+  font-size: 1vw;
   line-height: .8vw;
   height: auto;
 }
 
 .button__yellow:focus {
   color: #fff;
+}
+
+button.arrow--white,
+button.arrow--gold {
+  padding-right: 3.5vw;
+}
+
+button.arrow--white:after,
+button.arrow--gold:after {
+  content: "";
+  width: 1.333vw;
+  height: 2vw;
+  top: 1vw;
+  right: 1vw;
+  position: absolute;
+  display: inline-block;
+  background-size: 1vw 2vw;
+  background-repeat: no-repeat;
+}
+
+button.arrow--gold:after {
+  background-image: url('../assets/svg/right-arrow-gold.svg');
+}
+
+button.arrow--white:after {
+  background-image: url('../assets/svg/right-arrow-white.svg');
 }

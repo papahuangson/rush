@@ -6,6 +6,18 @@
   width: 100vw;
 }
 
+@media screen and (max-width: 850px) {
+  .hero {
+    top: 7vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    top: 10vw;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .hero {
     top: 15vw;

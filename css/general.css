@@ -52,6 +52,16 @@ body {
   position: relative;
 }
 
+.flex--60 {
+  width: 60%;
+  position: relative;
+}
+
+.flex--40 {
+  width: 40%;
+  position: relative;
+}
+
 .relative {
   position: relative;
 }

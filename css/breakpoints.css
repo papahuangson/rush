@@ -1,27 +1,27 @@
 .page-width {
-  width: 68vw;
+  width: 82vw;
   margin: 0 auto;
   height: 100%;
 }
 
 /* 850px breakpoint */
-/* @media screen and (max-width: 983px) {
+@media screen and (max-width: 850px) {
   .page-width {
-    width: 810px;
+    width: 95.29vw;
   }
-} */
+}
 
 /* 500px breakpoint */
-/* @media screen and (max-width: 809px) {
+@media screen and (max-width: 500px) {
   .page-width {
-    width: 460px;
+    width: 92vw;
   }
-} */
+}
 
 /* 320px breakpoint */
-@media screen and (max-width: 320px) { 
+@media screen and (max-width: 320px) {
   .page-width {
-    width: 90vw;
+    width: 87.5vw;
   }
 }
 
