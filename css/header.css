@@ -69,7 +69,7 @@
   padding: .75vw 0;
   text-decoration: none;
   font-family: "Trade Gothic Condensed", sans-serif;
-  font-size: 1vw;
+  font-size: 1.2rem;
   font-weight: normal;
 }
 
@@ -191,7 +191,7 @@
   color: #4b4c4c;
   text-decoration: none;
   font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 1.5vw;
+  font-size: 1.6rem;
 }
 
 @media screen and (max-width: 983px) {
@@ -250,7 +250,7 @@
 
 .header__content__navigation--with-child__child a {
   font-family: "Trade Gothic Condensed", sans-serif;
-  font-size: 1.12vw;
+  font-size: 1.4rem;
   margin-left: 1.333vw;
 }
 

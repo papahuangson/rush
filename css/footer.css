@@ -87,7 +87,7 @@
 .footer__content__item a,
 .footer__content__item label {
   font-family: "Trade Gothic Condensed", sans-serif;
-  font-size: 1.167vw;
+  font-size: 1.4rem;
   line-height: 1.333vw;
   margin-bottom: .95vw;
 }
@@ -176,7 +176,7 @@
   margin-right: .5vw;
   line-height: 1vw;
   color: #e6e7e8;
-  font-size: .9vw;
+  font-size: 1.2rem;
   width: 14.250vw;
   font-family: "Warnock", serif;
 }
@@ -253,7 +253,7 @@
 .footer__content__item__links a {
   display: block;
   font-family: "Trade Gothic Condensed", sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.4rem;
   color: #fff;
   text-decoration: none;
   margin-bottom: 1.2vw;
@@ -408,7 +408,7 @@ a.footer__map-link:hover .footer__hover-icon,
 
 .footer__content__linkedin a {
   font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 1vw;
+  font-size: 1.2rem;
   text-decoration: none;
   color: #fff;
 }
@@ -454,7 +454,7 @@ a.footer__map-link:hover .footer__hover-icon,
 
 .footer__copyright div a {
   font-family: "Warnock", serif;;
-  font-size: 1vw;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 850px) {

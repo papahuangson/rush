@@ -39,7 +39,7 @@
 
 .content__block h2 {
   font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 2.333vw;
+  font-size: 2.8rem;
   text-transform: uppercase;
   margin-bottom: 1vw;
   font-weight: normal;
@@ -95,7 +95,7 @@
 
 .content__heading h1 {
   font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 2.667vw;
+  font-size: 3.2rem;
   text-transform: uppercase;
   font-weight: normal;
   margin-bottom: 2.667vw;
@@ -126,7 +126,7 @@
 
 .content__heading p {
   font-family: "Warnock", serif;
-  font-size: 1.750vw;
+  font-size: 2.1rem;
   margin-bottom: 2vw;
   line-height: 2.667vw;
 }
@@ -166,7 +166,7 @@
   font-family: "Trade Gothic Bold Condensed", sans-serif;
   font-weight: normal;
   padding: 1.333vw 1.333vw 1.083vw 1.333vw;
-  font-size: 1.750vw;
+  font-size: 2.1rem;
   letter-spacing: 0.067vw;
   line-height: 1.50vw;
 }
@@ -229,7 +229,7 @@
 }
 
 .content__image__quote {
-  font-size: 1.750vw;
+  font-size: 2.1rem;
   margin-top: 11.333vw;
   color: rgba(255, 255, 255, .8);
   line-height: 2.667vw;
@@ -264,8 +264,8 @@
   color: #eeb111;
   text-transform: uppercase;
   letter-spacing: .067vw;
-  font-size: 1.750vw;
-  line-height: 2.667;
+  font-size: 2.1rem;
+  line-height: 2.667vw;
 }
 
 @media screen and (max-width: 850px) {
@@ -304,7 +304,7 @@
   background-color: #fff;
   height: 4vw;
   font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 2.333vw;
+  font-size: 2.8rem;
   letter-spacing: 0.058vw;
   text-transform: uppercase;
   line-height: 4vw;
@@ -429,7 +429,7 @@
 }
 
 .home-bg-image p {
-  font-size: 1.750vw;
+  font-size: 2.1rem;
   margin-bottom: 2vw;
   line-height: 2.667vw;
   letter-spacing: -0.025vw;
