@@ -4,7 +4,7 @@
 
 @media screen and (max-width: 850px) {
   .content {
-    margin: 51vw auto 2vw auto;
+    margin: 51vw auto 6vw auto;
   }
 }
 
@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 320px) {
   .content {
-    margin: 85vw 0 16vw 0;
+    margin: 76vw 0 15vw 0;
   }
 }
 
@@ -25,14 +25,20 @@
 }
 
 @media screen and (max-width: 850px) {
-  .content-block {
+  .content__block {
     margin-top: 8vw;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .content-block {
-    margin-top: 8vw;
+  .content__block {
+    margin-top: 9.600vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__block {
+    margin-top: 15vw;
   }
 }
 
@@ -49,26 +55,25 @@
 
 @media screen and (max-width: 850px) {
   .content__block h2 {
-    font-size: 3vw;
+    font-size: 2.4rem;
     margin-bottom: 2vw;
   }
 }
 
 @media screen and (max-width: 500px) {
   .content__block h2 {
-    font-size: 5vw;
-    margin-bottom: 3vw;
+    font-size: 2.4rem;
+    margin-bottom: 2.4vw;
+    line-height: 2.8rem;
+    letter-spacing: .075rem;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .content__block {
-    margin-top: 16vw;
-  }
-
   .content__block h2 {
-    font-size: 7vw;
-    margin-bottom: 5vw;
+    font-size: 2.1rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: .048rem;
   }
 }
 
@@ -93,34 +98,54 @@
   top: 0.3vw;
 }
 
+@media screen and (max-width: 500px) {
+  .content__heading::after {
+    background-size: 1.5rem 2.1rem;
+    width: 1.5rem;
+    height: 2.1rem;
+    left: -3.2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__heading::after {
+    background-size: 1.3rem 1.9rem;
+    width: 1.3rem;
+    height: 1.9rem;
+    left: .8rem;
+    top: 1.1vw;
+  }
+}
+
 .content__heading h1 {
   font-family: "Trade Gothic Bold Condensed", sans-serif;
   font-size: 3.2rem;
   text-transform: uppercase;
   font-weight: normal;
   margin-bottom: 2.667vw;
-  line-height: 3.333vw;
+  line-height: 3.2rem;
+  letter-spacing: .07rem;
 }
 
 @media screen and (max-width: 850px) {
   .content__heading h1 {
-    font-size: 3.4vw;
+    font-size: 2.8rem;
     margin-bottom: 3vw;
+    letter-spacing: .07rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .content__heading h1 {
-    font-size: 5.2vw;
-    margin-bottom: 5vw;
+    font-size: 2.6rem;
+    margin-bottom: 4.8vw;
+    line-height: 3rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   .content__heading h1 {
-    font-size: 7.4vw;
-    margin-left: 25vw;
-    padding-right: 4vw;
+    font-size: 2.4rem;
   }
 }
 
@@ -128,35 +153,51 @@
   font-family: "Warnock", serif;
   font-size: 2.1rem;
   margin-bottom: 2vw;
-  line-height: 2.667vw;
+  line-height: 2.8rem;
 }
 
 @media screen and (max-width: 850px) {
   .content__heading p {
-    font-size: 2vw;
+    font-size: 1.8rem;
     margin-bottom: 2vw;
-    line-height: 3.5vw;
+    line-height: 2.8rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .content__heading p {
-    font-size: 3.5vw;
-    line-height: 5.5vw;
-    margin-bottom: 5vw;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 2.4rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   .content__heading p {
-    font-size: 4.5vw;
-    margin: 8vw 0 4vw;
-    line-height: 7vw;
+    font-size: 1.4rem;
+    margin: 7.5vw 0 4vw;
+    line-height: 2.2rem;
   }
 }
 
 .inner-content {
   margin: 0 7vw;
+}
+
+@media screen and (max-width: 500px) {
+  .inner-content {
+    margin: 0 8vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .inner-content {
+    margin: 0;
+  }
+
+  .inner-content h1 {
+    margin-left: 11.563vw;
+  }
 }
 
 .content__button {
@@ -173,24 +214,26 @@
 
 @media screen and (max-width: 850px) {
   .content__button {
-    padding: 1vw 2vw;
-    font-size: 2.1vw;
-    letter-spacing: .15vw;
+    padding: 1.1rem 3.3rem .9rem 1.6rem;
+    font-size: 1.8rem;
+    letter-spacing: .08rem;
+    line-height: 1.8rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .content__button {
-    font-size: 3.5vw;
-    padding: 1.2vw 4vw;
+    font-size: 1.8rem;
+    padding: 1.1rem 3.3rem .9rem 1.6rem;
     letter-spacing: .1vw;
   }
 }
 
 @media screen and (max-width: 320px) {
   .content__button {
-    font-size: 4.2vw;
-    padding: 2.6vw 6vw;
+    font-size: 1.4rem;
+    padding: 3vw 6vw 2.6vw;
+    letter-spacing: .06rem;
   }
 }
 
@@ -233,29 +276,29 @@
   margin-top: 11.333vw;
   color: rgba(255, 255, 255, .8);
   line-height: 2.667vw;
-  letter-spacing: -0.025vw;
+  letter-spacing: -0.025rem;
 }
 
 @media screen and (max-width: 850px) {
   .content__image__quote {
-    font-size: 2vw;
+    font-size: 1.8rem;
     margin: 10vw 0 .5vw 0;
-    line-height: 3vw;
+    line-height: 2.8rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .content__image--full .content__image__quote {
-    font-size:3.3vw;
-    line-height: 5vw;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     margin: 8vw 0 0 0;
   }
 }
 
 @media screen and (max-width: 320px) {
   .content__image--full .content__image__quote {
-    font-size: 5.4vw;
-    line-height: 8vw;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
     margin: 0;
   }
 }
@@ -270,8 +313,8 @@
 
 @media screen and (max-width: 850px) {
   .content__image__attribution {
-    letter-spacing: .15vw;
-    font-size: 2.1vw;
+    letter-spacing: .06rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -285,8 +328,8 @@
 
 @media screen and (max-width: 320px) {
   .content__image__attribution {
-    letter-spacing: .04vw;
-    font-size: 5.5vw;
+    letter-spacing: .06rem;
+    font-size: 1.8rem;
     margin-top: 4vw;
   }
 }
@@ -315,7 +358,7 @@
 
 @media screen and (max-width: 850px) {
   .in-the-news__header__title {
-    font-size: 3vw;
+    font-size: 2.8rem;
   }
 }
 
@@ -408,7 +451,7 @@
 @media screen and (max-width: 500px) {
   .home-bg-image {
     height: unset;
-    background-size: 80vw;
+    background-size: 91vw;
   }
 }
 
@@ -437,23 +480,28 @@
 
 @media screen and (max-width: 850px) {
   .home-bg-image p {
-    font-size: 2.2vw;
-    margin-bottom: 2.5vw;
+    font-size: 1.8rem;
+    margin-bottom: 2.3rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.025rem;
   }
 }
 
 @media screen and (max-width: 500px) {
   .home-bg-image p {
-    font-size: 3.5vw;
-    margin-bottom: 3vw;
-    line-height: 5.5vw;
+    font-size: 1.8rem;
+    margin-bottom: 2.4vw;
+    line-height: 2.8rem;
+    letter-spacing: -.025rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   .home-bg-image p {
-    font-size: 4.5vw;
-    margin-bottom: 4vw;
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: -.02rem;
+    line-height: 2.2rem;
   }
 }
 
@@ -481,11 +529,13 @@
     display: block;
   }
 
-  .home-bg-image .flex--50 {
+  .home-bg-image .flex--50,
+  .home-bg-image .flex--40,
+  .home-bg-image .flex--60 {
     width: 100%;
   }
 
-  .home-bg-image .flex--50 .justify-bottom {
+  .home-bg-image .justify-bottom {
     position: unset;
     margin-bottom: 0;
     padding-top: 64vw;
@@ -497,18 +547,24 @@
     display: block;
   }
 
-  .content__image--full .flex--50 {
+  .content__image--full .flex--50,
+  .content__image--full .flex--40,
+  .content__image--full .flex--60 {
     width: 100%;
   }
 
-  .content__image--full .flex--50:first-child {
+  .content__image--full .flex--50:first-child,
+  .content__image--full .flex--40:first-child,
+  .content__image--full .flex--60:first-child {
     padding-top: 12vw;
   }
 
   .home-bg-image .flex {
     display: block;
   }
-  .home-bg-image .flex--50 {
+  .home-bg-image .flex--50,
+  .home-bg-image .flex--40,
+  .home-bg-image .flex--60 {
     width: 100%;
   }
 }

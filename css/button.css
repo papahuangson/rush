@@ -9,7 +9,6 @@ button {
 
 .button__yellow {
   background-color: #eeb111;
-  border-radius: 2px;
   border: none;
   color: #111;
   text-transform: uppercase;
@@ -29,6 +28,13 @@ button.arrow--gold {
   padding-right: 3.5vw;
 }
 
+@media screen and (max-width: 500px) {
+  button.arrow--white,
+  button.arrow--gold {
+  padding-right: 3rem;
+}
+}
+
 button.arrow--white:after,
 button.arrow--gold:after {
   content: "";
@@ -40,6 +46,36 @@ button.arrow--gold:after {
   display: inline-block;
   background-size: 1vw 2vw;
   background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 850px) {
+  button.arrow--white:after,
+  button.arrow--gold:after {
+    height: 2rem;
+    top: .9rem;
+    right: 1rem;
+    background-size: 1rem 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  button.arrow--white:after,
+  button.arrow--gold:after {
+    height: 1.8rem;
+    top: 1rem;
+    background-size: 1.2rem 1.8rem;
+    width: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  button.arrow--white:after,
+  button.arrow--gold:after {
+    height: 1.8rem;
+    top: 1rem;
+    background-size: 1.1rem 1.6rem;
+    width: 1.1rem;
+  }
 }
 
 button.arrow--gold:after {

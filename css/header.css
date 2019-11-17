@@ -76,7 +76,7 @@
 @media screen and (max-width: 850px) {
   .header__top-bar__content a {
     padding: .8vw 0;
-    font-size: 1.2vw;
+    font-size: 1.2rem;
   }
 }
 
@@ -85,12 +85,12 @@
 }
 
 .header__top-bar__content a img {
-  height: 1vw;
+  height: 1.4rem;
 }
 
 @media screen and (max-width: 850px) {
   .header__top-bar a img {
-    height: 1.4vw;
+    height: 1.2rem;
   }
 }
 
@@ -125,9 +125,15 @@
   margin: 2vw 0;
 }
 
+@media screen and (max-width: 500px) {
+  .header__content__logo {
+    margin: 3.200vw 0;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .header__content__logo {
-    margin: 4vw 0 4vw;
+    margin: 5vw 0;
     width: 22vw;
   }
 }
@@ -175,13 +181,13 @@
   margin-top: 3.583vw;
 }
 
-@media screen and (max-width: 809px) {
+@media screen and (max-width: 500px) {
   .header__content__navigation {
     display: none;
   }
 }
 
-@media screen and (max-width: 983px) {
+@media screen and (max-width: 850px) {
   .header__content__navigation {
     margin-top: 2.667vw;
   }
@@ -194,27 +200,21 @@
   font-size: 1.6rem;
 }
 
-@media screen and (max-width: 983px) {
-  .header__content__navigation a {
-    font-size: 1.333vw;
-  }
-}
-
 @media screen and (max-width: 850px) {
   .header__content__navigation a {
-    font-size: 1.8vw;
+    font-size: 1.6rem;
   }
 }
 
 .header__content__navigation a img {
-  margin-bottom: .3vw;
-  height: .417vw;
+  margin-bottom: .4rem;
+  height: .5rem;
 }
 
 @media screen and (max-width: 850px) {
   .header__content__navigation a img {
-    margin-bottom: .4vw;
-    height: .6vw;
+    margin-bottom: .3rem;
+    height: .5rem;
   }
 }
 
@@ -227,35 +227,17 @@
 }
 
 .header__content__navigation--with-child {
-  margin-top: 2.15vw;
-}
-
-@media screen and (max-width: 983px) {
-  .header__content__navigation--with-child {
-    margin-top: 1.583vw;
-  }
+  margin-top: 2.583vw;
 }
 
 .header__content__navigation--with-child__child {
-  margin-top: .75vw;
+  margin-top: 1.3rem;
   display: flex;
   justify-content: flex-end;
 }
 
-@media screen and (max-width: 983px) {
-  .header__content__navigation--with-child__child {
-    margin-top: 0.667vw;
-  }
-}
-
 .header__content__navigation--with-child__child a {
   font-family: "Trade Gothic Condensed", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin-left: 1.333vw;
-}
-
-@media screen and (max-width: 850px) {
-  .header__content__navigation--with-child__child a {
-    font-size: 1.6vw;
-  }
 }
