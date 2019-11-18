@@ -1,40 +1,14 @@
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 body {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
-
-
-/* h1 {
-  font-size: calc(24px + (32 - 24) * ((100vw - 320px) / (1200 - 320))) !important;
-}
-
-h2 {
-  font-size: calc(21px + (28 - 21) * ((100vw - 320px) / (1200 - 320))) !important;
-}
-
-.header__content__navigation a {
-  font-size: calc(16px + (18 - 16) * ((100vw - 850px) / (1200 - 850))) !important;
-}
-
-.header__content__navigation--with-child__child a {
-  font-size: calc(16px + (18 - 16) * ((100vw - 850px) / (1200 - 850))) !important;
-}
-
-.content__button {
-  font-size: calc(21px + (21 - 14) * ((100vw - 320px) / (1200 - 320))) !important;
-} */
-
-
-
-
 
 .bg-polygon {
   position: absolute;

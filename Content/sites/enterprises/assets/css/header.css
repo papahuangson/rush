@@ -66,7 +66,7 @@
 
 .header__top-bar__content a {
   color: #fff;
-  padding: .75vw 0;
+  padding: .65vw 0;
   text-decoration: none;
   font-family: "Trade Gothic Condensed", sans-serif;
   font-size: 1.2rem;
@@ -112,7 +112,7 @@
 
 .header__top-bar__content a img {
   margin-right: 0.333vw;
-  margin-bottom: -1px;
+  margin-bottom: -2px;
 }
 
 .header__content {
