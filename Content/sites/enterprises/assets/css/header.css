@@ -3,7 +3,7 @@
 }
 
 /* .header__polygon {
-  background-image: url("../assets/images/rush-paralellogram-watermark.png");
+  background-image: url("../Content/sites/enterprises/assets/images/rush-paralellogram-watermark.png");
   position: absolute;
   top: 47px;
   left: -120px;
@@ -15,7 +15,7 @@
 
 /* @media screen and (max-width: 983px) {
   .header__polygon {
-    background-image: url("../assets/images/rush-paralellogram-watermark.png");
+    background-image: url("../Content/sites/enterprises/assets/images/rush-paralellogram-watermark.png");
     background-size: 127px 86px;
     background-repeat: no-repeat;
     top: 51px;

@@ -1,0 +1,41 @@
+.hero {
+  overflow: hidden;
+  position: absolute;
+  top: 5vw;
+  z-index: -1;
+  width: 100vw;
+}
+
+@media screen and (max-width: 850px) {
+  .hero {
+    top: 7vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero {
+    top: 10.4vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero {
+    top: 15vw;
+  }
+}
+
+.hero__image {
+  width: 100vw;
+  height: 58vw;
+  background-image: url("../images/Hero.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+@media screen and (max-width: 320px) {
+  .hero__image {
+    height: 87vw;
+    background-size: 157vw;
+  }
+}

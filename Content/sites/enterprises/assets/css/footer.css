@@ -126,29 +126,6 @@
   }
 }
 
-.footer__content__contact-button {
-  margin-right: .5vw;
-  border-radius: 0;
-}
-
-@media screen and (max-width: 850px) {
-  .footer__content__contact-button {
-    margin-right: 1vw;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .footer__content__contact-button {
-    margin-right: 2vw;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .footer__content__contact-button {
-    margin-right: 1.2rem;
-  }
-}
-
 .footer__content__item input,
 .footer__content__item button {
   vertical-align: top;
@@ -187,9 +164,9 @@
 .footer__content__item input {
   background: none;
   border: 1px solid #939598;
-  padding: .5vw .8vw;
+  padding: .6rem .8rem .3rem;
   margin-right: .5vw;
-  line-height: 1vw;
+  line-height: 1.6rem;
   color: #e6e7e8;
   font-size: 1.2rem;
   width: 14.250vw;
@@ -350,19 +327,7 @@
 }
 
 .footer__map-link img {
-  height: 1vw;
-}
-
-@media screen and (max-width: 500px) {
-  .footer__map-link img {
-    height: 2.4vw;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .footer__map-link img {
-    height: 1.2rem;
-  }
+  height: 1.2rem;
 }
 
 a.footer__map-link:hover {
@@ -391,6 +356,7 @@ a.footer__map-link:hover .footer__hover-icon,
 
 .footer__content__linkedin img {
   margin-top: .5vw;
+  margin-left: .5vw;
   vertical-align: text-bottom;
   height: 1.167vw;
 }
@@ -398,6 +364,7 @@ a.footer__map-link:hover .footer__hover-icon,
 @media screen and (max-width: 850px) {
   .footer__content__linkedin img {
     height: 1.7vw;
+    margin-left: 1vw;
   }
 }
 
@@ -405,6 +372,7 @@ a.footer__map-link:hover .footer__hover-icon,
   .footer__content__linkedin img {
     margin-top: 1vw;
     height: 1.4rem;
+    margin-left: 2vw;
   }
 }
 
@@ -413,6 +381,7 @@ a.footer__map-link:hover .footer__hover-icon,
     margin-top: 1.5vw;
     vertical-align: text-bottom;
     height: 1.4rem;
+    margin-left: 2vw;
   }
 }
 

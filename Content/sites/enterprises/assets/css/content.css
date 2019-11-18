@@ -42,41 +42,6 @@
   }
 }
 
-
-.content__block h2 {
-  font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 2.8rem;
-  text-transform: uppercase;
-  margin-bottom: 1vw;
-  font-weight: normal;
-  letter-spacing: .058vw;
-  color: #111;
-}
-
-@media screen and (max-width: 850px) {
-  .content__block h2 {
-    font-size: 2.4rem;
-    margin-bottom: 2vw;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .content__block h2 {
-    font-size: 2.4rem;
-    margin-bottom: 2.4vw;
-    line-height: 2.8rem;
-    letter-spacing: .075rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .content__block h2 {
-    font-size: 2.1rem;
-    margin-bottom: 1.2rem;
-    letter-spacing: .048rem;
-  }
-}
-
 .content__block p {
   font-family: "Trade Gothic Condensed", serif;
 }
@@ -87,7 +52,7 @@
 
 .content__heading::after {
   position: absolute;
-  background-image: url('../assets/svg/right-arrow-gold.svg');
+  background-image: url('../svg/right-arrow-gold.svg');
   background-size: 1.583vw 2.417vw;
   background-repeat: no-repeat;
   content: "";
@@ -117,69 +82,6 @@
   }
 }
 
-.content__heading h1 {
-  font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 3.2rem;
-  text-transform: uppercase;
-  font-weight: normal;
-  margin-bottom: 2.667vw;
-  line-height: 3.2rem;
-  letter-spacing: .07rem;
-}
-
-@media screen and (max-width: 850px) {
-  .content__heading h1 {
-    font-size: 2.8rem;
-    margin-bottom: 3vw;
-    letter-spacing: .07rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .content__heading h1 {
-    font-size: 2.6rem;
-    margin-bottom: 4.8vw;
-    line-height: 3rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .content__heading h1 {
-    font-size: 2.4rem;
-  }
-}
-
-.content__heading p {
-  font-family: "Warnock", serif;
-  font-size: 2.1rem;
-  margin-bottom: 2vw;
-  line-height: 2.8rem;
-}
-
-@media screen and (max-width: 850px) {
-  .content__heading p {
-    font-size: 1.8rem;
-    margin-bottom: 2vw;
-    line-height: 2.8rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .content__heading p {
-    font-size: 1.8rem;
-    line-height: 2.8rem;
-    margin-bottom: 2.4rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .content__heading p {
-    font-size: 1.4rem;
-    margin: 7.5vw 0 4vw;
-    line-height: 2.2rem;
-  }
-}
-
 .inner-content {
   margin: 0 7vw;
 }
@@ -197,43 +99,6 @@
 
   .inner-content h1 {
     margin-left: 11.563vw;
-  }
-}
-
-.content__button {
-  color: #111;
-  text-transform: uppercase;
-  border-radius: 2px;
-  font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-weight: normal;
-  padding: 1.333vw 1.333vw 1.083vw 1.333vw;
-  font-size: 2.1rem;
-  letter-spacing: 0.067vw;
-  line-height: 1.50vw;
-}
-
-@media screen and (max-width: 850px) {
-  .content__button {
-    padding: 1.1rem 3.3rem .9rem 1.6rem;
-    font-size: 1.8rem;
-    letter-spacing: .08rem;
-    line-height: 1.8rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .content__button {
-    font-size: 1.8rem;
-    padding: 1.1rem 3.3rem .9rem 1.6rem;
-    letter-spacing: .1vw;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .content__button {
-    font-size: 1.4rem;
-    padding: 3vw 6vw 2.6vw;
-    letter-spacing: .06rem;
   }
 }
 
@@ -400,7 +265,7 @@
 }
 
 .in-the-news__header__triangle {
-  background-image: url('../assets/images/news-triangle.png');
+  background-image: url('../images/news-triangle.png');
   background-repeat: no-repeat;
   background-position: top right;
   background-size: 3.5vw 4vw;
@@ -471,44 +336,10 @@
   background-position: top right;
 }
 
-.home-bg-image p {
-  font-size: 2.1rem;
-  margin-bottom: 2vw;
-  line-height: 2.667vw;
-  letter-spacing: -0.025vw;
-}
-
-@media screen and (max-width: 850px) {
-  .home-bg-image p {
-    font-size: 1.8rem;
-    margin-bottom: 2.3rem;
-    line-height: 2.8rem;
-    letter-spacing: -0.025rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .home-bg-image p {
-    font-size: 1.8rem;
-    margin-bottom: 2.4vw;
-    line-height: 2.8rem;
-    letter-spacing: -.025rem;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .home-bg-image p {
-    font-size: 1.4rem;
-    margin-bottom: 1.2rem;
-    letter-spacing: -.02rem;
-    line-height: 2.2rem;
-  }
-}
-
 .justify-bottom {
   position: absolute;
   bottom: 0;
-  margin-bottom: 12vw;
+  margin: 0 0 12vw 0;
 }
 
 @media screen and (max-width: 320px) {

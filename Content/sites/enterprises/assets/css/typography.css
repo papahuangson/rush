@@ -1,0 +1,172 @@
+html {
+  font-size: 62.5%;
+    /* font-size: calc(62.5% * 1vw); */
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  letter-spacing: .07rem;
+  margin-bottom: 2.667vw;
+  font-family: "Trade Gothic Bold Condensed", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: #111;
+}
+
+@media screen and (max-width: 850px) {
+  h1 {
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 3vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    margin-bottom: 4.8vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+}
+
+h2 {
+  font-family: "Trade Gothic Bold Condensed", sans-serif;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin-bottom: 1vw;
+  font-weight: normal;
+  letter-spacing: .058vw;
+  color: #111;
+}
+
+@media screen and (max-width: 850px) {
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2.4vw;
+    line-height: 2.8rem;
+    letter-spacing: .075rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h2 {
+    font-size: 2.1rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: .048rem;
+  }
+}
+
+.content__button {
+  padding: 1.333vw 1.333vw 1.083vw 1.333vw;
+  color: #111;
+  text-transform: uppercase;
+  font-family: "Trade Gothic Bold Condensed", sans-serif;
+  font-weight: normal;
+  font-size: 2.1rem;
+  letter-spacing: 0.067vw;
+  line-height: 1.50vw;
+}
+
+@media screen and (max-width: 850px) {
+  .content__button {
+    padding: 1.1rem 3.3rem .9rem 1.6rem;
+    font-size: 1.8rem;
+    letter-spacing: .08rem;
+    line-height: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content__button {
+    font-size: 1.8rem;
+    padding: 1.1rem 3.3rem .9rem 1.6rem;
+    letter-spacing: .1vw;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__button {
+    font-size: 1.4rem;
+    padding: 3vw 6vw 2.6vw;
+    letter-spacing: .06rem;
+  }
+}
+
+p {
+  font-size: 2.1rem;
+  margin-bottom: 2vw;
+  line-height: 2.667vw;
+  letter-spacing: -0.025vw;
+}
+
+@media screen and (max-width: 850px) {
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 2.3rem;
+    line-height: 2.8rem;
+    letter-spacing: -0.025rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  p {
+    font-size: 1.8rem;
+    margin-bottom: 2.4vw;
+    line-height: 2.8rem;
+    letter-spacing: -.025rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  p {
+    font-size: 1.4rem;
+    margin-bottom: 1.2rem;
+    letter-spacing: -.02rem;
+    line-height: 2.2rem;
+  }
+}
+
+.content__heading p {
+  font-family: "Warnock", serif;
+  font-size: 2.1rem;
+  margin-bottom: 2vw;
+  line-height: 2.8rem;
+}
+
+@media screen and (max-width: 850px) {
+  .content__heading p {
+    font-size: 1.8rem;
+    margin-bottom: 2vw;
+    line-height: 2.8rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .content__heading p {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-bottom: 2.4rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content__heading p {
+    font-size: 1.4rem;
+    margin: 7.5vw 0 4vw;
+    line-height: 2.2rem;
+  }
+}

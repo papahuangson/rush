@@ -91,7 +91,6 @@
   position: fixed;
   width: 100%;
   background-color: rgba(230, 231, 232, .75);
-
 }
 
 .mobile__drawer--hide {
@@ -133,14 +132,12 @@
 
 .mobile__drawer__body__navigation ul {
   list-style-type: none;
-  /* padding: 0.833vw 0; */
 }
 
 .mobile__drawer__body__navigation ul li {
   list-style-type: none;
   border-left: 3px solid white;
   padding: 1.5rem 0 1.3rem;
-  /* margin: 10px 0; */
 }
 
 .mobile__drawer__body__navigation ul li a {
@@ -201,18 +198,6 @@ ul.mobile__drawer__body__navigation__item__child--list {
   font-size: 1.6rem;
   color: #111;
   text-decoration: none;
-}
-
-/* .mobile__drawer__body__navigation__item__child {
-  padding: 8px 0 8px 29px;
-} */
-
-.mobile__drawer__body__navigation__item--child:last-child {
-  /* padding-bottom: 15px; */
-}
-
-.mobile__drawer__body__navigation__item--child a {
-  
 }
 
 .mobile__drawer__footer {
