@@ -73,7 +73,7 @@
 
 @media screen and (max-width: 850px) {
   .footer__content__item {
-    width: 188px;
+    width: 21.882vw;
   }
 }
 
@@ -164,9 +164,9 @@
 .footer__content__item input {
   background: none;
   border: 1px solid #939598;
-  padding: .6rem .8rem .3rem;
+  padding: 0.588vw 0.941vw;
   margin-right: .5vw;
-  line-height: 1.6rem;
+  line-height: 0.6rem;
   color: #e6e7e8;
   font-size: 1.2rem;
   width: 14.250vw;

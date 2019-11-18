@@ -1,7 +1,72 @@
 html {
   font-size: 62.5%;
-    /* font-size: calc(62.5% * 1vw); */
   font-family: "Trade Gothic Condensed", serif;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 54%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media screen and (max-width: 555px) {
+  html {
+    font-size: 41%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  html {
+    font-size: 39%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 44%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 62.5%;
+  }
 }
 
 h1 {
