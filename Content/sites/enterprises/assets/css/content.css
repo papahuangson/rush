@@ -1,10 +1,10 @@
 .content {
-  margin: 50vw auto 8vw auto;
+  margin: 48vw auto 8vw auto;
 }
 
 @media screen and (max-width: 850px) {
   .content {
-    margin: 51vw auto 6vw auto;
+    margin: 50vw auto 6vw auto;
   }
 }
 
