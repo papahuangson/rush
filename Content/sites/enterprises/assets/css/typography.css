@@ -15,6 +15,12 @@ html {
   }
 }
 
+@media screen and (max-width: 790px) {
+  html {
+    font-size: 55%;
+  }
+}
+
 @media screen and (max-width: 690px) {
   html {
     font-size: 50%;

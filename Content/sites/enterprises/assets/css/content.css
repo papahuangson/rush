@@ -42,10 +42,6 @@
   }
 }
 
-.content__block p {
-  font-family: "Trade Gothic Condensed", serif;
-}
-
 .content__heading {
   position: relative;
 }
@@ -340,6 +336,12 @@
   position: absolute;
   bottom: 0;
   margin: 0 0 12vw 0;
+}
+
+@media screen and (max-width: 500px) {
+  .justify-bottom {
+  margin: 0 8vw;
+  }
 }
 
 @media screen and (max-width: 320px) {
