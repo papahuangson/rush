@@ -13,7 +13,7 @@
 
 @media screen and (max-width: 500px) {
   .footer {
-    padding: 8.125vw 0;
+    padding: 5.5vw 0;
   }
 }
 
@@ -349,6 +349,9 @@ a.footer__map-link:hover .footer__hover-icon,
   display: inline;
 }
 
+.form-spacing {
+  margin-top: 1.5rem;
+}
 
 .footer__content__linkedin {
   display: inline;

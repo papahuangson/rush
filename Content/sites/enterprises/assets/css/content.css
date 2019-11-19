@@ -1,10 +1,10 @@
 .content {
-  margin: 50vw auto 8vw auto;
+  margin: 48vw auto 8vw auto;
 }
 
 @media screen and (max-width: 850px) {
   .content {
-    margin: 51vw auto 6vw auto;
+    margin: 50vw auto 6vw auto;
   }
 }
 
@@ -40,10 +40,6 @@
   .content__block {
     margin-top: 15vw;
   }
-}
-
-.content__block p {
-  font-family: "Trade Gothic Condensed", serif;
 }
 
 .content__heading {
@@ -340,6 +336,12 @@
   position: absolute;
   bottom: 0;
   margin: 0 0 12vw 0;
+}
+
+@media screen and (max-width: 500px) {
+  .justify-bottom {
+  margin: 0 8vw;
+  }
 }
 
 @media screen and (max-width: 320px) {
