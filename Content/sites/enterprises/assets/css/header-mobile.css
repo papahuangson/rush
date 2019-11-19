@@ -1,4 +1,5 @@
-.header__mobile {
+.header__mobile,
+.mobile__drawer {
   display: none;
 }
 
@@ -101,6 +102,12 @@
   display: block;
 }
 
+@media screen and (min-width: 501px) {
+  .mobile__drawer {
+    display: none;
+  }
+}
+
 .mobile__drawer .header__mobile {
   position: absolute;
   z-index: 5;
@@ -137,11 +144,12 @@
 .mobile__drawer__body__navigation ul li {
   list-style-type: none;
   border-left: 3px solid white;
-  padding: 1.5rem 0 1.3rem;
+  padding: .5rem 0 .3rem;
 }
 
 .mobile__drawer__body__navigation ul li a {
-  padding: 0 1.7rem;
+  padding: 1rem 1.7rem;
+  display: block;
 }
 
 .mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation--divider {
@@ -155,14 +163,14 @@ ul.mobile__drawer__body__navigation__item__child--list {
 }
 
 .mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation__item__child {
-  padding: 1vw 2.417vw;
+  padding: 0 2.417vw;
 }
 
 .mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation__item__child a {
   font-family: "Trade Gothic Condensed", sans-serif;
   font-size: 1.4rem;
   letter-spacing: .026rem;
-  line-height: 2rem;
+  line-height: 1.4rem;
 }
 
 .mobile__drawer__body__navigation__item {

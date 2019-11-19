@@ -52,41 +52,90 @@
           <img src="Content/sites/enterprises/assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Locations" />
         </a>
         <div class="header__mobile__divider"></div>
-        <button class="header__mobile__icon" id="expand-mobile">
+        <button class="header__mobile__icon" id="expand-mobile" aria-expanded="false">
           <img src="Content/sites/enterprises/assets/svg/menu-mobile-gray.svg" class="header__mobile__icon--base" aria-label="Expand Mobile Menu" />
           <img src="Content/sites/enterprises/assets/svg/menu-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Expand Mobile Menu" />
       </button>
     </nav>
       <!-- End Mobile Navigation -->
-
+      
       <!-- Start Desktop Navigation -->
       <nav class="header__content__navigation header__content__navigation--with-child" role="navigation">
-        <a href="#" class="selected container">
-          Our Story
-          <img src="Content/sites/enterprises/assets/svg/down-caret-black.svg" aria-label="Expand Sub Navigation" />
-          <span class="ribbon"></span>
-        </a>
-        <a href="#" class="container">
-          Our Businesses
-          <span class="ribbon"></span>
-        </a>
-        <a href="#" class="container">
-          Investor Relations
-          <span class="ribbon"></span>
-        </a>
-        <a href="#" class="container">
-          Corporate Responsibility
-          <span class="ribbon"></span>
-        </a>
-        <a href="#" class="container">
-          Careers
-          <span class="ribbon"></span>
-        </a>
-        <a href="#" class="container">
-          News
-          <img src="Content/sites/enterprises/assets/svg/down-caret-black.svg" aria-label="Expand Sub Navigation" />
-          <span class="ribbon"></span>
-        </a>
+        <ul class="header__content__navigation--top-level">
+          <li class="header__content__navigation--top-level__link">
+            <a href="#" class="selected container" onclick="toggleMenu(event, 'dropdown1')">
+              Our Story
+              <img src="Content/sites/enterprises/assets/svg/down-caret-black.svg" aria-label="Expand Sub Navigation" />
+
+              <span class="ribbon"></span>
+            </a>
+
+              <div class="dropdown-menu" id="dropdown1" style="display: none;">
+                <ul>
+                  <li>
+                    <a href="#">Overview</a>
+                  </li>
+                  <li>
+                    <a href="#">Strategic Vision</a>
+                  </li>
+                  <li>
+                    <a href="#">Culture and Values</a>
+                  </li>
+                  <li>
+                    <a href="#">Corporate Citizenship</a>
+                  </li>
+                </ul>
+              </div>
+
+          </li>
+          <li class="header__content__navigation--top-level__link">
+              <a href="#" class="container">
+              Our Businesses
+              <span class="ribbon"></span>
+            </a>
+          </li>
+          <li class="header__content__navigation--top-level__link">
+              <a href="#" class="container">
+              Investor Relations
+              <span class="ribbon"></span>
+            </a>
+          </li>
+          <li class="header__content__navigation--top-level__link">
+              <a href="#" class="container">
+              Corporate Responsibility
+              <span class="ribbon"></span>
+            </a>
+          </li>
+          <li class="header__content__navigation--top-level__link">
+              <a href="#" class="container">
+              Careers
+              <span class="ribbon"></span>
+            </a>
+          </li>
+          <li class="header__content__navigation--top-level__link">
+              <a href="#" class="container" onclick="toggleMenu(event, 'dropdown2')" aria-expanded="false">
+              News
+              <img src="Content/sites/enterprises/assets/svg/down-caret-black.svg" aria-label="Expand Sub Navigation" />
+              <span class="ribbon"></span>
+            </a>
+            <div class="dropdown-menu" id="dropdown2" style="display: none;">
+                <ul>
+                  <li>
+                    <a href="#">News Item 1</a>
+                  </li>
+                  <li>
+                    <a href="#">News Item 2</a>
+                  </li>
+                  <li>
+                    <a href="#">News Item 3</a>
+                  </li>
+                  <li>
+                    <a href="#">News Item 4</a>
+                  </li>
+                </ul>
+              </div>
+          </li>
+        </ul>
         <div class="header__content__navigation--with-child__child">
           <a href="#" class="container selected">Overview<span class="ribbon"></span></a>
           <a href="#" class="container">Strategic Vision<span class="ribbon"></span></a>
@@ -125,11 +174,11 @@
         <nav class="mobile__drawer__body__navigation">
           <ul>
             <li class="mobile__drawer__body__navigation__item">
-              <a href="#">Our Story</a>
-              <button class="mobile__drawer__body__navigation__item__expand-control" onclick="toggleMobileSubNav('our-story')">
-                <img src="Content/sites/enterprises/assets/svg/collapse-mobile-gray.svg" id="our-story--hide" class="hide" aria-label="Collapse Sub Navigation" aria-pressed="true" />
-                <img src="Content/sites/enterprises/assets/svg/expand-mobile-gray.svg" id="our-story--show" aria-label="Expand Sub Navigation" aria-pressed="false"/>
-              </button>
+              <a href="#" onclick="toggleMobileSubNav(event, 'our-story')" aria-expanded="false" aria-label="Toggle Sub Navigation">
+                Our Story
+                <img src="Content/sites/enterprises/assets/svg/collapse-mobile-gray.svg" id="our-story--hide" class="hide mobile__drawer__body__navigation__item__expand-control" />
+                <img src="Content/sites/enterprises/assets/svg/expand-mobile-gray.svg" id="our-story--show" class="mobile__drawer__body__navigation__item__expand-control" />
+              </a>
             </li>
             <ul class="mobile__drawer__body__navigation__item__child--list hide" id="our-story">
               <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item--selected mobile__drawer__body__navigation__item__child">
@@ -166,11 +215,11 @@
             <li class="mobile__drawer__body__navigation--divider"></li>
 
             <li class="mobile__drawer__body__navigation__item">
-              <a href="#">News</a>
-              <button class="mobile__drawer__body__navigation__item__expand-control" onclick="toggleMobileSubNav('news')">
-                <img src="Content/sites/enterprises/assets/svg/collapse-mobile-gray.svg" id="news--hide" class="hide" aria-label="Collapse Sub Navigation" />
-                <img src="Content/sites/enterprises/assets/svg/expand-mobile-gray.svg" id="news--show" aria-label="Expand Sub Navigation" />
-              </button>
+              <a href="#" onclick="toggleMobileSubNav(event, 'news')" aria-expanded="false" aria-label="Toggle Sub Navigation">
+                News
+                <img src="Content/sites/enterprises/assets/svg/collapse-mobile-gray.svg" id="news--hide" class="mobile__drawer__body__navigation__item__expand-control hide" />
+                <img src="Content/sites/enterprises/assets/svg/expand-mobile-gray.svg" id="news--show" class="mobile__drawer__body__navigation__item__expand-control" />
+              </a>
             </li>
             <ul class="mobile__drawer__body__navigation__item__child--list hide" id="news">
               <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
@@ -396,6 +445,7 @@
       <img src="Content/sites/enterprises/assets/svg/tagline-yellow.svg" aria-label="Expect More - Tagline" />
   </div>
 
+  <script src="Content/sites/enterprises/assets/js/dropdownMenu.js" type="text/javascript"></script>
   <script src="Content/sites/enterprises/assets/js/footerMenu.js" type="text/javascript"></script>
   <script src="Content/sites/enterprises/assets/js/mobileMenu.js" type="text/javascript"></script>
 </body>
