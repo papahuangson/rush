@@ -138,20 +138,31 @@ const mobileLinks = [
   },
 ];
 
-links.map(link => {
-  var a = document.createElement('a');
-  var linkText = document.createTextNode(link.name);
-  a.appendChild(linkText);
-  a.title = link.name;
-  a.href = link.url;
-  return document.getElementsByClassName('footer__content__item__links')[0].appendChild(a);
-});
+function generateDesktopFooterLinks(list) {
+  list.map(link => {
+    var a = document.createElement('a');
+    var linkText = document.createTextNode(link.name);
+    a.appendChild(linkText);
+    a.title = link.name;
+    a.href = link.url;
+    return document.getElementById('footer-links').appendChild(a);
+  });
+}
 
-mobileLinks.map(link => {
-  var a = document.createElement('a');
-  var linkText = document.createTextNode(link.name);
-  a.appendChild(linkText);
-  a.title = link.name;
-  a.href = link.url;
-  return document.getElementsByClassName('footer__content__item__links--mobile')[0].appendChild(a);
-});
+function generateMobileFooterLinks(list) {
+  list.map(link => {
+    var a = document.createElement('a');
+    var linkText = document.createTextNode(link.name);
+    a.appendChild(linkText);
+    a.title = link.name;
+    a.href = link.url;
+    return document.getElementById('footer-links--mobile').appendChild(a);
+  });
+}
+
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    generateDesktopFooterLinks,
+    generateMobileFooterLinks
+  };
+}
