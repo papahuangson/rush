@@ -42,10 +42,6 @@
   }
 }
 
-.content__block p {
-  font-family: "Trade Gothic Condensed", serif;
-}
-
 .content__heading {
   position: relative;
 }
@@ -211,9 +207,9 @@
 .in-the-news__header__title {
   background-color: #fff;
   height: 4vw;
-  font-family: "Trade Gothic Bold Condensed", sans-serif;
-  font-size: 2.8rem;
-  letter-spacing: 0.058vw;
+
+
+
   text-transform: uppercase;
   line-height: 4vw;
   padding-right: 2vw;
@@ -223,23 +219,23 @@
 
 @media screen and (max-width: 850px) {
   .in-the-news__header__title {
-    font-size: 2.8rem;
+
   }
 }
 
 @media screen and (max-width: 500px) {
   .in-the-news__header__title {
-    font-size: 5vw;
+
     height: 10vw;
-    line-height: 10vw;
+
   }
 }
 
 @media screen and (max-width: 320px) {
   .in-the-news__header__title {
-    font-size: 7vw;
+
     height: 19vw;
-    line-height: 19vw;
+
   }
 }
 

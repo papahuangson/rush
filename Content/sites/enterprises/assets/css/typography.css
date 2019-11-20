@@ -102,7 +102,8 @@ h1 {
   }
 }
 
-h2 {
+h2,
+.in-the-news__header__title {
   font-family: "Trade Gothic Bold Condensed", sans-serif;
   font-size: 2.8rem;
   text-transform: uppercase;
@@ -113,14 +114,16 @@ h2 {
 }
 
 @media screen and (max-width: 850px) {
-  h2 {
+  h2,
+  .in-the-news__header__title {
     font-size: 2.4rem;
     margin-bottom: 2vw;
   }
 }
 
 @media screen and (max-width: 500px) {
-  h2 {
+  h2,
+  .in-the-news__header__title {
     font-size: 2.4rem;
     margin-bottom: 2.4vw;
     line-height: 2.8rem;
@@ -129,7 +132,8 @@ h2 {
 }
 
 @media screen and (max-width: 320px) {
-  h2 {
+  h2,
+  .in-the-news__header__title {
     font-size: 2.1rem;
     margin-bottom: 1.2rem;
     letter-spacing: .048rem;
@@ -210,7 +214,7 @@ p {
   font-family: "Warnock", serif;
   font-size: 2.1rem;
   margin-bottom: 2vw;
-  line-height: 2.8rem;
+  line-height: 3.2rem;
 }
 
 @media screen and (max-width: 850px) {

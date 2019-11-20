@@ -1,7 +1,7 @@
 .hero {
   overflow: hidden;
   position: absolute;
-  top: 5vw;
+  top: 6vw;
   z-index: -1;
   width: 100vw;
 }
