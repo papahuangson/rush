@@ -25,11 +25,10 @@ function toggleMobileSubNav(event, subNavTitle) {
   document.getElementById(`${subNavTitle}--show`).classList.toggle('hide');
 }
 
-window.onload = function() {
-  document.getElementById('expand-mobile').addEventListener('click', openDrawer);
-  document.getElementById('close-mobile').addEventListener('click', closeDrawer);
-  document.getElementsByClassName('mobile__drawer__page-mask')[0].addEventListener('click', closeDrawer);
-
-  // close drawer when screen larger than mobile
-  window.addEventListener('resize', () => window.innerWidth > 809 ? closeDrawer() : null);
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    openDrawer,
+    closeDrawer,
+    toggleMobileSubNav
+};
 }

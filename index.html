@@ -52,7 +52,7 @@
           <img src="Content/sites/enterprises/assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Locations" />
         </a>
         <div class="header__mobile__divider"></div>
-        <button class="header__mobile__icon" id="expand-mobile" aria-expanded="false">
+        <button class="header__mobile__icon" id="expand-mobile" aria-expanded="false" onclick="openDrawer()">
           <img src="Content/sites/enterprises/assets/svg/menu-mobile-gray.svg" class="header__mobile__icon--base" aria-label="Expand Mobile Menu" />
           <img src="Content/sites/enterprises/assets/svg/menu-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Expand Mobile Menu" />
       </button>
@@ -163,7 +163,7 @@
             <img src="Content/sites/enterprises/assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Locations" />
           </a>
           <div class="header__mobile__divider"></div>
-          <button class="header__mobile__icon" role="button" id="close-mobile">
+          <button class="header__mobile__icon" role="button" id="close-mobile" onclick="closeDrawer()">
             <img src="Content/sites/enterprises/assets/svg/close-mobile-white.svg" class="header__mobile__icon--base" aria-label="Collapse Mobile Menu" />
             <img src="Content/sites/enterprises/assets/svg/close-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Collapse Mobile Menu" />
           </button>
@@ -239,7 +239,7 @@
           <img src="Content/sites/enterprises/assets/svg/tagline-white.svg" aria-label="Expect More - Tagline" />
       </div>
       <div class="mobile__drawer__bg-container"></div>
-      <div class="mobile__drawer__page-mask"></div>
+      <div class="mobile__drawer__page-mask" role="button" onclick="closeDrawer()"></div>
     </div>
     <!-- End Mobile Drawer -->
   </header>
@@ -426,8 +426,8 @@
       <div class="page-width hr"></div>
 
       <div class="footer__content page-width">
-          <div class="footer__content__item__links"></div>
-          <div class="footer__content__item__links footer__content__item__links--mobile"></div>
+        <div id="footer-links" class="footer__content__item__links"></div>
+        <div id="footer-links--mobile" class="footer__content__item__links footer__content__item__links--mobile"></div>
       </div>
 
       <div class="page-width hr"></div>
@@ -442,11 +442,18 @@
     </footer>
 
   <div class="tagline">
-      <img src="Content/sites/enterprises/assets/svg/tagline-yellow.svg" aria-label="Expect More - Tagline" />
+    <img src="Content/sites/enterprises/assets/svg/tagline-yellow.svg" aria-label="Expect More - Tagline" />
   </div>
 
   <script src="Content/sites/enterprises/assets/js/dropdownMenu.js" type="text/javascript"></script>
   <script src="Content/sites/enterprises/assets/js/footerMenu.js" type="text/javascript"></script>
   <script src="Content/sites/enterprises/assets/js/mobileMenu.js" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    generateDesktopFooterLinks(links);
+    generateMobileFooterLinks(mobileLinks);
+
+    window.addEventListener('resize', () => window.innerWidth > 809 ? closeDrawer() : null);
+  </script>
 </body>
 </html>
