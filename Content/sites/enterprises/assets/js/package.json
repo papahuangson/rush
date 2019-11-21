@@ -4,12 +4,15 @@
   "description": "",
   "main": "dropdownMenu.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cover": "istanbul cover tape ./*.spec.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "browserify": "^16.5.0",
     "fs": "0.0.1-security",
+    "istanbul": "^0.4.5",
     "jsdom": "^15.2.1",
     "tape": "^4.11.0"
   }
