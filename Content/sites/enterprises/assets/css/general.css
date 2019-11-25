@@ -77,3 +77,7 @@ body {
   background-image: url('../svg/undone.svg');
   content: "";
 }
+
+.rotate180 {
+  transform: rotate(180deg);
+}
