@@ -4,7 +4,7 @@ const DOM = new JSDOM('<!DOCTYPE html><body><div id="footer-links"></div><div id
 
 global.document = DOM.window.document;
 
-const footerMenu = require('./footerMenu');
+const footerMenu = require('../footerMenu');
 
 const sampleList = [
   {
@@ -29,15 +29,13 @@ const sampleList = [
 ];
 
 test('generateDesktopFooterLinks', (assert) => {
-  assert.equal(
-    document.querySelectorAll('#footer-links a').length, 0,
-    'Should be no anchor tags on init'
-  );
+  const startingNumberOfLinks = document.querySelectorAll('#footer-links a').length;
 
   footerMenu.generateDesktopFooterLinks(sampleList);
 
   assert.equal(
-    document.querySelectorAll('#footer-links a').length, sampleList.length,
+    document.querySelectorAll('#footer-links a').length,
+    startingNumberOfLinks + sampleList.length,
     `Should have anchor tags equal to number of items in list (${sampleList.length})`
   );
 
@@ -45,15 +43,13 @@ test('generateDesktopFooterLinks', (assert) => {
 });
 
 test('generateMobileFooterLinks', (assert) => {
-  assert.equal(
-    document.querySelectorAll('#footer-links--mobile a').length, 0,
-    'Should be no anchor tags on init'
-  );
+  const startingNumberOfLinks = document.querySelectorAll('#footer-links--mobile a').length;
 
   footerMenu.generateMobileFooterLinks(sampleList);
 
   assert.equal(
-    document.querySelectorAll('#footer-links--mobile a').length, sampleList.length,
+    document.querySelectorAll('#footer-links--mobile a').length,
+    startingNumberOfLinks + sampleList.length,
     `Should have anchor tags equal to number of items in list (${sampleList.length})`
   );
 

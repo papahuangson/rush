@@ -60,88 +60,11 @@
       <!-- End Mobile Navigation -->
       
       <!-- Start Desktop Navigation -->
-      <nav class="header__content__navigation header__content__navigation--with-child" role="navigation">
-        <ul class="header__content__navigation--top-level">
-          <li class="header__content__navigation--top-level__link">
-            <a href="#" class="selected container" onclick="toggleMenu(event, 'dropdown1')">
-              Our Story
-              <img src="Content/sites/enterprises/assets/svg/down-caret-black.svg" aria-label="Expand Sub Navigation" />
-
-              <span class="ribbon"></span>
-            </a>
-
-              <div class="dropdown-menu" id="dropdown1" style="display: none;">
-                <ul>
-                  <li>
-                    <a href="#">Overview</a>
-                  </li>
-                  <li>
-                    <a href="#">Strategic Vision</a>
-                  </li>
-                  <li>
-                    <a href="#">Culture and Values</a>
-                  </li>
-                  <li>
-                    <a href="#">Corporate Citizenship</a>
-                  </li>
-                </ul>
-              </div>
-
-          </li>
-          <li class="header__content__navigation--top-level__link">
-              <a href="#" class="container">
-              Our Businesses
-              <span class="ribbon"></span>
-            </a>
-          </li>
-          <li class="header__content__navigation--top-level__link">
-              <a href="#" class="container">
-              Investor Relations
-              <span class="ribbon"></span>
-            </a>
-          </li>
-          <li class="header__content__navigation--top-level__link">
-              <a href="#" class="container">
-              Corporate Responsibility
-              <span class="ribbon"></span>
-            </a>
-          </li>
-          <li class="header__content__navigation--top-level__link">
-              <a href="#" class="container">
-              Careers
-              <span class="ribbon"></span>
-            </a>
-          </li>
-          <li class="header__content__navigation--top-level__link">
-              <a href="#" class="container" onclick="toggleMenu(event, 'dropdown2')" aria-expanded="false">
-              News
-              <img src="Content/sites/enterprises/assets/svg/down-caret-black.svg" aria-label="Expand Sub Navigation" />
-              <span class="ribbon"></span>
-            </a>
-            <div class="dropdown-menu" id="dropdown2" style="display: none;">
-                <ul>
-                  <li>
-                    <a href="#">News Item 1</a>
-                  </li>
-                  <li>
-                    <a href="#">News Item 2</a>
-                  </li>
-                  <li>
-                    <a href="#">News Item 3</a>
-                  </li>
-                  <li>
-                    <a href="#">News Item 4</a>
-                  </li>
-                </ul>
-              </div>
-          </li>
-        </ul>
-        <div class="header__content__navigation--with-child__child">
-          <a href="#" class="container selected">Overview<span class="ribbon"></span></a>
-          <a href="#" class="container">Strategic Vision<span class="ribbon"></span></a>
-          <a href="#" class="container">Culture and Values<span class="ribbon"></span></a>
-        </div>
-      </nav>
+      <nav
+        id="header__content__navigation"
+        class="header__content__navigation header__content__navigation--with-child"
+        role="navigation"
+      ></nav>
       <!-- End Deskop Navigation -->
     </div>
 
@@ -171,68 +94,8 @@
         <!-- End Mobile Navigation -->
       </div>
       <div class="mobile__drawer__body">
-        <nav class="mobile__drawer__body__navigation">
-          <ul>
-            <li class="mobile__drawer__body__navigation__item">
-              <a href="#" onclick="toggleMobileSubNav(event, 'our-story')" aria-expanded="false" aria-label="Toggle Sub Navigation">
-                Our Story
-                <img src="Content/sites/enterprises/assets/svg/collapse-mobile-gray.svg" id="our-story--hide" class="hide mobile__drawer__body__navigation__item__expand-control" />
-                <img src="Content/sites/enterprises/assets/svg/expand-mobile-gray.svg" id="our-story--show" class="mobile__drawer__body__navigation__item__expand-control" />
-              </a>
-            </li>
-            <ul class="mobile__drawer__body__navigation__item__child--list hide" id="our-story">
-              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item--selected mobile__drawer__body__navigation__item__child">
-                <a href="#">Overview</a>
-              </li>
-              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
-                <a href="#">Strategic Vision</a>
-              </li>
-              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
-                <a href="#">Culture and Values</a>
-              </li>
-            </ul>
+        <nav id="mobile__drawer__body__navigation" class="mobile__drawer__body__navigation">
 
-            <li class="mobile__drawer__body__navigation--divider"></li>
-
-            <li class="mobile__drawer__body__navigation__item">
-              <a href="#">Our Businesses</a>
-            </li>
-            <li class="mobile__drawer__body__navigation--divider"></li>
-
-            <li class="mobile__drawer__body__navigation__item">
-              <a href="#">Investor Relations</a>
-            </li>
-            <li class="mobile__drawer__body__navigation--divider"></li>
-
-            <li class="mobile__drawer__body__navigation__item">
-              <a href="#">Corporate Responsibility</a>
-            </li>
-            <li class="mobile__drawer__body__navigation--divider"></li>
-
-            <li class="mobile__drawer__body__navigation__item">
-              <a href="#">Careers</a>
-            </li>
-            <li class="mobile__drawer__body__navigation--divider"></li>
-
-            <li class="mobile__drawer__body__navigation__item">
-              <a href="#" onclick="toggleMobileSubNav(event, 'news')" aria-expanded="false" aria-label="Toggle Sub Navigation">
-                News
-                <img src="Content/sites/enterprises/assets/svg/collapse-mobile-gray.svg" id="news--hide" class="mobile__drawer__body__navigation__item__expand-control hide" />
-                <img src="Content/sites/enterprises/assets/svg/expand-mobile-gray.svg" id="news--show" class="mobile__drawer__body__navigation__item__expand-control" />
-              </a>
-            </li>
-            <ul class="mobile__drawer__body__navigation__item__child--list hide" id="news">
-              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
-                <a href="#">News Item 1</a>
-              </li>
-              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
-                <a href="#">News Item 2</a>
-              </li>
-              <li class="mobile__drawer__body__navigation__item mobile__drawer__body__navigation__item__child">
-                <a href="#">News Item 3</a>
-              </li>
-            </ul>
-          </ul>
         </nav>
       </div>
       <div class="mobile__drawer__footer">
@@ -444,16 +307,243 @@
   <div class="tagline">
     <img src="Content/sites/enterprises/assets/svg/tagline-yellow.svg" aria-label="Expect More - Tagline" />
   </div>
-
-  <script src="Content/sites/enterprises/assets/js/dropdownMenu.js" type="text/javascript"></script>
-  <script src="Content/sites/enterprises/assets/js/footerMenu.js" type="text/javascript"></script>
   <script src="Content/sites/enterprises/assets/js/mobileMenu.js" type="text/javascript"></script>
+  <script src="Content/sites/enterprises/assets/js/headerNavLinks.js" type="text/javascript"></script>
+  <script src="Content/sites/enterprises/assets/js/dropdownMenu.js" type="text/javascript"></script>
+
+  <script src="Content/sites/enterprises/assets/js/footerMenu.js" type="text/javascript"></script>
 
   <script type="text/javascript">
-    generateDesktopFooterLinks(links);
-    generateMobileFooterLinks(mobileLinks);
+    const footerLinks = [
+      {
+        name: 'Rush Truck Centers',
+        url: '#',
+        id: 0
+      },
+      {
+        name: 'Rush Towing Systems',
+        url: '#',
+        id: 4
+      },
+      {
+        name: 'House of Trucks',
+        url: '#',
+        id: 7
+      },
+      {
+        name: 'Perfection Truck Parts & Equipment',
+        url: '#',
+        id: 10
+      },
+      {
+        name: 'Rush Bus Centers',
+        url: '#',
+        id: 1
+      },
+      {
+        name: 'Rush Truck Leasing',
+        url: '#',
+        id: 5
+      },
+      {
+        name: 'Momentum Fuel Technologies',
+        url: '#',
+        id: 8
+      },
+      {
+        name: 'Chrome Country',
+        url: '#',
+        id: 11
+      },
+      {
+        name: 'Rush Refuse Systems',
+        url: '#',
+        id: 2
+      },
+      {
+        name: 'Rush Truck Insurance',
+        url: '#',
+        id: 6
+      },
+      {
+        name: 'Custom Vehicle Solutions',
+        url: '#',
+        id: 9
+      },
+      {
+        name: 'World Wide Tires',
+        url: '#',
+        id: 12
+      },
+      {
+        name: 'Rush Crane Systems',
+        url: '#',
+        id: 3
+      }
+    ];
 
-    window.addEventListener('resize', () => window.innerWidth > 809 ? closeDrawer() : null);
+    const mobileFooterLinks = [
+      {
+        name: 'Rush Truck Centers',
+        url: '#',
+        id: 0
+      },
+      {
+        name: 'House of Trucks',
+        url: '#',
+        id: 7
+      },
+      {
+        name: 'Rush Bus Centers',
+        url: '#',
+        id: 1
+      },
+      {
+        name: 'Momentum Fuel Technologies',
+        url: '#',
+        id: 8
+      },
+      {
+        name: 'Rush Refuse Systems',
+        url: '#',
+        id: 2
+      },
+      {
+        name: 'Custom Vehicle Solutions',
+        url: '#',
+        id: 9
+      },
+      {
+        name: 'Rush Crane Systems',
+        url: '#',
+        id: 3
+      },
+      {
+        name: 'Rush Towing Systems',
+        url: '#',
+        id: 4
+      },
+      {
+        name: 'Chrome Country',
+        url: '#',
+        id: 11
+      },
+      {
+        name: 'Rush Truck Leasing',
+        url: '#',
+        id: 5
+      },
+      {
+        name: 'World Wide Tires',
+        url: '#',
+        id: 12
+      },
+      {
+        name: 'Rush Truck Insurance',
+        url: '#',
+        id: 6
+      },
+      {
+        name: 'Perfection Truck Parts & Equipment',
+        url: '#',
+        id: 10
+      },
+    ];
+
+    const navList = [
+      {
+        id: 0,
+        name: 'Our Story',
+        order: 0,
+        url: '#',
+        selected: true,
+        machineName: 'our-story',
+        children: [
+          {
+            id: 0,
+            name: 'Overview',
+            order: 0,
+            url: '#',
+            selected: true
+          },
+          {
+            id: 1,
+            name: 'Strategic Vision',
+            order: 1,
+            url: '#'
+          },
+          {
+            id: 2,
+            name: 'Culture and Values',
+            order: 2,
+            url: '#'
+          },
+        ],
+      },
+      {
+        id: 1,
+        name: 'Our Businesses',
+        order: 1,
+        url: '#',
+        children: []
+      },
+      {
+        id: 2,
+        name: 'Investor Relations',
+        order: 2,
+        url: '#',
+        children: []
+      },
+      {
+        id: 3,
+        name: 'Corporate Responsibility',
+        order: 3,
+        url: '#',
+        children: []
+      },
+      {
+        id: 4,
+        name: 'Careers',
+        order: 4,
+        url: '#',
+        children: []
+      },
+      {
+        id: 5,
+        name: 'News',
+        order: 5,
+        url: '#',
+        machineName: 'news',
+        children: [
+          {
+            id: 0,
+            name: 'News Item 1',
+            order: 0,
+            url: '#'
+          },
+          {
+            id: 1,
+            name: 'News Item 2',
+            order: 1,
+            url: '#'
+          },
+          {
+            id: 2,
+            name: 'News Item 3',
+            order: 2,
+            url: '#'
+          }
+        ]
+      }
+    ];
+    createDesktopNavigation('header__content__navigation', navList);
+    createMobileNavigation('mobile__drawer__body__navigation', navList);
+    generateDesktopFooterLinks(footerLinks);
+    generateMobileFooterLinks(mobileFooterLinks);
+
+    window.onload = function () {
+      window.addEventListener('resize', () => window.innerWidth > 809 ? closeDrawer() : null);
+    }
   </script>
 </body>
 </html>
