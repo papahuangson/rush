@@ -8,12 +8,8 @@ function toggleMenu(event, menuId) {
     const elem = document.getElementById(menuId);
     const buttonElement = event.target;
 
-    const upCaret = document.getElementById(`${menuId}--up-caret`);
-    upCaret.classList.toggle('hide');
-
-    const downCaret = document.getElementById(`${menuId}--down-caret`);
-    downCaret.classList.toggle('hide');
-    console.log(`${menuId}--down-caret`)
+    const upCaret = document.getElementById(`${menuId}--caret`);
+    upCaret.classList.toggle('rotate180');
 
     document.getElementById(menuId).style.display = 'block';
     buttonElement.setAttribute('aria-expanded', 'true');
@@ -25,11 +21,8 @@ function toggleMenu(event, menuId) {
         elem.style.display = 'none';
         buttonElement.setAttribute('aria-expanded', 'false');
 
-        const upCaret = document.getElementById(`${menuId}--up-caret`);
-        upCaret.classList.toggle('hide');
-
-        const downCaret = document.getElementById(`${menuId}--down-caret`);
-        downCaret.classList.toggle('hide');
+        const upCaret = document.getElementById(`${menuId}--caret`);
+        upCaret.classList.toggle('rotate180');
 
         menuIsOpen = false;
         removeClickListener();

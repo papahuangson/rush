@@ -35,19 +35,11 @@ function createDesktopNavigation(navId, list) {
       a.onclick = (event) => toggleMenu(event, link.machineName);
 
       // add caret
-      const downCaretImg = document.createElement('img');
-      downCaretImg.setAttribute('src', 'Content/sites/enterprises/assets/svg/down-caret-black.svg');
-      downCaretImg.setAttribute('aria-label', 'Expand Sub Navigation');
-      downCaretImg.setAttribute('id', `${link.machineName}--down-caret`);
-      a.appendChild(downCaretImg);
-
-      const upCaretImg = document.createElement('img');
-      upCaretImg.setAttribute('src', 'Content/sites/enterprises/assets/svg/down-caret-black.svg');
-      upCaretImg.setAttribute('aria-label', 'Expand Sub Navigation');
-      upCaretImg.setAttribute('id', `${link.machineName}--up-caret`);
-      upCaretImg.classList.add('hide');
-      upCaretImg.classList.add('rotate180');
-      a.appendChild(upCaretImg);
+      const caretImg = document.createElement('img');
+      caretImg.setAttribute('src', 'Content/sites/enterprises/assets/svg/caret-black.svg');
+      caretImg.setAttribute('aria-label', 'Expand Sub Navigation');
+      caretImg.setAttribute('id', `${link.machineName}--caret`);
+      a.appendChild(caretImg);
 
       li.appendChild(a);
 
