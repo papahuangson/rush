@@ -30,3 +30,10 @@ function toggleMenu(event, menuId) {
     setTimeout(() => document.addEventListener('click', outsideClickListener), 1);
   }
 }
+
+/*istanbul ignore next */
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = {
+    toggleMenu
+  };
+}

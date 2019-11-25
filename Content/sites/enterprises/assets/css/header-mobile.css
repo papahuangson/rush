@@ -32,7 +32,7 @@
 
   .header__mobile__icon--base,
   .header__mobile__icon--hover {
-    height: 5.625vw;
+    height: 3.600vw;
   }
 
   .header__mobile__icon .header__mobile__icon--hover {
@@ -156,6 +156,10 @@
   border-top: 1px solid #939598;
   margin: 0 4vw;
   padding: 0;
+}
+
+.mobile__drawer__body__navigation ul li.mobile__drawer__body__navigation--divider:last-child {
+  display: none;
 }
 
 ul.mobile__drawer__body__navigation__item__child--list {

@@ -25,10 +25,11 @@ function toggleMobileSubNav(event, subNavTitle) {
   document.getElementById(`${subNavTitle}--show`).classList.toggle('hide');
 }
 
+/*istanbul ignore next */
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
     openDrawer,
     closeDrawer,
     toggleMobileSubNav
-};
+  };
 }

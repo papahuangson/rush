@@ -2,12 +2,12 @@ const test = require('tape');
 const JSDOM = require('jsdom').JSDOM;
 const fs = require('fs');
 
-const html = fs.readFileSync(__dirname + '/../../../../../index.html', 'utf8')
+const html = fs.readFileSync(__dirname + '/../../../../../../static-index.html', 'utf8')
 const DOM = new JSDOM(html);
 
 global.document = DOM.window.document;
 
-const mobileMenu = require('./mobileMenu');
+const mobileMenu = require('../mobileMenu');
 
 test('opening and closing the drawer', (assert) => {
   assert.equal(
@@ -54,23 +54,23 @@ test('expanding mobile menu list items', (assert) => {
   const event = { target: newDiv };
 
   assert.equal(
-    document.querySelector('#our-story--hide').classList.contains('hide'),
+    document.querySelector('#our-story--child-menu--hide').classList.contains('hide'),
     true,
     'hide menu button should not be visible on load'
   );
 
-  mobileMenu.toggleMobileSubNav(event, 'our-story');
+  mobileMenu.toggleMobileSubNav(event, 'our-story--child-menu');
 
   assert.equal(
-    document.querySelector('#our-story--hide').classList.contains('hide'),
+    document.querySelector('#our-story--child-menu--hide').classList.contains('hide'),
     false,
     'sub nav menu is opened'
   );
 
-  mobileMenu.toggleMobileSubNav(event, 'our-story');
+  mobileMenu.toggleMobileSubNav(event, 'our-story--child-menu');
 
   assert.equal(
-    document.querySelector('#our-story--hide').classList.contains('hide'),
+    document.querySelector('#our-story--child-menu--hide').classList.contains('hide'),
     true,
     'sub nav menu is closed'
   );
