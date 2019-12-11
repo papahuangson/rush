@@ -417,7 +417,11 @@ a.footer__map-link:hover .footer__hover-icon,
 .footer__copyright {
   justify-content: space-between;
   font-size: 1vw;
-  justify-content: flex-start;
+  justify-content: flex-end;
+}
+
+.footer__copyright--left{
+  margin-right: auto;
 }
 
 @media screen and (max-width: 850px) {
