@@ -78,8 +78,18 @@
 }
 
 @media screen and (max-width: 500px) {
+  .footer__content__item-full-row:first-child {
+    width: 90vw;
+    margin-bottom: 2.4rem;
+  }
+
+  .footer__content__item:last-child {
+    margin-right: auto;
+  }
+
   .footer__content__item {
     width: 45vw;
+    margin: 0;
   }
 }
 
@@ -159,6 +169,14 @@
 
 .email-signup {
   margin-top: 1vw;
+}
+
+.location-search{
+  margin-top: 1vw;
+}
+
+#find_a_location__input{
+  width: 80px;
 }
 
 .footer__content__item input {
@@ -426,7 +444,6 @@ a.footer__map-link:hover .footer__hover-icon,
 
 @media screen and (max-width: 850px) {
   .footer__copyright {
-
     font-size: 1.5vw;
   }
 }
