@@ -52,6 +52,7 @@ body {
 
 .flex--60 {
   width: 60%;
+  height: 40vw;
   position: relative;
 }
 
