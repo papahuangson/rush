@@ -13,6 +13,16 @@
     <!-- Begin Utility Bar -->
     <nav class="header__top-bar" role="navigation">
       <div class="header__top-bar__content page-width">
+        <!--
+                  @foreach (var @component in @Model.SearchAndUtility)
+        {
+            <a href="@component.Url">
+                <img src="@component.BaseIcon" class="utility__base-icon" aria-label="@component.DisplayName" />
+                <img src="@component.HoverIcon" class="utility__hover-icon" aria-label="@component.DisplayName" />
+                @component.DisplayName
+            </a>
+        }
+        -->
         <a href="#">
           <img src="Content/sites/enterprises/assets/svg/search-white.svg" class="utility__base-icon"
             aria-label="Search" />
@@ -47,6 +57,15 @@
 
       <!-- Begin Mobile Navigation -->
       <nav class="header__mobile bp-medium">
+        <!--
+            @foreach (var @component in @Model.SearchAndUtility)
+            {
+                <a href="@component.Url" class="header__mobile__icon">
+                    <img src="@component.DrawerBaseIcon" class="header__mobile__icon--base" aria-label="@component.DisplayName" />
+                    <img src="@component.DrawerHoverIcon" class="header__mobile__icon--hover" aria-label="@component.DisplayName" />
+                </a>
+            }
+        -->
         <a href="#" class="header__mobile__icon">
           <img src="Content/sites/enterprises/assets/svg/search-mobile-gray.svg" class="header__mobile__icon--base"
             aria-label="Search" />
@@ -345,7 +364,21 @@
 
     <div class="footer__content page-width">
       <div id="footer-links" class="footer__content__item__links"></div>
+      <!--
+        <div id="footer-links" class="footer__content__item__links">
+        @foreach (var @brand in @Model.AddressFooterBrandContent.AddressFooterBrandLinks)
+        {
+            <a title="@brand.DisplayName" href=@brand.Url>@brand.DisplayName</a>
+        }
+    </div>
+      -->
       <div id="footer-links--mobile" class="footer__content__item__links footer__content__item__links--mobile"></div>
+      <!--
+        @foreach (var @brand in @Model.AddressFooterBrandContent.AddressFooterBrandLinks)
+        {
+            <a title="@brand.DisplayName" href=@brand.Url>@brand.DisplayName</a>
+        }
+      -->
     </div>
 
     <div class="page-width hr"></div>

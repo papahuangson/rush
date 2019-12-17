@@ -22,7 +22,10 @@ function createDesktopNavigation(navId, list) {
     const linkText = document.createTextNode(link.name);
     a.appendChild(linkText);
     a.title = link.name;
-    a.href = link.url;
+
+    if (link.children && link.children.length === 0) {
+        a.href = link.url;
+    }
 
     // mark as selected if selected
     if (link.selected) {
@@ -32,13 +35,13 @@ function createDesktopNavigation(navId, list) {
     // child link logic
     if (link.children && link.children.length > 0) {
       // add onclick
-      a.onclick = (event) => toggleMenu(event, link.machineName);
+      a.onclick = (event) => toggleMenu(event, link.uniqueId);
 
       // add caret
       const caretImg = document.createElement('img');
-      caretImg.setAttribute('src', 'Content/sites/enterprises/assets/svg/caret-black.svg');
+      caretImg.setAttribute('src', '/Content/sites/enterprises/assets/svg/caret-black.svg');
       caretImg.setAttribute('aria-label', 'Expand Sub Navigation');
-      caretImg.setAttribute('id', `${link.machineName}--caret`);
+      caretImg.setAttribute('id', `${link.uniqueId}--caret`);
       a.appendChild(caretImg);
 
       li.appendChild(a);
@@ -46,7 +49,7 @@ function createDesktopNavigation(navId, list) {
       // create dropdown
       const dropdownElement = document.createElement('div');
       dropdownElement.classList.add('dropdown-menu');
-      dropdownElement.setAttribute('id', link.machineName);
+      dropdownElement.setAttribute('id', link.uniqueId);
       dropdownElement.setAttribute('style', 'display: none;');
 
       const dropdownUl = document.createElement('ul');
@@ -128,22 +131,25 @@ function createMobileNavigation(navId, list) {
     const linkText = document.createTextNode(link.name);
     a.appendChild(linkText);
     a.title = link.name;
-    a.href = link.url;
+
+    if (link.children && link.children.length === 0) {
+        a.href = link.url;
+    }
 
     if (link.children && link.children.length > 0) {
-      const childMenuId = `${link.machineName}--child-menu`;
+      const childMenuId = `${link.uniqueId}--child-menu`;
       a.onclick = (event) => toggleMobileSubNav(event, childMenuId);
       a.setAttribute('aria-expanded', 'false');
       a.setAttribute('aria-label', 'Toggle Sub Navigation');
 
       const expandControl = document.createElement('img');
-      expandControl.setAttribute('src', 'Content/sites/enterprises/assets/svg/collapse-mobile-gray.svg');
+      expandControl.setAttribute('src', '/Content/sites/enterprises/assets/svg/collapse-mobile-gray.svg');
       expandControl.setAttribute('id', `${childMenuId}--hide`);
       expandControl.classList.add('mobile__drawer__body__navigation__item__expand-control');
       expandControl.classList.add('hide');
 
       const minimizeControl = document.createElement('img');
-      minimizeControl.setAttribute('src', 'Content/sites/enterprises/assets/svg/expand-mobile-gray.svg');
+      minimizeControl.setAttribute('src', '/Content/sites/enterprises/assets/svg/expand-mobile-gray.svg');
       minimizeControl.setAttribute('id', `${childMenuId}--show`);
       minimizeControl.classList.add('mobile__drawer__body__navigation__item__expand-control');
 
