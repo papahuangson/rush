@@ -78,8 +78,18 @@
 }
 
 @media screen and (max-width: 500px) {
+  .footer__content__item-full-row:first-child {
+    width: 90vw;
+    margin-bottom: 2.4rem;
+  }
+
+  .footer__content__item:last-child {
+    margin-right: auto;
+  }
+
   .footer__content__item {
     width: 45vw;
+    margin: 0;
   }
 }
 
@@ -159,6 +169,14 @@
 
 .email-signup {
   margin-top: 1vw;
+}
+
+.location-search{
+  margin-top: 1vw;
+}
+
+#find_a_location__input{
+  width: 80px;
 }
 
 .footer__content__item input {
@@ -417,12 +435,15 @@ a.footer__map-link:hover .footer__hover-icon,
 .footer__copyright {
   justify-content: space-between;
   font-size: 1vw;
-  justify-content: flex-start;
+  justify-content: flex-end;
+}
+
+.footer__copyright--left{
+  margin-right: auto;
 }
 
 @media screen and (max-width: 850px) {
   .footer__copyright {
-
     font-size: 1.5vw;
   }
 }

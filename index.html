@@ -1,29 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rush</title>
-  <link rel="stylesheet" href="Content/sites/enterprises/assets/css/styles.css">
+  <link rel="stylesheet" href="Content/sites/enterprises/assets/css/styles.css" />
 </head>
+
 <body>
   <header class="header" role="banner">
     <!-- Begin Utility Bar -->
     <nav class="header__top-bar" role="navigation">
       <div class="header__top-bar__content page-width">
+        <!--
+                  @foreach (var @component in @Model.SearchAndUtility)
+        {
+            <a href="@component.Url">
+                <img src="@component.BaseIcon" class="utility__base-icon" aria-label="@component.DisplayName" />
+                <img src="@component.HoverIcon" class="utility__hover-icon" aria-label="@component.DisplayName" />
+                @component.DisplayName
+            </a>
+        }
+        -->
         <a href="#">
-          <img src="Content/sites/enterprises/assets/svg/search-white.svg" class="utility__base-icon" aria-label="Search" />
-          <img src="Content/sites/enterprises/assets/svg/search-gold.svg" class="utility__hover-icon" aria-label="Search" />
+          <img src="Content/sites/enterprises/assets/svg/search-white.svg" class="utility__base-icon"
+            aria-label="Search" />
+          <img src="Content/sites/enterprises/assets/svg/search-gold.svg" class="utility__hover-icon"
+            aria-label="Search" />
           Search
         </a>
         <a href="#">
-          <img src="Content/sites/enterprises/assets/svg/contact-white.svg" class="utility__base-icon" aria-label="Contact" />
-          <img src="Content/sites/enterprises/assets/svg/contact-gold.svg" class="utility__hover-icon" aria-label="Contact" />
+          <img src="Content/sites/enterprises/assets/svg/contact-white.svg" class="utility__base-icon"
+            aria-label="Contact" />
+          <img src="Content/sites/enterprises/assets/svg/contact-gold.svg" class="utility__hover-icon"
+            aria-label="Contact" />
           Contact
         </a>
         <a href="#">
-          <img src="Content/sites/enterprises/assets/svg/location-white.svg" class="utility__base-icon" aria-label="Locations" />
-          <img src="Content/sites/enterprises/assets/svg/location-gold.svg" class="utility__hover-icon" aria-label="Locations" />
+          <img src="Content/sites/enterprises/assets/svg/location-white.svg" class="utility__base-icon"
+            aria-label="Locations" />
+          <img src="Content/sites/enterprises/assets/svg/location-gold.svg" class="utility__hover-icon"
+            aria-label="Locations" />
           Locations
         </a>
       </div>
@@ -39,32 +57,46 @@
 
       <!-- Begin Mobile Navigation -->
       <nav class="header__mobile bp-medium">
+        <!--
+            @foreach (var @component in @Model.SearchAndUtility)
+            {
+                <a href="@component.Url" class="header__mobile__icon">
+                    <img src="@component.DrawerBaseIcon" class="header__mobile__icon--base" aria-label="@component.DisplayName" />
+                    <img src="@component.DrawerHoverIcon" class="header__mobile__icon--hover" aria-label="@component.DisplayName" />
+                </a>
+            }
+        -->
         <a href="#" class="header__mobile__icon">
-          <img src="Content/sites/enterprises/assets/svg/search-mobile-gray.svg" class="header__mobile__icon--base" aria-label="Search" />
-          <img src="Content/sites/enterprises/assets/svg/search-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Search" />
+          <img src="Content/sites/enterprises/assets/svg/search-mobile-gray.svg" class="header__mobile__icon--base"
+            aria-label="Search" />
+          <img src="Content/sites/enterprises/assets/svg/search-mobile-gold.svg" class="header__mobile__icon--hover"
+            aria-label="Search" />
         </a>
         <a href="#" class="header__mobile__icon">
-          <img src="Content/sites/enterprises/assets/svg/contact-mobile-gray.svg" class="header__mobile__icon--base" aria-label="Contact" />
-          <img src="Content/sites/enterprises/assets/svg/contact-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Contact" />
+          <img src="Content/sites/enterprises/assets/svg/contact-mobile-gray.svg" class="header__mobile__icon--base"
+            aria-label="Contact" />
+          <img src="Content/sites/enterprises/assets/svg/contact-mobile-gold.svg" class="header__mobile__icon--hover"
+            aria-label="Contact" />
         </a>
         <a href="#" class="header__mobile__icon">
-          <img src="Content/sites/enterprises/assets/svg/location-mobile-gray.svg" class="header__mobile__icon--base" aria-label="Locations" />
-          <img src="Content/sites/enterprises/assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Locations" />
+          <img src="Content/sites/enterprises/assets/svg/location-mobile-gray.svg" class="header__mobile__icon--base"
+            aria-label="Locations" />
+          <img src="Content/sites/enterprises/assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover"
+            aria-label="Locations" />
         </a>
         <div class="header__mobile__divider"></div>
         <button class="header__mobile__icon" id="expand-mobile" aria-expanded="false" onclick="openDrawer()">
-          <img src="Content/sites/enterprises/assets/svg/menu-mobile-gray.svg" class="header__mobile__icon--base" aria-label="Expand Mobile Menu" />
-          <img src="Content/sites/enterprises/assets/svg/menu-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Expand Mobile Menu" />
-      </button>
-    </nav>
+          <img src="Content/sites/enterprises/assets/svg/menu-mobile-gray.svg" class="header__mobile__icon--base"
+            aria-label="Expand Mobile Menu" />
+          <img src="Content/sites/enterprises/assets/svg/menu-mobile-gold.svg" class="header__mobile__icon--hover"
+            aria-label="Expand Mobile Menu" />
+        </button>
+      </nav>
       <!-- End Mobile Navigation -->
-      
+
       <!-- Start Desktop Navigation -->
-      <nav
-        id="header__content__navigation"
-        class="header__content__navigation header__content__navigation--with-child"
-        role="navigation"
-      ></nav>
+      <nav id="header__content__navigation" class="header__content__navigation header__content__navigation--with-child"
+        role="navigation"></nav>
       <!-- End Deskop Navigation -->
     </div>
 
@@ -74,32 +106,38 @@
         <!-- Begin Mobile Navigation -->
         <nav class="header__mobile bp-medium">
           <a href="#" class="header__mobile__icon">
-            <img src="Content/sites/enterprises/assets/svg/search-mobile-white.svg" class="header__mobile__icon--base" aria-label="Search" />
-            <img src="Content/sites/enterprises/assets/svg/search-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Search" />
+            <img src="Content/sites/enterprises/assets/svg/search-mobile-white.svg" class="header__mobile__icon--base"
+              aria-label="Search" />
+            <img src="Content/sites/enterprises/assets/svg/search-mobile-gold.svg" class="header__mobile__icon--hover"
+              aria-label="Search" />
           </a>
           <a href="#" class="header__mobile__icon">
-            <img src="Content/sites/enterprises/assets/svg/contact-mobile-white.svg" class="header__mobile__icon--base" aria-label="Contact" />
-            <img src="Content/sites/enterprises/assets/svg/contact-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Contact" />
+            <img src="Content/sites/enterprises/assets/svg/contact-mobile-white.svg" class="header__mobile__icon--base"
+              aria-label="Contact" />
+            <img src="Content/sites/enterprises/assets/svg/contact-mobile-gold.svg" class="header__mobile__icon--hover"
+              aria-label="Contact" />
           </a>
           <a href="#" class="header__mobile__icon">
-            <img src="Content/sites/enterprises/assets/svg/location-mobile-white.svg" class="header__mobile__icon--base" aria-label="Locations" />
-            <img src="Content/sites/enterprises/assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Locations" />
+            <img src="Content/sites/enterprises/assets/svg/location-mobile-white.svg" class="header__mobile__icon--base"
+              aria-label="Locations" />
+            <img src="Content/sites/enterprises/assets/svg/location-mobile-gold.svg" class="header__mobile__icon--hover"
+              aria-label="Locations" />
           </a>
           <div class="header__mobile__divider"></div>
           <button class="header__mobile__icon" role="button" id="close-mobile" onclick="closeDrawer()">
-            <img src="Content/sites/enterprises/assets/svg/close-mobile-white.svg" class="header__mobile__icon--base" aria-label="Collapse Mobile Menu" />
-            <img src="Content/sites/enterprises/assets/svg/close-mobile-gold.svg" class="header__mobile__icon--hover" aria-label="Collapse Mobile Menu" />
+            <img src="Content/sites/enterprises/assets/svg/close-mobile-white.svg" class="header__mobile__icon--base"
+              aria-label="Collapse Mobile Menu" />
+            <img src="Content/sites/enterprises/assets/svg/close-mobile-gold.svg" class="header__mobile__icon--hover"
+              aria-label="Collapse Mobile Menu" />
           </button>
         </nav>
         <!-- End Mobile Navigation -->
       </div>
       <div class="mobile__drawer__body">
-        <nav id="mobile__drawer__body__navigation" class="mobile__drawer__body__navigation">
-
-        </nav>
+        <nav id="mobile__drawer__body__navigation" class="mobile__drawer__body__navigation"></nav>
       </div>
       <div class="mobile__drawer__footer">
-          <img src="Content/sites/enterprises/assets/svg/tagline-white.svg" aria-label="Expect More - Tagline" />
+        <img src="Content/sites/enterprises/assets/svg/tagline-white.svg" aria-label="Expect More - Tagline" />
       </div>
       <div class="mobile__drawer__bg-container"></div>
       <div class="mobile__drawer__page-mask" role="button" onclick="closeDrawer()"></div>
@@ -108,64 +146,82 @@
   </header>
 
   <div class="hero" role="banner">
-    <div class="hero__image" role="img" aria-label="Rush Headquarters Photo" style="background-image: url('Content/sites/enterprises/assets/images/Hero.png')"></div>
+    <div class="hero__image" role="img" aria-label="Rush Headquarters Photo"
+      style="background-image: url('Content/sites/enterprises/assets/images/Hero.png')"></div>
   </div>
 
   <main class="content" role="article">
-
     <!-- Begin Content Header -->
     <div class="page-width">
       <div class="content__heading content__block inner-content">
         <h1>Rush Enterprises.<br />More than a Tradition of Truck Sales.</h1>
-        <p>A family dealership founded in 1965, Rush Enterprises has grown to over 120 
-          dealerships across twenty states. With over 7,500 employees and $5.5 billion in 
-          revenue, we're the largest commercial vehicle dealer group in North America.
-          But we're a lot more than that.</p>
-        <button class="content__button content__button--yellow arrow--white">our strategic vision</button>
+        <p>
+          A family dealership founded in 1965, Rush Enterprises has grown to
+          over 120 dealerships across twenty states. With over 7,500 employees
+          and $5.5 billion in revenue, we're the largest commercial vehicle
+          dealer group in North America. But we're a lot more than that.
+        </p>
+        <button class="content__button content__button--yellow arrow--white">
+          our strategic vision
+        </button>
       </div>
       <div class="clearfix"></div>
     </div>
     <!-- End Content Header -->
 
     <!-- Start Quote Component -->
-    <div class="content__image--full content__block" style="background-image: url('Content/sites/enterprises/assets/images/IMG\ -\ Rusty.png')" role="img" aria-label="Rusty The Founder">
+    <div class="content__image--full content__block"
+      style="background-image: url('Content/sites/enterprises/assets/images/IMG\ -\ Rusty.png')" role="img"
+      aria-label="Rusty The Founder">
       <div class="flex page-width">
-          <div class="flex--50">
-              <p class="content__image__quote">
-                "Only a man who knows what it is like to be defeated can reach down to the bottom of 
-                his soul and come up with the extra ounce of power it takes to win when the match is even."
-              </p>
-              <p class="content__image__attribution">— W.M. "Rusty" Rush</p>
-            </div>
-            <div class="flex--50"></div>
+        <div class="flex--50">
+          <p class="content__image__quote">
+            "Only a man who knows what it is like to be defeated can reach
+            down to the bottom of his soul and come up with the extra ounce of
+            power it takes to win when the match is even."
+          </p>
+          <p class="content__image__attribution">— W.M. "Rusty" Rush</p>
+        </div>
+        <div class="flex--50"></div>
       </div>
     </div>
     <!-- End Quote Component -->
 
-    <div class="content__block home-bg-image home-bg-image--left" style="background-image: url('Content/sites/enterprises/assets/images/img-expanding-our-reach.png');">
+    <div class="content__block home-bg-image home-bg-image--left"
+      style="background-image: url('Content/sites/enterprises/assets/images/img-expanding-our-reach.png');">
       <div class="page-width flex">
-
-          <div class="flex--60"></div>
-          <div class="flex--40">
-            <div class="justify-bottom inner-content">
-                <h2>Expanding our reach.</h2>
-                <p>We offer a variety of solutions that keep your truck on the road and you on the job.</p>
-                <button class="content__button content__button--gray arrow--gold">about our business</button>
-            </div>
+        <div class="flex--60"></div>
+        <div class="flex--40">
+          <div class="justify-bottom inner-content">
+            <h2>Expanding our reach.</h2>
+            <p>
+              We offer a variety of solutions that keep your truck on the road
+              and you on the job.
+            </p>
+            <button class="content__button content__button--gray arrow--gold">
+              about our business
+            </button>
           </div>
+        </div>
       </div>
     </div>
 
-    <div class="content__block home-bg-image home-bg-image--right" style="background-image: url('Content/sites/enterprises/assets/images/img-driven-to-serve.png');">
+    <div class="content__block home-bg-image home-bg-image--right"
+      style="background-image: url('Content/sites/enterprises/assets/images/img-driven-to-serve.png');">
       <div class="page-width flex">
-          <div class="flex--40">
-              <div class="justify-bottom inner-content">
-                <h2>Driven to serve.</h2>
-                <p>We're in the business of serving people, and we bring an unmatched pride and 
-                  accountability to work every day.</p>
-                <button class="content__button content__button--gray arrow--gold">about our culture and values</button>              </div>
-            </div>
-            <div class="flex--60"></div>
+        <div class="flex--40">
+          <div class="justify-bottom inner-content">
+            <h2>Driven to serve.</h2>
+            <p>
+              We're in the business of serving people, and we bring an
+              unmatched pride and accountability to work every day.
+            </p>
+            <button class="content__button content__button--gray arrow--gold">
+              about our culture and values
+            </button>
+          </div>
+        </div>
+        <div class="flex--60"></div>
       </div>
     </div>
 
@@ -178,7 +234,7 @@
         <div class="tabbed-block__header__triangle"></div>
       </div>
       <div class="tabbed-block__container page-width">
-          <!-- <ul class="in-the-news__container__item">
+        <!-- <ul class="in-the-news__container__item">
             <li>
               <span class="in-the-news__container__item__date">Oct 23, 2019.</span>
               <span class="in-the-news__container__item__title">Rush Enterprises, Inc. Reports Third Quarter 2019 Results, Announces $0.13 Per Share Dividend</span>
@@ -213,33 +269,44 @@
             </li>
           </ul>
           <button class="content__button content__button--gray">More Rush in the news</button> -->
-        </div>
-    </div>
-
-    <div class="content__block home-bg-image home-bg-image--left" style="background-image: url('Content/sites/enterprises/assets/images/img-grounded-in-commiunities.png');">
-      <div class="page-width flex">
-
-          <div class="flex--60"></div>
-          <div class="flex--40">
-            <div class="justify-bottom inner-content">
-                <h2>Expanding our reach.</h2>
-                <p>We offer a variety of solutions that keep your truck on the road and you on the job.</p>
-                <button class="content__button content__button--gray arrow--gold">Our corporate responsibility</button>
-            </div>
-          </div>
       </div>
     </div>
 
-    <div class="content__block home-bg-image home-bg-image--right" style="background-image: url('Content/sites/enterprises/assets/images/img-eyes-to-the-future.png');">
+    <div class="content__block home-bg-image home-bg-image--left"
+      style="background-image: url('Content/sites/enterprises/assets/images/img-grounded-in-commiunities.png');">
       <div class="page-width flex">
-          <div class="flex--40">
-              <div class="justify-bottom inner-content">
-                <h2>Driven to serve.</h2>
-                <p>We're in the business of serving people, and we bring an unmatched pride and 
-                  accountability to work every day.</p>
-                <button class="content__button content__button--gray arrow--gold">about our story</button>              </div>
-            </div>
-            <div class="flex--60"></div>
+        <div class="flex--60"></div>
+        <div class="flex--40">
+          <div class="justify-bottom inner-content">
+            <h2>Expanding our reach.</h2>
+            <p>
+              We offer a variety of solutions that keep your truck on the road
+              and you on the job.
+            </p>
+            <button class="content__button content__button--gray arrow--gold">
+              Our corporate responsibility
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="content__block home-bg-image home-bg-image--right"
+      style="background-image: url('Content/sites/enterprises/assets/images/img-eyes-to-the-future.png');">
+      <div class="page-width flex">
+        <div class="flex--40">
+          <div class="justify-bottom inner-content">
+            <h2>Driven to serve.</h2>
+            <p>
+              We're in the business of serving people, and we bring an
+              unmatched pride and accountability to work every day.
+            </p>
+            <button class="content__button content__button--gray arrow--gold">
+              about our story
+            </button>
+          </div>
+        </div>
+        <div class="flex--60"></div>
       </div>
     </div>
   </main>
@@ -247,62 +314,134 @@
   <footer class="footer" role="contentinfo">
     <div class="footer__content page-width">
       <div class="footer__content__item">
-          <img src="Content/sites/enterprises/assets/svg/enterprises-dark.svg" class="footer--logo" aria-label="Rush Enterprises" />
-        </div>
-        <div class="footer__content__item">
-          <p>555 IH-35 South Suite 500</p>
-          <p>New Braunfels, Texas 78130</p>
-          <a href="#" class="footer__map-link">
-            <img src="Content/sites/enterprises/assets/svg/location-footer-gold.svg" class="footer__base-icon" aria-label="Map and Directions" />
-            <img src="Content/sites/enterprises/assets/svg/location-footer-white.svg" class="footer__hover-icon" aria-label="Map and Directions" />
-            MAP and DIRECTIONS
-          </a>
-        </div>
+        <img src="Content/sites/enterprises/assets/svg/enterprises-dark.svg" class="footer--logo"
+          aria-label="Rush Enterprises" />
+      </div>
+      <div class="footer__content__item">
+        <p>555 IH-35 South Suite 500</p>
+        <p>New Braunfels, Texas 78130</p>
+        <a href="#" class="footer__map-link">
+          <img src="Content/sites/enterprises/assets/svg/location-footer-gold.svg" class="footer__base-icon"
+            aria-label="Map and Directions" />
+          <img src="Content/sites/enterprises/assets/svg/location-footer-white.svg" class="footer__hover-icon"
+            aria-label="Map and Directions" />
+          MAP and DIRECTIONS
+        </a>
+      </div>
 
-        <div class="page-width hr bp-medium"></div>
+      <div class="page-width hr bp-medium"></div>
 
-        <div class="footer__content__item">
-          <p>Call Direct: (830) 302-5200</p>
-          <p>Toll Free: (800) 973-7874</p>
-          <p>Hours: 8:00am - 5:00pm CT</p>
-          <div>
-            <button class="button__yellow footer__content__contact-button">Contact Us</button>
-            <div class="footer__content__linkedin">
-              <a href="#">
-                <img src="Content/sites/enterprises/assets/svg/linkedin-footer-white.svg" class="footer__base-icon" aria-label="LinkedIn - Follow Us" />
-                <img src="Content/sites/enterprises/assets/svg/linkedin-footer-gold.svg" class="footer__hover-icon" aria-label="LinkedIn - Follow Us" />
-                FOLLOW US
-              </a>
-            </div>
+      <div class="footer__content__item">
+        <p>Call Direct: (830) 302-5200</p>
+        <p>Toll Free: (800) 973-7874</p>
+        <p>Hours: 8:00am - 5:00pm CT</p>
+        <div>
+          <button class="button__yellow footer__content__contact-button">
+            Contact Us
+          </button>
+          <div class="footer__content__linkedin">
+            <a href="#">
+              <img src="Content/sites/enterprises/assets/svg/linkedin-footer-white.svg" class="footer__base-icon"
+                aria-label="LinkedIn - Follow Us" />
+              <img src="Content/sites/enterprises/assets/svg/linkedin-footer-gold.svg" class="footer__hover-icon"
+                aria-label="LinkedIn - Follow Us" />
+              FOLLOW US
+            </a>
           </div>
         </div>
-        <div class="page-width hr bp-small"></div>
-        <div class="footer__content__item">
-          <label for="email-signup__input">Subscribe to our media announcements.</label>
-          <div class="email-signup">
-            <input type="text" placeholder="Email" aria-label="Email Address" id="email-signup__input" />
-            <button class="button__yellow">Submit</button>
-          </div>
+      </div>
+      <div class="page-width hr bp-small"></div>
+      <div class="footer__content__item">
+        <label for="email-signup__input">Subscribe to our media announcements.</label>
+        <div class="email-signup">
+          <input type="text" placeholder="Email" aria-label="Email Address" id="email-signup__input" />
+          <button class="button__yellow">Submit</button>
         </div>
       </div>
+    </div>
 
-      <div class="page-width hr"></div>
+    <div class="page-width hr"></div>
 
-      <div class="footer__content page-width">
-        <div id="footer-links" class="footer__content__item__links"></div>
-        <div id="footer-links--mobile" class="footer__content__item__links footer__content__item__links--mobile"></div>
+    <div class="footer__content page-width">
+      <div id="footer-links" class="footer__content__item__links"></div>
+      <!--
+        <div id="footer-links" class="footer__content__item__links">
+        @foreach (var @brand in @Model.AddressFooterBrandContent.AddressFooterBrandLinks)
+        {
+            <a title="@brand.DisplayName" href=@brand.Url>@brand.DisplayName</a>
+        }
+    </div>
+      -->
+      <div id="footer-links--mobile" class="footer__content__item__links footer__content__item__links--mobile"></div>
+      <!--
+        @foreach (var @brand in @Model.AddressFooterBrandContent.AddressFooterBrandLinks)
+        {
+            <a title="@brand.DisplayName" href=@brand.Url>@brand.DisplayName</a>
+        }
+      -->
+    </div>
+
+    <div class="page-width hr"></div>
+
+    <div class="footer__content footer__copyright page-width">
+      <div class="footer__copyright--left">
+        <a href="#">©2019 Rush Enterprises, Inc.</a>
       </div>
-
-      <div class="page-width hr"></div>
-
-      <div class="footer__content footer__copyright page-width">
-        <div><a href="#">©2019 Rush Enterprises, Inc.</a></div>
-        <div><a href="#">Privacy Policy</a></div>
-        <div><a href="#">Terms of Use</a></div>
-        <div><a href="#">California Transparency in Supply Chains Act of 2010</a></div>
-        <div><a href="#">Report an Ethics Violation</a></div>
+      <div><a href="#">Privacy Policy</a></div>
+      <div><a href="#">Terms of Use</a></div>
+      <div>
+        <a href="#">California Transparency in Supply Chains Act of 2010</a>
       </div>
-    </footer>
+    </div>
+  </footer>
+  <!-- RTL -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__content page-width">
+      <div class="footer__content__item footer__content__item-logo footer__content__item-full-row">
+        <img src="Content/sites/enterprises/assets/svg/truck-leasing.svg" class="footer--logo"
+          aria-label="Rush Enterprises" />
+      </div>
+      <div class="footer__content__item">
+        <p>Call Direct: (830) 302-5200</p>
+        <p>Toll Free: (800) 973-7874</p>
+        <p>Hours: 8:00am - 5:00pm CT</p>
+        <div>
+          <button class="button__yellow footer__content__contact-button">
+            Contact Us
+          </button>
+        </div>
+      </div>
+      <div class="page-width hr bp-small"></div>
+      <div class="footer__content__item">
+        <label for="find_a_location__input">Find a Rush Truck Leasing Location.</label>
+        <div class="location-search">
+          <input type="text" placeholder="Zip Code" aria-label="Zip Code" id="find_a_location__input" />
+          <button class="button__yellow">Find</button>
+        </div>
+      </div>
+      <div class="page-width hr bp-medium"></div>
+      <div class="footer__content__item">
+        <label for="rtl_insider-email__input">Be a Rush Truck Leasing Insider.</label>
+        <div class="email-signup">
+          <input type="text" placeholder="Email" aria-label="Email Address" id="rtl_insider-email__input" />
+          <button class="button__yellow">Submit</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-width hr"></div>
+
+    <div class="footer__content footer__copyright page-width">
+      <div class="footer__copyright--left">
+        <a href="#">©2019 Rush Enterprises, Inc.</a>
+      </div>
+      <div><a href="#">Privacy Policy</a></div>
+      <div><a href="#">Terms of Use</a></div>
+      <div>
+        <a href="#">California Transparency in Supply Chains Act of 2010</a>
+      </div>
+    </div>
+  </footer>
 
   <div class="tagline">
     <img src="Content/sites/enterprises/assets/svg/tagline-yellow.svg" aria-label="Expect More - Tagline" />
@@ -316,234 +455,237 @@
   <script type="text/javascript">
     const footerLinks = [
       {
-        name: 'Rush Truck Centers',
-        url: '#',
+        name: "Rush Truck Centers",
+        url: "#",
         id: 0
       },
       {
-        name: 'Rush Towing Systems',
-        url: '#',
+        name: "Rush Towing Systems",
+        url: "#",
         id: 4
       },
       {
-        name: 'House of Trucks',
-        url: '#',
+        name: "House of Trucks",
+        url: "#",
         id: 7
       },
       {
-        name: 'Perfection Truck Parts & Equipment',
-        url: '#',
+        name: "Perfection Truck Parts & Equipment",
+        url: "#",
         id: 10
       },
       {
-        name: 'Rush Bus Centers',
-        url: '#',
+        name: "Rush Bus Centers",
+        url: "#",
         id: 1
       },
       {
-        name: 'Rush Truck Leasing',
-        url: '#',
+        name: "Rush Truck Leasing",
+        url: "#",
         id: 5
       },
       {
-        name: 'Momentum Fuel Technologies',
-        url: '#',
+        name: "Momentum Fuel Technologies",
+        url: "#",
         id: 8
       },
       {
-        name: 'Chrome Country',
-        url: '#',
+        name: "Chrome Country",
+        url: "#",
         id: 11
       },
       {
-        name: 'Rush Refuse Systems',
-        url: '#',
+        name: "Rush Refuse Systems",
+        url: "#",
         id: 2
       },
       {
-        name: 'Rush Truck Insurance',
-        url: '#',
+        name: "Rush Truck Insurance",
+        url: "#",
         id: 6
       },
       {
-        name: 'Custom Vehicle Solutions',
-        url: '#',
+        name: "Custom Vehicle Solutions",
+        url: "#",
         id: 9
       },
       {
-        name: 'World Wide Tires',
-        url: '#',
+        name: "World Wide Tires",
+        url: "#",
         id: 12
       },
       {
-        name: 'Rush Crane Systems',
-        url: '#',
+        name: "Rush Crane Systems",
+        url: "#",
         id: 3
       }
     ];
 
     const mobileFooterLinks = [
       {
-        name: 'Rush Truck Centers',
-        url: '#',
+        name: "Rush Truck Centers",
+        url: "#",
         id: 0
       },
       {
-        name: 'House of Trucks',
-        url: '#',
+        name: "House of Trucks",
+        url: "#",
         id: 7
       },
       {
-        name: 'Rush Bus Centers',
-        url: '#',
+        name: "Rush Bus Centers",
+        url: "#",
         id: 1
       },
       {
-        name: 'Momentum Fuel Technologies',
-        url: '#',
+        name: "Momentum Fuel Technologies",
+        url: "#",
         id: 8
       },
       {
-        name: 'Rush Refuse Systems',
-        url: '#',
+        name: "Rush Refuse Systems",
+        url: "#",
         id: 2
       },
       {
-        name: 'Custom Vehicle Solutions',
-        url: '#',
+        name: "Custom Vehicle Solutions",
+        url: "#",
         id: 9
       },
       {
-        name: 'Rush Crane Systems',
-        url: '#',
+        name: "Rush Crane Systems",
+        url: "#",
         id: 3
       },
       {
-        name: 'Rush Towing Systems',
-        url: '#',
+        name: "Rush Towing Systems",
+        url: "#",
         id: 4
       },
       {
-        name: 'Chrome Country',
-        url: '#',
+        name: "Chrome Country",
+        url: "#",
         id: 11
       },
       {
-        name: 'Rush Truck Leasing',
-        url: '#',
+        name: "Rush Truck Leasing",
+        url: "#",
         id: 5
       },
       {
-        name: 'World Wide Tires',
-        url: '#',
+        name: "World Wide Tires",
+        url: "#",
         id: 12
       },
       {
-        name: 'Rush Truck Insurance',
-        url: '#',
+        name: "Rush Truck Insurance",
+        url: "#",
         id: 6
       },
       {
-        name: 'Perfection Truck Parts & Equipment',
-        url: '#',
+        name: "Perfection Truck Parts & Equipment",
+        url: "#",
         id: 10
-      },
+      }
     ];
 
     const navList = [
       {
         id: 0,
-        name: 'Our Story',
+        name: "Our Story",
         order: 0,
-        url: '#',
+        url: "#",
         selected: true,
-        machineName: 'our-story',
+        machineName: "our-story",
         children: [
           {
             id: 0,
-            name: 'Overview',
+            name: "Overview",
             order: 0,
-            url: '#',
+            url: "#",
             selected: true
           },
           {
             id: 1,
-            name: 'Strategic Vision',
+            name: "Strategic Vision",
             order: 1,
-            url: '#'
+            url: "#"
           },
           {
             id: 2,
-            name: 'Culture and Values',
+            name: "Culture and Values",
             order: 2,
-            url: '#'
-          },
-        ],
+            url: "#"
+          }
+        ]
       },
       {
         id: 1,
-        name: 'Our Businesses',
+        name: "Our Businesses",
         order: 1,
-        url: '#',
+        url: "#",
         children: []
       },
       {
         id: 2,
-        name: 'Investor Relations',
+        name: "Investor Relations",
         order: 2,
-        url: '#',
+        url: "#",
         children: []
       },
       {
         id: 3,
-        name: 'Corporate Responsibility',
+        name: "Corporate Responsibility",
         order: 3,
-        url: '#',
+        url: "#",
         children: []
       },
       {
         id: 4,
-        name: 'Careers',
+        name: "Careers",
         order: 4,
-        url: '#',
+        url: "#",
         children: []
       },
       {
         id: 5,
-        name: 'News',
+        name: "News",
         order: 5,
-        url: '#',
-        machineName: 'news',
+        url: "#",
+        machineName: "news",
         children: [
           {
             id: 0,
-            name: 'News Item 1',
+            name: "News Item 1",
             order: 0,
-            url: '#'
+            url: "#"
           },
           {
             id: 1,
-            name: 'News Item 2',
+            name: "News Item 2",
             order: 1,
-            url: '#'
+            url: "#"
           },
           {
             id: 2,
-            name: 'News Item 3',
+            name: "News Item 3",
             order: 2,
-            url: '#'
+            url: "#"
           }
         ]
       }
     ];
-    createDesktopNavigation('header__content__navigation', navList);
-    createMobileNavigation('mobile__drawer__body__navigation', navList);
+    createDesktopNavigation("header__content__navigation", navList);
+    createMobileNavigation("mobile__drawer__body__navigation", navList);
     generateDesktopFooterLinks(footerLinks);
     generateMobileFooterLinks(mobileFooterLinks);
 
     window.onload = function () {
-      window.addEventListener('resize', () => window.innerWidth > 809 ? closeDrawer() : null);
-    }
+      window.addEventListener("resize", () =>
+        window.innerWidth > 809 ? closeDrawer() : null
+      );
+    };
   </script>
 </body>
+
 </html>
