@@ -39,7 +39,7 @@ function createDesktopNavigation(navId, list) {
 
       // add caret
       const caretImg = document.createElement('img');
-      caretImg.setAttribute('src', '/Content/sites/enterprises/assets/svg/caret-black.svg');
+      caretImg.setAttribute('src', 'Content/sites/enterprises/assets/svg/caret-black.svg');
       caretImg.setAttribute('aria-label', 'Expand Sub Navigation');
       caretImg.setAttribute('id', `${link.uniqueId}--caret`);
       a.appendChild(caretImg);
