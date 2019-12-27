@@ -60,6 +60,11 @@
     margin-top: 8.438vw;
     height: 1.5vw;
   }
+
+  .header__mobile__icon--base,
+  .header__mobile__icon--hover {
+    height: 5.625vw;
+  }
 }
 
 .mobile__drawer,

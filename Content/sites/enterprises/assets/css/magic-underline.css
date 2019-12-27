@@ -23,7 +23,8 @@
 }
 
 .container:hover .ribbon,
-.selected .ribbon {
+.selected .ribbon,
+.active .ribbon {
   height: .4rem;
   width: 105%;
   position: absolute;
@@ -34,6 +35,12 @@
   clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 95%);
   backface-visibilty: hidden;
   bottom: .05rem;
+}
+
+.active .ribbon {
+  z-index: 0;
+  left: -2px;
+  bottom: -.1rem;
 }
 
 .header__content__navigation--with-child__child .container:hover .ribbon,

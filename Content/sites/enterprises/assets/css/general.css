@@ -56,6 +56,12 @@ body {
   position: relative;
 }
 
+@media screen and (max-width: 500px) {
+  .flex--60 {
+    height: 0;
+  }
+}
+
 .flex--40 {
   width: 40%;
   position: relative;
