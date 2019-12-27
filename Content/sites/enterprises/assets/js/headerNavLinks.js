@@ -41,7 +41,7 @@ function createDesktopNavigation(navId, list) {
       const caretImg = document.createElement('img');
       caretImg.setAttribute('src', 'Content/sites/enterprises/assets/svg/caret-black.svg');
       caretImg.setAttribute('aria-label', 'Expand Sub Navigation');
-      caretImg.setAttribute('id', `${link.uniqueId}--caret`);
+      caretImg.setAttribute('id', link.uniqueId+"--caret");
       a.appendChild(caretImg);
 
       li.appendChild(a);
@@ -137,20 +137,20 @@ function createMobileNavigation(navId, list) {
     }
 
     if (link.children && link.children.length > 0) {
-      const childMenuId = `${link.uniqueId}--child-menu`;
+      const childMenuId = link.uniqueId+"--child-menu";
       a.onclick = function (event) { toggleMobileSubNav(event, childMenuId) };
       a.setAttribute('aria-expanded', 'false');
       a.setAttribute('aria-label', 'Toggle Sub Navigation');
 
       const expandControl = document.createElement('img');
       expandControl.setAttribute('src', '/Content/sites/enterprises/assets/svg/collapse-mobile-gray.svg');
-      expandControl.setAttribute('id', `${childMenuId}--hide`);
+      expandControl.setAttribute('id', childMenuId+"--hide");
       expandControl.classList.add('mobile__drawer__body__navigation__item__expand-control');
       expandControl.classList.add('hide');
 
       const minimizeControl = document.createElement('img');
       minimizeControl.setAttribute('src', '/Content/sites/enterprises/assets/svg/expand-mobile-gray.svg');
-      minimizeControl.setAttribute('id', `${childMenuId}--show`);
+      minimizeControl.setAttribute('id', childMenuId+"--show");
       minimizeControl.classList.add('mobile__drawer__body__navigation__item__expand-control');
 
       a.appendChild(expandControl);

@@ -8,7 +8,7 @@ function toggleMenu(event, menuId) {
     const elem = document.getElementById(menuId);
     const buttonElement = event.target;
 
-    document.getElementById(`${menuId}--caret`).classList.toggle('rotate180');
+    document.getElementById(menuId+"--caret").classList.toggle('rotate180');
 
     document.getElementById(menuId).style.display = 'block';
     buttonElement.setAttribute('aria-expanded', 'true');
@@ -16,11 +16,11 @@ function toggleMenu(event, menuId) {
 
     // add event listener for clicks outside element
     const outsideClickListener = function (event) {
-      if (!elem.contains(event.target) && event.target.closest(`#${menuId}`) === null) {
+      if (!elem.contains(event.target) && event.target.closest("#"+menuId) === null) {
         elem.style.display = 'none';
         buttonElement.setAttribute('aria-expanded', 'false');
 
-        document.getElementById(`${menuId}--caret`).classList.toggle('rotate180');
+        document.getElementById(menuId+"--caret").classList.toggle('rotate180');
 
         menuIsOpen = false;
         removeClickListener();
