@@ -15,7 +15,7 @@ function toggleMenu(event, menuId) {
     menuIsOpen = true;
 
     // add event listener for clicks outside element
-    const outsideClickListener = (event) => {
+    const outsideClickListener = function (event) {
       if (!elem.contains(event.target) && event.target.closest(`#${menuId}`) === null) {
         elem.style.display = 'none';
         buttonElement.setAttribute('aria-expanded', 'false');
@@ -27,12 +27,12 @@ function toggleMenu(event, menuId) {
       }
     }
 
-    const removeClickListener = () => {
+    const removeClickListener = function () {
       document.removeEventListener('click', outsideClickListener);
     }
 
     // add a setTimeout to allow bubbling to die down
-    setTimeout(() => document.addEventListener('click', outsideClickListener), 1);
+    setTimeout(function () { document.addEventListener('click', outsideClickListener) }, 1);
   }
 }
 

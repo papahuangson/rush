@@ -6,7 +6,7 @@ function createDesktopNavigation(navId, list) {
   const navElement = document.getElementById(navId);
   const ul = document.createElement('ul');
   ul.classList.add('header__content__navigation--top-level');
-  list.map(link => {
+  list.map(function (link) {
     // check if this item is selected and has children - if so, add array to secondLevelNav
     if (link.selected && link.children && link.children.length > 0) {
       secondLevelNav = link.children;
@@ -35,7 +35,7 @@ function createDesktopNavigation(navId, list) {
     // child link logic
     if (link.children && link.children.length > 0) {
       // add onclick
-      a.onclick = (event) => toggleMenu(event, link.uniqueId);
+      a.onclick = function (event) { toggleMenu(event, link.uniqueId) };
 
       // add caret
       const caretImg = document.createElement('img');
@@ -54,7 +54,7 @@ function createDesktopNavigation(navId, list) {
 
       const dropdownUl = document.createElement('ul');
 
-      link.children.map(child => {
+      link.children.map(function (child) {
         const childItem = document.createElement('li');
         const childLink = document.createElement('a');
         const childLinkText = document.createTextNode(child.name);
@@ -89,7 +89,7 @@ function createDesktopNavigation(navId, list) {
     const secondLevelElement = document.createElement('div');
     secondLevelElement.classList.add('header__content__navigation--with-child__child');
 
-    secondLevelNav.map(link => {
+    secondLevelNav.map(function (link) {
       const secondLevelLink = document.createElement('a');
       const secondLevelText = document.createTextNode(link.name);
       secondLevelLink.classList.add('container');
@@ -121,7 +121,7 @@ function createMobileNavigation(navId, list) {
   const navElement = document.getElementById(navId);
   const ul = document.createElement('ul');
 
-  list.map(link => {
+  list.map(function (link) {
     // create list item
     const li = document.createElement('li');
     li.classList.add('mobile__drawer__body__navigation__item');
@@ -138,7 +138,7 @@ function createMobileNavigation(navId, list) {
 
     if (link.children && link.children.length > 0) {
       const childMenuId = `${link.uniqueId}--child-menu`;
-      a.onclick = (event) => toggleMobileSubNav(event, childMenuId);
+      a.onclick = function (event) { toggleMobileSubNav(event, childMenuId) };
       a.setAttribute('aria-expanded', 'false');
       a.setAttribute('aria-label', 'Toggle Sub Navigation');
 
@@ -163,7 +163,7 @@ function createMobileNavigation(navId, list) {
       subNavMenu.classList.add('hide');
       subNavMenu.setAttribute('id', childMenuId);
 
-      link.children.map(child => {
+      link.children.map(function (child) {
         const childLi = document.createElement('li');
         childLi.classList.add('mobile__drawer__body__navigation__item');
         childLi.classList.add('mobile__drawer__body__navigation__item__child');
