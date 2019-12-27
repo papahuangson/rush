@@ -4,7 +4,7 @@
 
 function generateDesktopFooterLinks(list) {
   if (document.getElementsByClassName('footer__content__item__links')[0]) {
-    list.map(function (link) {
+    list.map(link => {
       var a = document.createElement('a');
       var linkText = document.createTextNode(link.name);
       a.appendChild(linkText);
@@ -17,7 +17,7 @@ function generateDesktopFooterLinks(list) {
 
 function generateMobileFooterLinks(list) {
   if (document.getElementsByClassName('footer__content__item__links--mobile')[0]) {
-    list.map(function (link) {
+    list.map(link => {
       var a = document.createElement('a');
       var linkText = document.createTextNode(link.name);
       a.appendChild(linkText);

@@ -21,8 +21,8 @@ function toggleMobileSubNav(event, subNavTitle) {
   : event.target.setAttribute('aria-expanded', 'true');
 
   document.getElementById(subNavTitle).classList.toggle('hide');
-  document.getElementById(subNavTitle+"--hide").classList.toggle('hide');
-  document.getElementById(subNavTitle+"--show").classList.toggle('hide');
+  document.getElementById(`${subNavTitle}--hide`).classList.toggle('hide');
+  document.getElementById(`${subNavTitle}--show`).classList.toggle('hide');
 }
 
 /*istanbul ignore next */
