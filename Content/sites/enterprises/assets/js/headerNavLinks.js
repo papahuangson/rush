@@ -6,7 +6,7 @@ function createDesktopNavigation(navId, list) {
   const navElement = document.getElementById(navId);
   const ul = document.createElement('ul');
   ul.classList.add('header__content__navigation--top-level');
-  list.map(link => {
+  list.map((link, key) => {
     // check if this item is selected and has children - if so, add array to secondLevelNav
     if (link.selected && link.children && link.children.length > 0) {
       secondLevelNav = link.children;
@@ -21,6 +21,8 @@ function createDesktopNavigation(navId, list) {
     // create link
     const a = document.createElement('a');
     a.classList.add('container');
+
+    a.setAttribute('id', `${link.uniqueId}--anchor`);
     const linkText = document.createTextNode(link.name);
     a.appendChild(linkText);
     a.title = link.name;
@@ -36,8 +38,13 @@ function createDesktopNavigation(navId, list) {
 
     // child link logic
     if (link.children && link.children.length > 0) {
+      a.href = '#';
+      a.setAttribute('aria-role', 'button');
+
       // add onclick
+
       a.onclick = (event) => toggleMenu(event, link.uniqueId);
+      a.onkeypress = (event) => event.keyCode == 13 && document.getElementById(`${link.uniqueId}--anchor`).click();
 
       // add caret
       const caretImg = document.createElement('img');
