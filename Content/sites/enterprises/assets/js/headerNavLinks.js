@@ -44,7 +44,6 @@ function createDesktopNavigation(navId, list) {
       // add onclick
 
       a.onclick = (event) => toggleMenu(event, link.uniqueId);
-      a.onkeypress = (event) => event.keyCode == 13 && document.getElementById(`${link.uniqueId}--anchor`).click();
 
       // add caret
       const caretImg = document.createElement('img');
