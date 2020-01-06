@@ -1,5 +1,5 @@
 .content {
-  margin: 50vw auto 8vw auto;
+  margin: 0 auto 8vw auto;
 }
 
 main {
@@ -8,19 +8,19 @@ main {
 
 @media screen and (max-width: 850px) {
   .content {
-    margin: 51vw auto 6vw auto;
+    margin: 0 auto 6vw auto;
   }
 }
 
 @media screen and (max-width: 500px) {
   .content {
-    margin: 52vw auto 10vw auto;
+    margin: 0 auto 10vw auto;
   }
 }
 
 @media screen and (max-width: 320px) {
   .content {
-    margin: 76vw 0 15vw 0;
+    margin: 0 0 15vw 0;
   }
 }
 
@@ -28,7 +28,7 @@ main {
   margin-top: 8vw;
 }
 
-.inner-page .content__block {
+.inner-page .content__block:not(:first-child) {
   margin-top: 6vw;
 }
 

@@ -39,3 +39,25 @@
     background-size: 157vw;
   }
 }
+
+.hero--spacer {
+  height: 50vw;
+}
+
+@media screen and (max-width: 850px) {
+  .hero--spacer {
+    margin: 51vw auto 6vw auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero--spacer {
+    margin: 52vw auto 10vw auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero--spacer {
+    margin: 76vw 0 15vw 0;
+  }
+}
