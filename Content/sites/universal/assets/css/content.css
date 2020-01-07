@@ -898,3 +898,13 @@ main {
     line-height: 2.4rem;
   }
 }
+
+.inquire-frame {
+  height: 730px;
+}
+
+@media screen and (max-width: 850px) {
+  .inquire-frame {
+    height: 1150px;
+  }
+}
