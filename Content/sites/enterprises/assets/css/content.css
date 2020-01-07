@@ -682,3 +682,34 @@ main {
     padding: 2.4rem 2rem;
   }
 }
+
+.service-block {
+  width: 19vw;
+  background-color: #fff;
+}
+
+.service-block:not(:first-child) {
+  margin-left: 2vw;
+}
+
+.service-block__img {
+  width: 19vw;
+  height: 9vw;
+  overflow: hidden;
+}
+
+.service-block__title {
+  font-family: "Trade Gothic Bold Condensed", sans-serif;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  color: #111;
+  margin: 1.6rem 0 1.2rem 1.6rem;
+  text-transform: uppercase;
+}
+
+.service-block button {
+  margin-left: 1.6rem;
+  margin-bottom: 2.4rem;
+  font-size: 1.6rem;
+  padding: 1.1rem 1.6rem .8rem 1.6rem;
+}

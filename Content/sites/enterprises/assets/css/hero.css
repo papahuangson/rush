@@ -46,18 +46,18 @@
 
 @media screen and (max-width: 850px) {
   .hero--spacer {
-    margin: 51vw auto 6vw auto;
+    height: 48vw;
   }
 }
 
 @media screen and (max-width: 500px) {
   .hero--spacer {
-    margin: 52vw auto 10vw auto;
+    height: 52vw;
   }
 }
 
 @media screen and (max-width: 320px) {
   .hero--spacer {
-    margin: 76vw 0 15vw 0;
+    height: 65vw;
   }
 }
