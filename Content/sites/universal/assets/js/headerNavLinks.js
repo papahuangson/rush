@@ -47,7 +47,7 @@ function createDesktopNavigation(navId, list) {
 
       // add caret
       const caretImg = document.createElement('img');
-      caretImg.setAttribute('src', 'Content/sites/universal/assets/svg/caret-black.svg');
+      caretImg.setAttribute('src', '/Content/sites/universal/assets/svg/caret-black.svg');
       caretImg.setAttribute('aria-label', 'Expand Sub Navigation');
       caretImg.setAttribute('id', `${link.uniqueId}--caret`);
       a.appendChild(caretImg);
@@ -152,13 +152,13 @@ function createMobileNavigation(navId, list) {
       a.setAttribute('aria-label', 'Toggle Sub Navigation');
 
       const expandControl = document.createElement('img');
-      expandControl.setAttribute('src', 'Content/sites/universal/assets/svg/collapse-mobile-gray.svg');
+      expandControl.setAttribute('src', '/Content/sites/universal/assets/svg/collapse-mobile-gray.svg');
       expandControl.setAttribute('id', `${childMenuId}--hide`);
       expandControl.classList.add('mobile__drawer__body__navigation__item__expand-control');
       expandControl.classList.add('hide');
 
       const minimizeControl = document.createElement('img');
-      minimizeControl.setAttribute('src', 'Content/sites/universal/assets/svg/expand-mobile-gray.svg');
+      minimizeControl.setAttribute('src', '/Content/sites/universal/assets/svg/expand-mobile-gray.svg');
       minimizeControl.setAttribute('id', `${childMenuId}--show`);
       minimizeControl.classList.add('mobile__drawer__body__navigation__item__expand-control');
 
