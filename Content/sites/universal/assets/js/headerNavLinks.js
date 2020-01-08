@@ -12,7 +12,7 @@ function createDesktopNavigation(navId, list) {
       secondLevelNav = link.children;
     }
 
-    link.uniqueId = `navLink-${link.id}`;
+    link.uniqueId = `navLink-${link.uniqueId}`;
 
     // create list item
     const li = document.createElement('li');
