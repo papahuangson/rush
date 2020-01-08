@@ -738,10 +738,6 @@ main {
     width: 44vw;
   }
 
-  .service-block:nth-child(even) {
-    margin-left: 3vw;
-  }
-
   .service-block:nth-child(n+3) {
     margin-top: 4.8vw;
   }
