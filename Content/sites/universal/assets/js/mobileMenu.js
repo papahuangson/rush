@@ -16,6 +16,7 @@ function closeDrawer() {
 }
 
 function toggleMobileSubNav(event, subNavTitle) {
+  event.preventDefault();
   event.target.getAttribute('aria-expanded') === 'true' ?
     event.target.setAttribute('aria-expanded', 'false')
   : event.target.setAttribute('aria-expanded', 'true');

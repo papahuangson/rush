@@ -146,6 +146,7 @@ function createMobileNavigation(navId, list) {
 
     if (link.children && link.children.length > 0) {
       const childMenuId = `${link.uniqueId}--child-menu`;
+      a.href = '#';
       a.onclick = (event) => toggleMobileSubNav(event, childMenuId);
       a.setAttribute('aria-expanded', 'false');
       a.setAttribute('aria-label', 'Toggle Sub Navigation');
