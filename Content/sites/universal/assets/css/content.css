@@ -887,3 +887,45 @@ main {
     line-height: 2.4rem;
   }
 }
+
+iframe {
+  overflow: hidden;
+}
+
+.iframe__home-news {
+  height: 370px;
+}
+
+@media screen and (max-width: 730px) {
+  .iframe__home-news {
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .iframe__home-news {
+    height: 430px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .iframe__home-news {
+    height: 460px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .iframe__home-news {
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .iframe__home-news {
+    height: 550px;
+  }
+}
+
+.iframe__news-main {
+  height: 700px
+}
