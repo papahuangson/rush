@@ -606,14 +606,18 @@
         ]
       }
     ];
-    createDesktopNavigation('header__content__navigation', navList);
-    createMobileNavigation('mobile__drawer__body__navigation', navList);
-    generateDesktopFooterLinks(footerLinks);
-    generateMobileFooterLinks(mobileFooterLinks);
+    "use strict";
 
-    window.onload = function () {
-      window.addEventListener('resize', () => window.innerWidth > 809 ? closeDrawer() : null);
-    }
+createDesktopNavigation("header__content__navigation", navList);
+createMobileNavigation("mobile__drawer__body__navigation", navList);
+generateDesktopFooterLinks(footerLinks);
+generateMobileFooterLinks(mobileFooterLinks);
+
+window.onload = function () {
+  window.addEventListener("resize", function () {
+    return window.innerWidth > 809 ? closeDrawer() : null;
+  });
+};
   </script>
 </body>
 </html>

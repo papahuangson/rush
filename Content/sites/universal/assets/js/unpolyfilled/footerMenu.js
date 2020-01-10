@@ -1,11 +1,10 @@
-"use strict";
-
 // Note: The order of items between desktop and mobile are different,
 // so we need two separate/reordered lists in order to display them
 // in the correct order.
+
 function generateDesktopFooterLinks(list) {
   if (document.getElementsByClassName('footer__content__item__links')[0]) {
-    list.map(function (link) {
+    list.map(link => {
       var a = document.createElement('a');
       var linkText = document.createTextNode(link.name);
       a.appendChild(linkText);
@@ -18,7 +17,7 @@ function generateDesktopFooterLinks(list) {
 
 function generateMobileFooterLinks(list) {
   if (document.getElementsByClassName('footer__content__item__links--mobile')[0]) {
-    list.map(function (link) {
+    list.map(link => {
       var a = document.createElement('a');
       var linkText = document.createTextNode(link.name);
       a.appendChild(linkText);
@@ -28,12 +27,11 @@ function generateMobileFooterLinks(list) {
     });
   }
 }
+
 /*istanbul ignore next */
-
-
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = {
-    generateDesktopFooterLinks: generateDesktopFooterLinks,
-    generateMobileFooterLinks: generateMobileFooterLinks
+    generateDesktopFooterLinks,
+    generateMobileFooterLinks
   };
 }
