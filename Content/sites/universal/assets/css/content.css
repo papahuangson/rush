@@ -32,6 +32,11 @@ main {
   margin-top: 6vw;
 }
 
+.content__block.content__block__copy--main {
+  margin-top: 3vw !important;
+  margin-bottom: 6vw;
+}
+
 @media screen and (max-width: 850px) {
   .content__block {
     margin-top: 8vw;
