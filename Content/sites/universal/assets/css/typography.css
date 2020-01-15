@@ -193,7 +193,8 @@ h3 {
   }
 }
 
-p {
+p, .content__block ul {
+  font-family: "Trade Gothic Condensed", serif;
   font-size: 2.1rem;
   margin-bottom: 2.4rem;
   line-height: 3.2rem;
@@ -201,7 +202,7 @@ p {
 }
 
 @media screen and (max-width: 850px) {
-  p {
+  p, .content__block ul {
     font-size: 1.8rem;
     margin-bottom: 2.4rem;
     line-height: 2.8rem;
@@ -210,12 +211,16 @@ p {
 }
 
 @media screen and (max-width: 320px) {
-  p {
+  p, .content__block ul {
     font-size: 1.6rem;
     margin-bottom: 2.4rem;
     letter-spacing: -.02rem;
     line-height: 2.4rem;
   }
+}
+
+.content__block ul {
+  margin-left: 4rem;
 }
 
 .content__heading p {
