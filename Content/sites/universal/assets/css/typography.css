@@ -223,6 +223,12 @@ p, .content__block ul {
   margin-left: 4rem;
 }
 
+@media screen and (max-width: 850px) {
+  .content__block ul {
+    margin-left: 3rem;
+  }
+}
+
 .content__heading p {
   font-family: "Warnock", serif;
   font-size: 2.1rem;
