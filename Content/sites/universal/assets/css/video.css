@@ -1,12 +1,14 @@
 .header-video {
   position: relative;
-  height: 400px;
-  width: 1200px;
+  height: 63vw;
+  width: 100%;
   margin: 0 auto;
   overflow: hidden;
+  padding: 3vw 0;
 }
 
 .header-video video {
+  width: 100%;
     position: absolute;
     z-index:-2; /* Causes the video to sit behind your heading */
     object-position:center; /* Causes video to be centred against the header */
