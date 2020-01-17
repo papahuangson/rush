@@ -13,7 +13,6 @@
     z-index:-2; /* Causes the video to sit behind your heading */
     object-position:center; /* Causes video to be centred against the header */
     object-fit:cover; /* Causes video to cover/stretch to the header */
-    
 }
 
 .header-video--big {
