@@ -898,36 +898,24 @@ iframe {
 }
 
 .iframe__home-news {
-  height: 370px;
+  height: 300px;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 630px) {
   .iframe__home-news {
-    height: 400px;
+    height: 350px;
   }
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 525px) {
   .iframe__home-news {
-    height: 430px;
+    height: 800px;
   }
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 400px) {
   .iframe__home-news {
-    height: 460px;
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .iframe__home-news {
-    height: 500px;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .iframe__home-news {
-    height: 550px;
+    height: 830px;
   }
 }
 
