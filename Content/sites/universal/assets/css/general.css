@@ -139,6 +139,6 @@ fieldset:not(:first-child) {
 
 @media screen and (orientation: landscape) {
   html {
-font-size: 62.5% !important;
+    font-size: 40% !important;
   }
 }
