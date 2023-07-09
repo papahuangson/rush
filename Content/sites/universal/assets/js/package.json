@@ -13,7 +13,7 @@
     "browserify": "^16.5.0",
     "fs": "0.0.1-security",
     "istanbul": "^0.4.5",
-    "jsdom": "^15.2.1",
+    "jsdom": "^22.1.0",
     "tape": "^4.11.0"
   }
 }
